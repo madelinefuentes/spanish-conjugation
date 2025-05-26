@@ -9,13 +9,40 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@emotion/native": "^11.11.0",
+    "@emotion/react": "^11.14.0",
+    "@expo-google-fonts/dev": "^0.3.7",
+    "@lovesworking/watermelondb-expo-plugin-sdk-52-plus": "^1.0.2",
+    "@nozbe/watermelondb": "^0.28.0",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-navigation/bottom-tabs": "^7.3.13",
+    "chroma-js": "^3.1.2",
     "expo": "~53.0.9",
+    "expo-blur": "~14.1.4",
+    "expo-build-properties": "~0.14.6",
+    "expo-dev-client": "~5.1.8",
+    "expo-font": "~13.3.1",
+    "expo-linear-gradient": "~14.1.4",
+    "expo-navigation-bar": "~4.2.4",
+    "expo-splash-screen": "^0.30.8",
     "expo-status-bar": "~2.2.3",
+    "install": "^0.13.0",
+    "lucide-react-native": "^0.511.0",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-edge-to-edge": "^1.6.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-simple-default-props": "^1.0.0",
+    "react-native-size-matters": "^0.4.2",
+    "react-native-svg": "15.11.2",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/plugin-proposal-decorators": "^7.27.1",
+    "@welldone-software/why-did-you-render": "^10.0.1",
+    "metro-react-native-babel-preset": "^0.77.0"
   },
   "private": true
 }
