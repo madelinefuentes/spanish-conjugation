@@ -1,0 +1,39 @@
+{
+  "infinitive": "estar",
+  "meaning": "to be (state/temporary)",
+  "type": "irregular",
+  "group": "-ar",
+  "conjugations": {
+    "indicative": {
+      "present": {
+        "yo": { "conjugation": "estoy", "translation": "I am" },
+        "tú": { "conjugation": "estás", "translation": "you are" },
+        "él": { "conjugation": "está", "translation": "he is" },
+        "ella": { "conjugation": "está", "translation": "she is" },
+        "nosotros": { "conjugation": "estamos", "translation": "we are" },
+        "ustedes": { "conjugation": "están", "translation": "you all are" },
+        "ellos": { "conjugation": "están", "translation": "they (masc.) are" },
+        "ellas": { "conjugation": "están", "translation": "they (fem.) are" }
+      },
+      "preterite": {
+        "yo": { "conjugation": "estuve", "translation": "I was" },
+        "tú": { "conjugation": "estuviste", "translation": "you were" },
+        "él": { "conjugation": "estuvo", "translation": "he was" },
+        "ella": { "conjugation": "estuvo", "translation": "she was" },
+        "nosotros": { "conjugation": "estuvimos", "translation": "we were" },
+        "ustedes": {
+          "conjugation": "estuvieron",
+          "translation": "you all were"
+        },
+        "ellos": {
+          "conjugation": "estuvieron",
+          "translation": "they (masc.) were"
+        },
+        "ellas": {
+          "conjugation": "estuvieron",
+          "translation": "they (fem.) were"
+        }
+      }
+    }
+  }
+}

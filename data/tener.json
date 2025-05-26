@@ -1,0 +1,36 @@
+{
+  "infinitive": "tener",
+  "meaning": "to have",
+  "type": "irregular",
+  "group": "-ar",
+  "conjugations": {
+    "indicative": {
+      "present": {
+        "yo": { "conjugation": "tengo", "translation": "I have" },
+        "tú": { "conjugation": "tienes", "translation": "you have" },
+        "él": { "conjugation": "tiene", "translation": "he has" },
+        "ella": { "conjugation": "tiene", "translation": "she has" },
+        "nosotros": { "conjugation": "tenemos", "translation": "we have" },
+        "ustedes": { "conjugation": "tienen", "translation": "you all have" },
+        "ellos": {
+          "conjugation": "tienen",
+          "translation": "they (masc.) have"
+        },
+        "ellas": { "conjugation": "tienen", "translation": "they (fem.) have" }
+      },
+      "preterite": {
+        "yo": { "conjugation": "tuve", "translation": "I had" },
+        "tú": { "conjugation": "tuviste", "translation": "you had" },
+        "él": { "conjugation": "tuvo", "translation": "he had" },
+        "ella": { "conjugation": "tuvo", "translation": "she had" },
+        "nosotros": { "conjugation": "tuvimos", "translation": "we had" },
+        "ustedes": { "conjugation": "tuvieron", "translation": "you all had" },
+        "ellos": {
+          "conjugation": "tuvieron",
+          "translation": "they (masc.) had"
+        },
+        "ellas": { "conjugation": "tuvieron", "translation": "they (fem.) had" }
+      }
+    }
+  }
+}

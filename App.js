@@ -52,14 +52,17 @@ export default function App() {
       >
         <SystemBars style={isInDarkMode ? "light" : "dark"} />
         <PracticeScreen />
-        {/* <StyledText>Open up App.js to start working on your app!</StyledText>
-        <Pressable hitSlop={15} onPress={toggleTheme}>
+        <Pressable
+          hitSlop={15}
+          onPress={toggleTheme}
+          style={{ alignSelf: "center", paddingTop: 40 }}
+        >
           <Star
             size={23}
             strokeWidth={1.1}
             color={currentTheme.colors.iconColor}
           />
-        </Pressable> */}
+        </Pressable>
       </View>
     </ThemeProvider>
   );

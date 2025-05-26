@@ -1,0 +1,33 @@
+{
+  "infinitive": "ir",
+  "meaning": "to go",
+  "type": "irregular",
+  "group": null,
+  "conjugations": {
+    "indicative": {
+      "present": {
+        "yo": { "conjugation": "voy", "translation": "I go" },
+        "tú": { "conjugation": "vas", "translation": "you go" },
+        "él": { "conjugation": "va", "translation": "he goes" },
+        "ella": { "conjugation": "va", "translation": "she goes" },
+        "nosotros": { "conjugation": "vamos", "translation": "we go" },
+        "ustedes": { "conjugation": "van", "translation": "you all go" },
+        "ellos": { "conjugation": "van", "translation": "they (masc.) go" },
+        "ellas": { "conjugation": "van", "translation": "they (fem.) go" }
+      },
+      "preterite": {
+        "yo": { "conjugation": "fui", "translation": "I went" },
+        "tú": { "conjugation": "fuiste", "translation": "you went" },
+        "él": { "conjugation": "fue", "translation": "he went" },
+        "ella": { "conjugation": "fue", "translation": "she went" },
+        "nosotros": { "conjugation": "fuimos", "translation": "we went" },
+        "ustedes": { "conjugation": "fueron", "translation": "you all went" },
+        "ellos": {
+          "conjugation": "fueron",
+          "translation": "they (masc.) went"
+        },
+        "ellas": { "conjugation": "fueron", "translation": "they (fem.) went" }
+      }
+    }
+  }
+}
