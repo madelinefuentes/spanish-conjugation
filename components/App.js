@@ -1,11 +1,11 @@
-import "./wdyr";
+import "../wdyr";
 import { Text, View, TextInput, Pressable, SafeAreaView } from "react-native";
 import setDefaultProps from "react-native-simple-default-props";
 import { useLocalStorageStore } from "./stores/LocalStorageStore";
 import { lightTheme, darkTheme } from "./themes/colorThemes";
 import { ThemeProvider } from "@emotion/react";
 import styled from "@emotion/native";
-import { Star } from "lucide-react-native";
+import { Bean, Star } from "lucide-react-native";
 import { SystemBars } from "react-native-edge-to-edge";
 import { PracticeScreen } from "./PracticeTab/PracticeScreen";
 import {
@@ -13,6 +13,7 @@ import {
   Lato_400Regular,
   Barlow_400Regular,
 } from "@expo-google-fonts/dev";
+// import { seedVerbs } from "./db/seedVerbs";
 
 const StyledText = styled.Text(({ theme }) => ({
   fontSize: theme.t6,
@@ -52,17 +53,21 @@ export default function App() {
       >
         <SystemBars style={isInDarkMode ? "light" : "dark"} />
         <PracticeScreen />
-        <Pressable
-          hitSlop={15}
-          onPress={toggleTheme}
-          style={{ alignSelf: "center", paddingTop: 40 }}
+        <View
+          style={{
+            gap: 50,
+            paddingTop: 40,
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
         >
-          <Star
-            size={23}
-            strokeWidth={1.1}
-            color={currentTheme.colors.iconColor}
-          />
-        </Pressable>
+          <Pressable hitSlop={15} onPress={toggleTheme}>
+            <Star size={23} color={currentTheme.colors.iconColor} />
+          </Pressable>
+          <Pressable hitSlop={15} onPress={toggleTheme}>
+            <Bean size={23} color={currentTheme.colors.iconColor} />
+          </Pressable>
+        </View>
       </View>
     </ThemeProvider>
   );

@@ -40,17 +40,6 @@
             "enforceNavigationBarContrast": false
           }
         }
-      ],
-      ["@lovesworking/watermelondb-expo-plugin-sdk-52-plus"],
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "packagingOptions": {
-              "pickFirst": ["**/libc++_shared.so"]
-            }
-          }
-        }
       ]
     ]
   }
