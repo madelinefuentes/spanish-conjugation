@@ -2,7 +2,7 @@
   "infinitive": "ir",
   "meaning": "to go",
   "type": "irregular",
-  "group": null,
+  "group": "-ir",
   "conjugations": {
     "indicative": {
       "present": {
@@ -12,8 +12,8 @@
         "ella": { "conjugation": "va", "translation": "she goes" },
         "nosotros": { "conjugation": "vamos", "translation": "we go" },
         "ustedes": { "conjugation": "van", "translation": "you all go" },
-        "ellos": { "conjugation": "van", "translation": "they (masc.) go" },
-        "ellas": { "conjugation": "van", "translation": "they (fem.) go" }
+        "ellos": { "conjugation": "van", "translation": "they go" },
+        "ellas": { "conjugation": "van", "translation": "they go" }
       },
       "preterite": {
         "yo": { "conjugation": "fui", "translation": "I went" },
@@ -24,9 +24,9 @@
         "ustedes": { "conjugation": "fueron", "translation": "you all went" },
         "ellos": {
           "conjugation": "fueron",
-          "translation": "they (masc.) went"
+          "translation": "they went"
         },
-        "ellas": { "conjugation": "fueron", "translation": "they (fem.) went" }
+        "ellas": { "conjugation": "fueron", "translation": "they went" }
       }
     }
   }

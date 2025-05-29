@@ -36,5 +36,5 @@ export const srsReviews = sqliteTable("srs_reviews", {
   reps: integer("reps").notNull(),
   lapses: integer("lapses").notNull(),
   state: text("state").notNull(),
-  lastReviewAt: integer("last_review_at").notNull(),
+  lastReviewAt: integer("last_review_at"),
 });

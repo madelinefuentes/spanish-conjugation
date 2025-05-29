@@ -40,7 +40,8 @@
             "enforceNavigationBarContrast": false
           }
         }
-      ]
+      ],
+      "expo-sqlite"
     ]
   }
 }

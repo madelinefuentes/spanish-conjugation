@@ -12,8 +12,8 @@
         "ella": { "conjugation": "está", "translation": "she is" },
         "nosotros": { "conjugation": "estamos", "translation": "we are" },
         "ustedes": { "conjugation": "están", "translation": "you all are" },
-        "ellos": { "conjugation": "están", "translation": "they (masc.) are" },
-        "ellas": { "conjugation": "están", "translation": "they (fem.) are" }
+        "ellos": { "conjugation": "están", "translation": "they are" },
+        "ellas": { "conjugation": "están", "translation": "they are" }
       },
       "preterite": {
         "yo": { "conjugation": "estuve", "translation": "I was" },
@@ -27,11 +27,11 @@
         },
         "ellos": {
           "conjugation": "estuvieron",
-          "translation": "they (masc.) were"
+          "translation": "they were"
         },
         "ellas": {
           "conjugation": "estuvieron",
-          "translation": "they (fem.) were"
+          "translation": "they were"
         }
       }
     }

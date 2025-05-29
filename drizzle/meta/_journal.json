@@ -15,6 +15,13 @@
       "when": 1748468011855,
       "tag": "0001_flimsy_talon",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1748553195314,
+      "tag": "0002_huge_darwin",
+      "breakpoints": true
     }
   ]
 }

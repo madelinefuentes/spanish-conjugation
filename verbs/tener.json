@@ -14,9 +14,9 @@
         "ustedes": { "conjugation": "tienen", "translation": "you all have" },
         "ellos": {
           "conjugation": "tienen",
-          "translation": "they (masc.) have"
+          "translation": "they have"
         },
-        "ellas": { "conjugation": "tienen", "translation": "they (fem.) have" }
+        "ellas": { "conjugation": "tienen", "translation": "they have" }
       },
       "preterite": {
         "yo": { "conjugation": "tuve", "translation": "I had" },
@@ -27,9 +27,9 @@
         "ustedes": { "conjugation": "tuvieron", "translation": "you all had" },
         "ellos": {
           "conjugation": "tuvieron",
-          "translation": "they (masc.) had"
+          "translation": "they had"
         },
-        "ellas": { "conjugation": "tuvieron", "translation": "they (fem.) had" }
+        "ellas": { "conjugation": "tuvieron", "translation": "they had" }
       }
     }
   }

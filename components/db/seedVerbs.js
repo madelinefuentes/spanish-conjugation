@@ -1,67 +1,83 @@
 import { db } from "./client";
 import { verbs, conjugations, srsReviews } from "./schema";
-import { createEmptyCard } from "ts-fsrs";
+import estar from "../../verbs/estar.json";
+import hablar from "../../verbs/hablar.json";
+import ir from "../../verbs/ir.json";
+import ser from "../../verbs/ser.json";
+import tener from "../../verbs/tener.json";
+import { State } from "ts-fsrs";
+
+const verbList = [estar, hablar, ir, ser, tener];
 
 export const seedVerbs = () => {
-  const card = createEmptyCard();
-  console.log(card);
+  for (const verb of verbList) {
+    seedVerbFromJson(verb);
+  }
 };
 
 const seedVerbFromJson = async (verbData) => {
-  // Step 1: Insert verb
-  const [insertedVerb] = await db
-    .insert(verbs)
-    .values({
-      infinitive: verbData.infinitive,
-      meaning: verbData.meaning,
-      type: verbData.type,
-      group: verbData.group,
-      status: verbData.status ?? "new",
-    })
-    .returning({ id: verbs.id });
+  console.log(`Seeding: ${verbData.infinitive}`);
 
-  const verbId = insertedVerb.id;
+  try {
+    // Step 1: Insert verb
+    const [insertedVerb] = await db
+      .insert(verbs)
+      .values({
+        infinitive: verbData.infinitive,
+        meaning: verbData.meaning,
+        type: verbData.type,
+        group: verbData.group,
+        status: "new",
+      })
+      .returning({ id: verbs.id });
 
-  // Step 2: Insert conjugations and linked SRS records
-  for (const mood in verbData.conjugations) {
-    const tenses = verbData.conjugations[mood];
+    const verbId = insertedVerb.id;
 
-    for (const tense in tenses) {
-      const persons = tenses[tense];
+    // Step 2: Insert conjugations and linked SRS records
+    for (const mood in verbData.conjugations) {
+      const tenses = verbData.conjugations[mood];
 
-      for (const person in persons) {
-        const entry = persons[person];
+      for (const tense in tenses) {
+        const persons = tenses[tense];
 
-        // Insert conjugation
-        const [conjugationRow] = await db
-          .insert(conjugations)
-          .values({
-            verbId,
-            mood,
-            tense,
-            person,
-            conjugation: entry.conjugation,
-            translation: entry.translation,
-          })
-          .returning({ id: conjugations.id });
+        for (const person in persons) {
+          const entry = persons[person];
 
-        const conjugationId = conjugationRow.id;
+          // Insert conjugation
+          const [conjugationRow] = await db
+            .insert(conjugations)
+            .values({
+              verbId,
+              mood,
+              tense,
+              person,
+              conjugation: entry.conjugation,
+              translation: entry.translation,
+            })
+            .returning({ id: conjugations.id });
 
-        // Insert SRS review
-        await db.insert(srsReviews).values({
-          conjugationId,
-          stability: 0,
-          difficulty: 0,
-          elapsedDays: 0,
-          scheduledDays: 0,
-          reps: 0,
-          lapses: 0,
-          state: "new",
-          lastReviewAt: 0,
-        });
+          const conjugationId = conjugationRow.id;
+
+          // Insert SRS review
+          await db.insert(srsReviews).values({
+            conjugationId,
+            difficulty: 0,
+            dueAt: new Date(),
+            elapsedDays: 0,
+            lapses: 0,
+            // lastReviewAt: null,
+            learningSteps: 0,
+            reps: 0,
+            scheduledDays: 0,
+            stability: 0,
+            state: State.New,
+          });
+        }
       }
     }
-  }
 
-  console.log(`Seeded: ${verbData.infinitive}`);
+    console.log(`Successfully seeded: ${verbData.infinitive}`);
+  } catch (error) {
+    console.log(`Error seeding db with verb: ${error}`);
+  }
 };

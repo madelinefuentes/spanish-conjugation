@@ -32,11 +32,11 @@
         },
         "ellos": {
           "conjugation": "hablan",
-          "translation": "they (masc.) speak"
+          "translation": "they speak"
         },
         "ellas": {
           "conjugation": "hablan",
-          "translation": "they (fem.) speak"
+          "translation": "they speak"
         }
       },
       "preterite": {
@@ -66,11 +66,11 @@
         },
         "ellos": {
           "conjugation": "hablaron",
-          "translation": "they (masc.) spoke"
+          "translation": "they spoke"
         },
         "ellas": {
           "conjugation": "hablaron",
-          "translation": "they (fem.) spoke"
+          "translation": "they spoke"
         }
       }
     }

@@ -21,7 +21,7 @@ export const BottomTabs = () => {
           paddingLeft: responsiveScale(18),
           paddingRight: responsiveScale(18),
           paddingTop: responsiveScale(4),
-          backgroundColor: "transparent",
+          backgroundColor: theme.colors.background,
           borderTopWidth: 0,
           elevation: 0,
         },
@@ -33,7 +33,7 @@ export const BottomTabs = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <Dumbbell
-              size={theme.t7}
+              size={theme.t10}
               color={
                 focused ? theme.colors.primary : theme.colors.greyClickable
               }

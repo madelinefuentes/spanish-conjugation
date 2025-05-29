@@ -12,8 +12,8 @@
         "ella": { "conjugation": "es", "translation": "she is" },
         "nosotros": { "conjugation": "somos", "translation": "we are" },
         "ustedes": { "conjugation": "son", "translation": "you all are" },
-        "ellos": { "conjugation": "son", "translation": "they (masc.) are" },
-        "ellas": { "conjugation": "son", "translation": "they (fem.) are" }
+        "ellos": { "conjugation": "son", "translation": "they are" },
+        "ellas": { "conjugation": "son", "translation": "they are" }
       },
       "preterite": {
         "yo": { "conjugation": "fui", "translation": "I was" },
@@ -24,9 +24,9 @@
         "ustedes": { "conjugation": "fueron", "translation": "you all were" },
         "ellos": {
           "conjugation": "fueron",
-          "translation": "they (masc.) were"
+          "translation": "they were"
         },
-        "ellas": { "conjugation": "fueron", "translation": "they (fem.) were" }
+        "ellas": { "conjugation": "fueron", "translation": "they were" }
       }
     }
   }
