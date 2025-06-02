@@ -1,4 +1,4 @@
-import styled from "@emotion/native";
+import { ProgressBar } from "./ProgressBar";
 import { PracticeCard } from "./PracticeCard";
 
 const testItem = {
@@ -13,7 +13,12 @@ export const PracticeScreen = () => {
     // alert(isCorrect ? "Correct!" : "Wrong, Try Again");
   };
 
-  return <PracticeCard item={testItem} onSubmit={handleResult} />;
+  return (
+    <>
+      <ProgressBar />
+      <PracticeCard item={testItem} onSubmit={handleResult} />
+    </>
+  );
 };
 
 PracticeScreen.whyDidYouRender = true;

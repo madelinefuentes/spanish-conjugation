@@ -16,57 +16,54 @@ import { getHexWithOpacity } from "../util/ColorHelper";
 
 const Container = styled.View(({ theme }) => ({
   alignItems: "center",
-  marginTop: theme.s10,
+  paddingTop: theme.s7,
 }));
 
 const Prompt = styled.Text(({ theme }) => ({
-  fontSize: theme.t14,
-  fontWeight: "600",
+  fontSize: theme.t15,
   color: theme.colors.text,
-  marginBottom: theme.s4,
+  marginBottom: theme.s3,
   textAlign: "center",
-}));
-
-const Subject = styled.Text(({ theme }) => ({
-  fontSize: theme.t12,
-  fontWeight: "600",
-  color: theme.colors.text,
-  textAlign: "center",
+  fontFamily: "Inter_500Medium",
 }));
 
 const TenseContainer = styled.View(({ theme }) => ({
-  padding: theme.s2,
+  paddingVertical: theme.s1,
   paddingHorizontal: theme.s3,
-  borderRadius: theme.s2,
-  alignItems: "center",
-  justifyContent: "center",
-  marginBottom: theme.s8,
-  // backgroundColor: "#E6F7FF",
   borderRadius: theme.s3,
+  marginBottom: theme.s6,
+  // backgroundColor: getHexWithOpacity("#ff6a00", 0.15),
 }));
 
 const Tense = styled.Text(({ theme }) => ({
-  fontSize: theme.t9,
+  fontSize: theme.t8,
   color: theme.colors.buttonOutline,
 }));
 
+const Pronoun = styled.Text(({ theme }) => ({
+  fontSize: theme.t13,
+  color: theme.colors.text,
+  fontFamily: "Inter_500Medium",
+  textAlign: "center",
+}));
+
 const StyledInput = styled.TextInput(({ theme, focused }) => ({
-  borderBottomWidth: 3,
+  borderBottomWidth: 2,
   borderBottomColor: focused
     ? theme.colors.primary
     : theme.colors.greyBackground,
-  fontSize: theme.t12,
+  fontSize: theme.t11,
+  paddingVertical: theme.s1,
   color: theme.colors.text,
   textAlign: "center",
-  marginTop: theme.s1,
   marginBottom: theme.s4,
-  width: responsiveScale(300),
+  width: responsiveScale(280),
 }));
 
 const AccentRow = styled.View(({ theme }) => ({
   flexDirection: "row",
   gap: theme.s2,
-  marginBottom: theme.s3,
+  justifyContent: "center",
 }));
 
 const AccentButton = styled.View(({ theme }) => ({
@@ -114,7 +111,7 @@ export const PracticeCard = ({ item, onSubmit }) => {
       >
         <Tense>{item.tense}</Tense>
       </TenseContainer>
-      <Subject>{item.subject}</Subject>
+      <Pronoun>{item.subject}</Pronoun>
       <StyledInput
         value={answer}
         onChangeText={setAnswer}
@@ -130,7 +127,10 @@ export const PracticeCard = ({ item, onSubmit }) => {
             </AccentButton>
           </Pressable>
         ))}
-        <AccentButton onPress={handleSubmit}>
+        <AccentButton
+          onPress={handleSubmit}
+          style={{ backgroundColor: theme.colors.primary }}
+        >
           <LogIn
             size={theme.t7}
             color={theme.colors.iconColor}

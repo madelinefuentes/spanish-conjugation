@@ -1,9 +1,10 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { responsiveScale } from "./util/ResponsiveScale";
 import { PracticeScreen } from "./PracticeTab/PracticeScreen";
-import { SettingsScreen } from "./SettingsTab/SettingsScreen";
+import { DebugScreen } from "./DebugTab/DebugScreen";
 import { useTheme } from "@emotion/react";
-import { Dumbbell } from "lucide-react-native";
+import { Dumbbell, SquareTerminal } from "lucide-react-native";
+import { Pressable } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,6 +26,13 @@ export const BottomTabs = () => {
           borderTopWidth: 0,
           elevation: 0,
         },
+        tabBarButton: (props) => (
+          <Pressable
+            {...props}
+            android_ripple={{ color: "transparent" }}
+            hitSlop={20}
+          />
+        ),
       }}
     >
       <Tab.Screen
@@ -41,11 +49,22 @@ export const BottomTabs = () => {
           ),
         }}
       />
-      {/* <Tab.Screen
-          name="settings"
-          component={SettingsScreen}
-          options={screenOptions.tasks}
-        /> */}
+      <Tab.Screen
+        name="debug"
+        component={DebugScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <SquareTerminal
+              size={theme.t10}
+              color={
+                focused ? theme.colors.primary : theme.colors.greyClickable
+              }
+            />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 };
+
+BottomTabs.whyDidYouRender = true;
