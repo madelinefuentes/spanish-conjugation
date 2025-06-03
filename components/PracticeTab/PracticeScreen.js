@@ -3,8 +3,8 @@ import { PracticeCard } from "./PracticeCard";
 
 const testItem = {
   english: "you spoke",
-  subject: "yo",
-  tense: "preterite - indicative",
+  subject: "tú",
+  tense: "preterite",
   correctAnswer: "hablé",
 };
 
