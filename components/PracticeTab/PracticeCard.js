@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { KeyboardAvoidingView, Platform, Pressable } from "react-native";
+import { useState } from "react";
 import styled from "@emotion/native";
 import { useTheme } from "@emotion/react";
 import { responsiveScale } from "../util/ResponsiveScale";
@@ -8,13 +7,12 @@ import { getHexWithOpacity } from "../util/ColorHelper";
 import { ShadowButton } from "../buttons/ShadowButton";
 
 const Container = styled.View(({ theme }) => ({
-  flex: 1,
   alignItems: "center",
-  paddingTop: theme.s6,
+  paddingTop: theme.s5,
 }));
 
 const Prompt = styled.Text(({ theme }) => ({
-  fontSize: theme.t14,
+  fontSize: theme.t13,
   color: theme.colors.text,
   marginBottom: theme.s3,
 }));
@@ -24,7 +22,7 @@ const TenseContainer = styled.View(({ theme }) => ({
   paddingHorizontal: theme.s3,
   borderRadius: 999,
   backgroundColor: getHexWithOpacity(theme.colors.primary, 0.2),
-  marginBottom: theme.s7,
+  marginBottom: theme.s6,
 }));
 
 const Tense = styled.Text(({ theme }) => ({
@@ -39,9 +37,7 @@ const Pronoun = styled.Text(({ theme }) => ({
 
 const StyledInput = styled.TextInput(({ theme, focused }) => ({
   borderBottomWidth: 2,
-  borderBottomColor: focused
-    ? theme.colors.primary
-    : theme.colors.greyClickable,
+  borderBottomColor: focused ? theme.colors.primary : theme.colors.line,
   fontSize: theme.t11,
   color: theme.colors.text,
   marginBottom: theme.s4,
@@ -56,13 +52,14 @@ const AccentRow = styled.View(({ theme }) => ({
 }));
 
 const AnswerContainer = styled.View(({ theme }) => ({
-  backgroundColor: getHexWithOpacity("#ffffff", 0.05),
+  // backgroundColor: theme.colors.greyBackground,
   width: "85%",
   borderRadius: theme.s4,
-  padding: theme.s5,
+  padding: theme.s4,
   alignItems: "center",
-  borderWidth: 1,
-  borderColor: getHexWithOpacity("#ffffff", 0.1),
+  borderWidth: 1.5,
+  borderBottomWidth: 4,
+  borderColor: theme.colors.line,
 }));
 
 export const PracticeCard = ({ item, onSubmit }) => {
@@ -121,7 +118,7 @@ export const PracticeCard = ({ item, onSubmit }) => {
           icon={
             <LogIn
               size={theme.t7}
-              color={theme.colors.iconColor}
+              color={theme.colors.white}
               strokeWidth={2.5}
             />
           }
