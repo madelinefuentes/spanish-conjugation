@@ -3,8 +3,9 @@ import { responsiveScale } from "./util/ResponsiveScale";
 import { PracticeScreen } from "./PracticeTab/PracticeScreen";
 import { DebugScreen } from "./DebugTab/DebugScreen";
 import { useTheme } from "@emotion/react";
-import { Dumbbell, SquareTerminal } from "lucide-react-native";
+import { Dumbbell, SquareTerminal, BookText } from "lucide-react-native";
 import { Pressable } from "react-native";
+import { VerbListScreen } from "./VerbListTab/VerbListScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -41,6 +42,20 @@ export const BottomTabs = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <Dumbbell
+              size={theme.t10}
+              color={
+                focused ? theme.colors.primary : theme.colors.greyClickable
+              }
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="verbList"
+        component={VerbListScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <BookText
               size={theme.t10}
               color={
                 focused ? theme.colors.primary : theme.colors.greyClickable

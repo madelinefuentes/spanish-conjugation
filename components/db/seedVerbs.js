@@ -1,16 +1,11 @@
 import { db } from "./client";
 import { verbs, conjugations, srsReviews } from "./schema";
-import estar from "../../verbs/estar.json";
-import hablar from "../../verbs/hablar.json";
-import ir from "../../verbs/ir.json";
-import ser from "../../verbs/ser.json";
-import tener from "../../verbs/tener.json";
+import conjugatedVerbs from "../../scripts/conjugated_verbs.json";
 import { State } from "ts-fsrs";
 
-const verbList = [estar, hablar, ir, ser, tener];
-
 export const seedVerbs = () => {
-  for (const verb of verbList) {
+  for (const verb of conjugatedVerbs) {
+    // console.log(verb.infinitive);
     seedVerbFromJson(verb);
   }
 };
@@ -26,7 +21,7 @@ const seedVerbFromJson = async (verbData) => {
         infinitive: verbData.infinitive,
         meaning: verbData.meaning,
         type: verbData.type,
-        group: verbData.group,
+        group: "group", // TODO remove
         status: "new",
       })
       .returning({ id: verbs.id });
