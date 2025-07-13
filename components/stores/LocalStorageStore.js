@@ -7,12 +7,14 @@ const deviceTheme = Appearance.getColorScheme();
 
 const localStorageSlice = (set, get) => ({
   theme: deviceTheme || "light",
+  sortField: "frequency",
   setTheme: (newTheme) => set({ theme: newTheme }),
   toggleTheme: () => {
     const currentTheme = get().theme;
     const newTheme = currentTheme === "light" ? "dark" : "light";
     set({ theme: newTheme });
   },
+  setSortField: (field) => set({ sortField: field }),
 });
 
 export const useLocalStorageStore = create(

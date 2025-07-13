@@ -1,4 +1,4 @@
-import { sqliteTable, integer, text } from "drizzle-orm/sqlite-core";
+import { sqliteTable, integer, text, real } from "drizzle-orm/sqlite-core";
 
 export const verbs = sqliteTable("verbs", {
   id: integer("id").primaryKey({ autoIncrement: true }), // autogenerate primary key for now
@@ -7,6 +7,7 @@ export const verbs = sqliteTable("verbs", {
   type: text("type").notNull(),
   group: text("group").notNull(),
   status: text("status").notNull(), // new, learning, mastered
+  frequency: real("frequency"),
 });
 
 export const conjugations = sqliteTable("conjugations", {

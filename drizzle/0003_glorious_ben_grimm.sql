@@ -1,0 +1,1 @@
+ALTER TABLE `verbs` ADD `frequency` real;

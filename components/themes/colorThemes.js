@@ -27,6 +27,7 @@ export const darkTheme = {
     background: "#18181b",
     greyBackground: "#27272a",
     greyClickable: "#52525b",
+    greyDisabled: "#27272a",
     line: "#3f3f46",
     iconColor: "#F2F2F2",
     primary: "#4D8BFF",

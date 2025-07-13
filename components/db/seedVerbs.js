@@ -3,6 +3,7 @@ import { verbs, conjugations, srsReviews } from "./schema";
 import conjugatedVerbs from "../../scripts/conjugated_verbs.json";
 import { State } from "ts-fsrs";
 
+// TODO prevent this from blocking
 export const seedVerbs = () => {
   for (const verb of conjugatedVerbs) {
     // console.log(verb.infinitive);
@@ -14,6 +15,38 @@ const seedVerbFromJson = async (verbData) => {
   console.log(`Seeding: ${verbData.infinitive}`);
 
   try {
+    // Check if verb already exists
+    const existingVerb = await db
+      .select({ id: verbs.id })
+      .from(verbs)
+      .where(eq(verbs.infinitive, verbData.infinitive))
+      .limit(1);
+
+    if (existingVerb.length > 0) {
+      const verbId = existingVerb[0].id;
+
+      // Delete related SRS reviews first
+      await db
+        .delete(srsReviews)
+        .where(
+          inArray(
+            srsReviews.conjugationId,
+            db
+              .select({ id: conjugations.id })
+              .from(conjugations)
+              .where(eq(conjugations.verbId, verbId))
+          )
+        );
+
+      // Then delete conjugations
+      await db.delete(conjugations).where(eq(conjugations.verbId, verbId));
+
+      // Then delete the verb
+      await db.delete(verbs).where(eq(verbs.id, verbId));
+
+      console.log(`Overriding existing verb: ${verbData.infinitive}`);
+    }
+
     // Step 1: Insert verb
     const [insertedVerb] = await db
       .insert(verbs)
@@ -21,6 +54,7 @@ const seedVerbFromJson = async (verbData) => {
         infinitive: verbData.infinitive,
         meaning: verbData.meaning,
         type: verbData.type,
+        frequency: verbData.form_frequency ?? 0,
         group: "group", // TODO remove
         status: "new",
       })
