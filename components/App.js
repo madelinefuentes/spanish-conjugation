@@ -12,6 +12,7 @@ import {
   Inter_400Regular,
   Inter_500Medium,
   Inter_600SemiBold,
+  Inter_400Regular_Italic,
   Manrope_400Regular,
 } from "@expo-google-fonts/dev";
 import { BottomTabs } from "./BottomTabs";
@@ -33,6 +34,7 @@ export default function App() {
     Inter_400Regular,
     Inter_500Medium,
     Inter_600SemiBold,
+    Inter_400Regular_Italic,
   });
 
   const defaultText = {

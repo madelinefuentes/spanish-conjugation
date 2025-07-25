@@ -3,11 +3,12 @@ import { FlatList, Pressable, View } from "react-native";
 import { db } from "../db/client";
 import { useLiveQuery } from "drizzle-orm/expo-sqlite";
 import { verbs } from "../db/schema";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
 import { getHexWithOpacity } from "../util/ColorHelper";
 import { useTheme } from "@emotion/react";
 import { Search } from "lucide-react-native";
+import { VerbModal } from "./VerbModal";
 
 const ScreenContainer = styled.View(({ theme }) => ({
   flex: 1,
@@ -96,11 +97,31 @@ const SearchContainer = styled.View(({ theme }) => ({
   alignItems: "center",
 }));
 
+const PlaceholderText = styled.Text(({ theme }) => ({
+  fontSize: theme.t6,
+  color: theme.colors.text,
+  textAlign: "center",
+}));
+
+const PlaceholderContainer = styled.View(({ theme }) => ({
+  marginTop: theme.s10,
+  marginHorizontal: theme.s5,
+}));
+
+const SideButtonText = styled.Text(({ theme }) => ({
+  fontSize: theme.t4,
+  color: theme.colors.greyText,
+}));
+
 export const VerbListScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [isVerbModalVisible, setIsVerbModalVisible] = useState(false);
+  const [selectedVerb, setSelectedVerb] = useState({});
+
   const sortField = useLocalStorageStore((state) => state.sortField);
   const setSortField = useLocalStorageStore((state) => state.setSortField);
 
+  const flatListRef = useRef();
   const theme = useTheme();
 
   const { data: rawVerbs, error } = useLiveQuery(db.select().from(verbs));
@@ -131,7 +152,7 @@ export const VerbListScreen = () => {
     return verb.infinitive[0].toUpperCase();
   };
 
-  const { flatData, stickyIndices } = useMemo(() => {
+  const { flatData, headerIndices } = useMemo(() => {
     const grouped = [];
 
     verbList.forEach((verb) => {
@@ -142,17 +163,21 @@ export const VerbListScreen = () => {
     });
 
     const flatData = [];
-    const stickyIndices = [];
+    const headerIndices = {};
+    let index = 0;
 
     Object.entries(grouped).forEach(([header, verbs]) => {
-      stickyIndices.push(flatData.length);
+      headerIndices[header] = index;
       flatData.push({ type: "header", header });
+      index++;
+
       for (const verb of verbs) {
         flatData.push({ type: "verb", ...verb });
+        index++;
       }
     });
 
-    return { flatData, stickyIndices };
+    return { flatData, headerIndices };
   }, [verbList, sortField]);
 
   const renderItem = ({ item }) => {
@@ -167,14 +192,21 @@ export const VerbListScreen = () => {
     const isIrregular = item.type === "Irregular";
 
     return (
-      <VerbCard>
-        <TopRow>
-          <Infinitive>{item.infinitive}</Infinitive>
-          {isIrregular && <IrregularTag>Irregular</IrregularTag>}
-        </TopRow>
-        <Meaning>{item.meaning}</Meaning>
-      </VerbCard>
+      <Pressable onPress={() => openVerbModal(item)}>
+        <VerbCard>
+          <TopRow>
+            <Infinitive>{item.infinitive}</Infinitive>
+            {isIrregular && <IrregularTag>Irregular</IrregularTag>}
+          </TopRow>
+          <Meaning>{item.meaning}</Meaning>
+        </VerbCard>
+      </Pressable>
     );
+  };
+
+  const openVerbModal = (verb) => {
+    setSelectedVerb(verb);
+    setIsVerbModalVisible(true);
   };
 
   return (
@@ -206,15 +238,64 @@ export const VerbListScreen = () => {
           </SortField>
         </Pressable>
       </SortContainer>
-      <FlatList
-        data={flatData}
-        keyExtractor={(item, index) =>
-          item.type === "header"
-            ? `header-${item.header}`
-            : item.infinitive + index
-        }
-        renderItem={renderItem}
-        showsVerticalScrollIndicator={false}
+      {searchQuery.length > 0 && verbList.length < 1 ? (
+        <PlaceholderContainer>
+          <PlaceholderText>{`There are no search results for '${searchQuery}'`}</PlaceholderText>
+        </PlaceholderContainer>
+      ) : (
+        <View style={{ flex: 1, flexDirection: "row" }}>
+          <FlatList
+            ref={flatListRef}
+            data={flatData}
+            keyExtractor={(item, index) =>
+              item.type === "header"
+                ? `header-${item.header}`
+                : item.infinitive + index
+            }
+            renderItem={renderItem}
+            showsVerticalScrollIndicator={false}
+          />
+
+          <View
+            style={{
+              width: theme.s5,
+              gap: theme.s3,
+              alignItems: "center",
+            }}
+          >
+            {Object.keys(headerIndices).map((header) => (
+              <Pressable
+                key={header}
+                onPress={() => {
+                  const index = headerIndices[header];
+                  if (flatListRef.current && index !== undefined) {
+                    flatListRef.current.scrollToIndex({
+                      index,
+                      animated: true,
+                    });
+                  }
+                }}
+                hitSlop={10}
+              >
+                <SideButtonText
+                  style={{
+                    transform:
+                      sortField === "frequency"
+                        ? [{ rotate: "-270deg" }]
+                        : undefined,
+                  }}
+                >
+                  {header.length > 4 ? header.slice(-3) : header}
+                </SideButtonText>
+              </Pressable>
+            ))}
+          </View>
+        </View>
+      )}
+      <VerbModal
+        verb={selectedVerb}
+        isVisible={isVerbModalVisible}
+        closeModal={() => setIsVerbModalVisible(false)}
       />
     </ScreenContainer>
   );
