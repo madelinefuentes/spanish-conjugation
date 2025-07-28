@@ -14,24 +14,20 @@ load_dotenv()
 translator = GoogleTranslator(source='es', target='en')
 conjugator = Conjugator(language='es')
 
-ml_to_custom_pronouns = {
-    'yo': ['yo'],
-    'tú': ['tú'],
-    'él': ['él', 'ella', 'usted'],
-    'nosotros': ['nosotros'],
-    'ellos': ['ellos', 'ellas', 'ustedes']
-}
+# ml_to_custom_pronouns = {
+#     'yo': ['yo'],
+#     'tú': ['tú'],
+#     'él': ['él', 'ella', 'usted'],
+#     'nosotros': ['nosotros'],
+#     'ellos': ['ellos', 'ellas', 'ustedes']
+# }
 
 reflexive_pronouns = {
     "yo": "me",
     "tú": "te",
     "él": "se",
-    "ella": "se",
-    "usted": "se",
     "nosotros": "nos",
     "ellos": "se",
-    "ellas": "se",
-    "ustedes": "se"
 }
 
 tenses_map = {
@@ -43,7 +39,7 @@ tenses_map = {
 }
 
 
-def generate_conjugation_data(input_csv: str, output_json: str, sample_size: int = 50):
+def generate_conjugation_data(input_csv, output_json, sample_size = 50):
     df = pd.read_csv(input_csv).sample(sample_size, random_state=42)
     output = []
 
@@ -71,27 +67,30 @@ def generate_conjugation_data(input_csv: str, output_json: str, sample_size: int
                     tense_block = {}
 
                     for ml_pronoun, conj_form in tense_data.items():
-                        if ml_pronoun not in ml_to_custom_pronouns:
+                        if ml_pronoun not in reflexive_pronouns:
                             continue
 
-                        for custom_pronoun in ml_to_custom_pronouns[ml_pronoun]:
-                            if is_reflexive:
-                                reflexive = reflexive_pronouns[custom_pronoun]
-                                full_spanish = f"{reflexive} {conj_form}"
-                            else:
-                                full_spanish = f"{custom_pronoun} {conj_form}"
+                        if is_reflexive:
+                            reflexive = reflexive_pronouns[ml_pronoun]
+                            full_spanish = f"{reflexive} {conj_form}"
+                        else:
+                            full_spanish = f"{ml_pronoun} {conj_form}"
 
-                            try:
-                                translation = translator.translate(full_spanish)
-                            except Exception as e:
-                                print(f"Translation error for '{full_spanish}': {e}")
-                                translation = ""
+                        try:
+                            translation = translator.translate(full_spanish)
 
-                            if custom_pronoun not in tense_block:
-                                tense_block[custom_pronoun] = {
-                                    "conjugation": conj_form,
-                                    "translation": translation
-                                }
+                             # remove subject if present
+                            translation_words = translation.split()
+                            if len(translation_words) > 1:
+                                translation = " ".join(translation_words[1:])
+                        except Exception as e:
+                            print(f"Translation error for '{full_spanish}': {e}")
+                            translation = ""
+
+                        tense_block[ml_pronoun] = {
+                            "conjugation": conj_form,
+                            "translation": translation
+                        }
 
                     entry["conjugations"]["indicative"][tense_key] = tense_block
 
@@ -130,5 +129,5 @@ def add_frequency_to_json(json_path: str) -> None:
     print(f"Updated frequency data saved to {json_path}")
 
 
-# generate_conjugation_data("common-spanish-verbs.csv", "conjugated_verbs.json")
-add_frequency_to_json("conjugated_verbs.json")
+generate_conjugation_data("common-spanish-verbs.csv", "conjugated_verbs.json")
+# add_frequency_to_json("conjugated_verbs.json")

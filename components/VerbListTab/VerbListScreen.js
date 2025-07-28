@@ -124,6 +124,7 @@ export const VerbListScreen = () => {
   const flatListRef = useRef();
   const theme = useTheme();
 
+  // TODO use useEffect instead of live query
   const { data: rawVerbs, error } = useLiveQuery(db.select().from(verbs));
 
   const verbList = useMemo(() => {

@@ -1,0 +1,1192 @@
+[
+  {
+    "infinitive": "coser",
+    "meaning": "to sew, to stitch",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "coso",
+            "translation": "coso"
+          },
+          "tú": {
+            "conjugation": "coses",
+            "translation": "sew"
+          },
+          "él": {
+            "conjugation": "cose",
+            "translation": "sews"
+          },
+          "nosotros": {
+            "conjugation": "cosemos",
+            "translation": "sew"
+          },
+          "ellos": {
+            "conjugation": "cosen",
+            "translation": "sew"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "cosí",
+            "translation": "sewed"
+          },
+          "tú": {
+            "conjugation": "cosiste",
+            "translation": "sew"
+          },
+          "él": {
+            "conjugation": "cosió",
+            "translation": "sewn"
+          },
+          "nosotros": {
+            "conjugation": "cosimos",
+            "translation": "sew"
+          },
+          "ellos": {
+            "conjugation": "cosieron",
+            "translation": "sewn"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "cosía",
+            "translation": "sewed"
+          },
+          "tú": {
+            "conjugation": "cosías",
+            "translation": "sewing"
+          },
+          "él": {
+            "conjugation": "cosía",
+            "translation": "sewed"
+          },
+          "nosotros": {
+            "conjugation": "cosíamos",
+            "translation": "sewed"
+          },
+          "ellos": {
+            "conjugation": "cosían",
+            "translation": "sewed"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "coseré",
+            "translation": "will sew"
+          },
+          "tú": {
+            "conjugation": "coserás",
+            "translation": "will sew"
+          },
+          "él": {
+            "conjugation": "coserá",
+            "translation": "will sew"
+          },
+          "nosotros": {
+            "conjugation": "coseremos",
+            "translation": "will sew"
+          },
+          "ellos": {
+            "conjugation": "coserán",
+            "translation": "will sew"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "cosería",
+            "translation": "would remember"
+          },
+          "tú": {
+            "conjugation": "coserías",
+            "translation": "would sew"
+          },
+          "él": {
+            "conjugation": "cosería",
+            "translation": "would remember"
+          },
+          "nosotros": {
+            "conjugation": "coseríamos",
+            "translation": "would sew"
+          },
+          "ellos": {
+            "conjugation": "coserían",
+            "translation": "would keep up"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "disminuir",
+    "meaning": "to decrease, to diminish",
+    "type": "Irregular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "disminuyo",
+            "translation": "decreased"
+          },
+          "tú": {
+            "conjugation": "disminuyes",
+            "translation": "decrease"
+          },
+          "él": {
+            "conjugation": "disminuye",
+            "translation": "decreases"
+          },
+          "nosotros": {
+            "conjugation": "disminuimos",
+            "translation": "decrease"
+          },
+          "ellos": {
+            "conjugation": "disminuyen",
+            "translation": "decrease"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "disminuí",
+            "translation": "decreased"
+          },
+          "tú": {
+            "conjugation": "disminuiste",
+            "translation": "decreased"
+          },
+          "él": {
+            "conjugation": "disminuyó",
+            "translation": "decreased"
+          },
+          "nosotros": {
+            "conjugation": "disminuimos",
+            "translation": "decrease"
+          },
+          "ellos": {
+            "conjugation": "disminuyeron",
+            "translation": "decreased"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "disminuía",
+            "translation": "decreased"
+          },
+          "tú": {
+            "conjugation": "disminuías",
+            "translation": "decreased"
+          },
+          "él": {
+            "conjugation": "disminuía",
+            "translation": "decreased"
+          },
+          "nosotros": {
+            "conjugation": "disminuíamos",
+            "translation": "decreased"
+          },
+          "ellos": {
+            "conjugation": "disminuían",
+            "translation": "decreased"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "disminuiré",
+            "translation": "will decrease"
+          },
+          "tú": {
+            "conjugation": "disminuirás",
+            "translation": "will decrease"
+          },
+          "él": {
+            "conjugation": "disminuirá",
+            "translation": "will decrease"
+          },
+          "nosotros": {
+            "conjugation": "disminuiremos",
+            "translation": "will decrease"
+          },
+          "ellos": {
+            "conjugation": "disminuirán",
+            "translation": "will decrease"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "disminuiría",
+            "translation": "would decrease"
+          },
+          "tú": {
+            "conjugation": "disminuirías",
+            "translation": "would decrease"
+          },
+          "él": {
+            "conjugation": "disminuiría",
+            "translation": "would decrease"
+          },
+          "nosotros": {
+            "conjugation": "disminuiríamos",
+            "translation": "would decrease"
+          },
+          "ellos": {
+            "conjugation": "disminuirían",
+            "translation": "would decrease"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "ahorrar",
+    "meaning": "to save (money), to spare",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "ahorro",
+            "translation": "save"
+          },
+          "tú": {
+            "conjugation": "ahorras",
+            "translation": "save"
+          },
+          "él": {
+            "conjugation": "ahorra",
+            "translation": "saves"
+          },
+          "nosotros": {
+            "conjugation": "ahorramos",
+            "translation": "save"
+          },
+          "ellos": {
+            "conjugation": "ahorran",
+            "translation": "save"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "ahorré",
+            "translation": "saved"
+          },
+          "tú": {
+            "conjugation": "ahorraste",
+            "translation": "saved"
+          },
+          "él": {
+            "conjugation": "ahorró",
+            "translation": "saved"
+          },
+          "nosotros": {
+            "conjugation": "ahorramos",
+            "translation": "save"
+          },
+          "ellos": {
+            "conjugation": "ahorraron",
+            "translation": "saved"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "ahorraba",
+            "translation": "saved"
+          },
+          "tú": {
+            "conjugation": "ahorrabas",
+            "translation": "saved"
+          },
+          "él": {
+            "conjugation": "ahorraba",
+            "translation": "saved"
+          },
+          "nosotros": {
+            "conjugation": "ahorrábamos",
+            "translation": "saved"
+          },
+          "ellos": {
+            "conjugation": "ahorraban",
+            "translation": "saved"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "ahorraré",
+            "translation": "will save"
+          },
+          "tú": {
+            "conjugation": "ahorrarás",
+            "translation": "will save"
+          },
+          "él": {
+            "conjugation": "ahorrará",
+            "translation": "will save"
+          },
+          "nosotros": {
+            "conjugation": "ahorraremos",
+            "translation": "will save"
+          },
+          "ellos": {
+            "conjugation": "ahorrarán",
+            "translation": "will save"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "ahorraría",
+            "translation": "would save"
+          },
+          "tú": {
+            "conjugation": "ahorrarías",
+            "translation": "would save"
+          },
+          "él": {
+            "conjugation": "ahorraría",
+            "translation": "would save"
+          },
+          "nosotros": {
+            "conjugation": "ahorraríamos",
+            "translation": "would save"
+          },
+          "ellos": {
+            "conjugation": "ahorrarían",
+            "translation": "would save"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "jubilarse",
+    "meaning": "to retire",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "jubilo",
+            "translation": "retire"
+          },
+          "tú": {
+            "conjugation": "jubilas",
+            "translation": "retire"
+          },
+          "él": {
+            "conjugation": "jubila",
+            "translation": "retires"
+          },
+          "nosotros": {
+            "conjugation": "jubilamos",
+            "translation": "retire"
+          },
+          "ellos": {
+            "conjugation": "jubilan",
+            "translation": "retire"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "jubilé",
+            "translation": "retired"
+          },
+          "tú": {
+            "conjugation": "jubilaste",
+            "translation": "retired"
+          },
+          "él": {
+            "conjugation": "jubiló",
+            "translation": "retired"
+          },
+          "nosotros": {
+            "conjugation": "jubilamos",
+            "translation": "retire"
+          },
+          "ellos": {
+            "conjugation": "jubilaron",
+            "translation": "retired"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "jubilaba",
+            "translation": "retired"
+          },
+          "tú": {
+            "conjugation": "jubilabas",
+            "translation": "retired"
+          },
+          "él": {
+            "conjugation": "jubilaba",
+            "translation": "retired"
+          },
+          "nosotros": {
+            "conjugation": "jubilábamos",
+            "translation": "retired"
+          },
+          "ellos": {
+            "conjugation": "jubilaban",
+            "translation": "retired"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "jubilaré",
+            "translation": "will retire"
+          },
+          "tú": {
+            "conjugation": "jubilarás",
+            "translation": "will retire"
+          },
+          "él": {
+            "conjugation": "jubilará",
+            "translation": "will retire"
+          },
+          "nosotros": {
+            "conjugation": "jubilaremos",
+            "translation": "will retire"
+          },
+          "ellos": {
+            "conjugation": "jubilarán",
+            "translation": "will retire"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "jubilaría",
+            "translation": "would retire"
+          },
+          "tú": {
+            "conjugation": "jubilarías",
+            "translation": "would retire"
+          },
+          "él": {
+            "conjugation": "jubilaría",
+            "translation": "would retire"
+          },
+          "nosotros": {
+            "conjugation": "jubilaríamos",
+            "translation": "would retire"
+          },
+          "ellos": {
+            "conjugation": "jubilarían",
+            "translation": "would retire"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "recibir",
+    "meaning": "to receive",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "recibo",
+            "translation": "receive"
+          },
+          "tú": {
+            "conjugation": "recibes",
+            "translation": "receive"
+          },
+          "él": {
+            "conjugation": "recibe",
+            "translation": "receives"
+          },
+          "nosotros": {
+            "conjugation": "recibimos",
+            "translation": "receive"
+          },
+          "ellos": {
+            "conjugation": "reciben",
+            "translation": "receive"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "recibí",
+            "translation": "received"
+          },
+          "tú": {
+            "conjugation": "recibiste",
+            "translation": "received"
+          },
+          "él": {
+            "conjugation": "recibió",
+            "translation": "received"
+          },
+          "nosotros": {
+            "conjugation": "recibimos",
+            "translation": "receive"
+          },
+          "ellos": {
+            "conjugation": "recibieron",
+            "translation": "received"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "recibía",
+            "translation": "received"
+          },
+          "tú": {
+            "conjugation": "recibías",
+            "translation": "received"
+          },
+          "él": {
+            "conjugation": "recibía",
+            "translation": "received"
+          },
+          "nosotros": {
+            "conjugation": "recibíamos",
+            "translation": "received"
+          },
+          "ellos": {
+            "conjugation": "recibían",
+            "translation": "received"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "recibiré",
+            "translation": "will receive"
+          },
+          "tú": {
+            "conjugation": "recibirás",
+            "translation": "will receive"
+          },
+          "él": {
+            "conjugation": "recibirá",
+            "translation": "will receive"
+          },
+          "nosotros": {
+            "conjugation": "recibiremos",
+            "translation": "will receive"
+          },
+          "ellos": {
+            "conjugation": "recibirán",
+            "translation": "will receive"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "recibiría",
+            "translation": "would receive"
+          },
+          "tú": {
+            "conjugation": "recibirías",
+            "translation": "would receive"
+          },
+          "él": {
+            "conjugation": "recibiría",
+            "translation": "would receive"
+          },
+          "nosotros": {
+            "conjugation": "recibiríamos",
+            "translation": "would receive"
+          },
+          "ellos": {
+            "conjugation": "recibirían",
+            "translation": "would receive"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "hacer",
+    "meaning": "to do, to make",
+    "type": "Irregular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "hago",
+            "translation": "do"
+          },
+          "tú": {
+            "conjugation": "haces",
+            "translation": "do"
+          },
+          "él": {
+            "conjugation": "hace",
+            "translation": "does"
+          },
+          "nosotros": {
+            "conjugation": "hacemos",
+            "translation": "do"
+          },
+          "ellos": {
+            "conjugation": "hacen",
+            "translation": "do"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "hice",
+            "translation": "did"
+          },
+          "tú": {
+            "conjugation": "hiciste",
+            "translation": "did"
+          },
+          "él": {
+            "conjugation": "hizo",
+            "translation": "did"
+          },
+          "nosotros": {
+            "conjugation": "hicimos",
+            "translation": "did"
+          },
+          "ellos": {
+            "conjugation": "hicieron",
+            "translation": "did"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "hacía",
+            "translation": "did"
+          },
+          "tú": {
+            "conjugation": "hacías",
+            "translation": "did"
+          },
+          "él": {
+            "conjugation": "hacía",
+            "translation": "did"
+          },
+          "nosotros": {
+            "conjugation": "hacíamos",
+            "translation": "did"
+          },
+          "ellos": {
+            "conjugation": "hacían",
+            "translation": "did"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "haré",
+            "translation": "will do"
+          },
+          "tú": {
+            "conjugation": "harás",
+            "translation": "will do"
+          },
+          "él": {
+            "conjugation": "hará",
+            "translation": "will do"
+          },
+          "nosotros": {
+            "conjugation": "haremos",
+            "translation": "will do"
+          },
+          "ellos": {
+            "conjugation": "harán",
+            "translation": "will do"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "haría",
+            "translation": "would do"
+          },
+          "tú": {
+            "conjugation": "harías",
+            "translation": "would do"
+          },
+          "él": {
+            "conjugation": "haría",
+            "translation": "would do"
+          },
+          "nosotros": {
+            "conjugation": "haríamos",
+            "translation": "would do"
+          },
+          "ellos": {
+            "conjugation": "harían",
+            "translation": "would do"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "sembrar",
+    "meaning": "to sow, to plant",
+    "type": "Irregular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "siembro",
+            "translation": "sow"
+          },
+          "tú": {
+            "conjugation": "siembras",
+            "translation": "sow"
+          },
+          "él": {
+            "conjugation": "siembra",
+            "translation": "sows"
+          },
+          "nosotros": {
+            "conjugation": "sembramos",
+            "translation": "sow"
+          },
+          "ellos": {
+            "conjugation": "siembran",
+            "translation": "sow"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "sembré",
+            "translation": "sowed"
+          },
+          "tú": {
+            "conjugation": "sembraste",
+            "translation": "sowed"
+          },
+          "él": {
+            "conjugation": "sembró",
+            "translation": "sowed"
+          },
+          "nosotros": {
+            "conjugation": "sembramos",
+            "translation": "sow"
+          },
+          "ellos": {
+            "conjugation": "sembraron",
+            "translation": "sowed"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "sembraba",
+            "translation": "sowed"
+          },
+          "tú": {
+            "conjugation": "sembrabas",
+            "translation": "sowed"
+          },
+          "él": {
+            "conjugation": "sembraba",
+            "translation": "sowed"
+          },
+          "nosotros": {
+            "conjugation": "sembrábamos",
+            "translation": "sowed"
+          },
+          "ellos": {
+            "conjugation": "sembraban",
+            "translation": "sowed"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "sembraré",
+            "translation": "will sow"
+          },
+          "tú": {
+            "conjugation": "sembrarás",
+            "translation": "will sow"
+          },
+          "él": {
+            "conjugation": "sembrará",
+            "translation": "will sow"
+          },
+          "nosotros": {
+            "conjugation": "sembraremos",
+            "translation": "will sow"
+          },
+          "ellos": {
+            "conjugation": "sembrarán",
+            "translation": "will sow"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "sembraría",
+            "translation": "would sow"
+          },
+          "tú": {
+            "conjugation": "sembrarías",
+            "translation": "would sow"
+          },
+          "él": {
+            "conjugation": "sembraría",
+            "translation": "would sow"
+          },
+          "nosotros": {
+            "conjugation": "sembraríamos",
+            "translation": "would sow"
+          },
+          "ellos": {
+            "conjugation": "sembrarían",
+            "translation": "would sow"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "cesar",
+    "meaning": "to cease, to stop, to end",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "ceso",
+            "translation": "cease"
+          },
+          "tú": {
+            "conjugation": "cesas",
+            "translation": "cease"
+          },
+          "él": {
+            "conjugation": "cesa",
+            "translation": "ceases"
+          },
+          "nosotros": {
+            "conjugation": "cesamos",
+            "translation": "cease"
+          },
+          "ellos": {
+            "conjugation": "cesan",
+            "translation": "cease"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "cesé",
+            "translation": "ceased"
+          },
+          "tú": {
+            "conjugation": "cesaste",
+            "translation": "ceased"
+          },
+          "él": {
+            "conjugation": "cesó",
+            "translation": "ceased"
+          },
+          "nosotros": {
+            "conjugation": "cesamos",
+            "translation": "cease"
+          },
+          "ellos": {
+            "conjugation": "cesaron",
+            "translation": "ceased"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "cesaba",
+            "translation": "ceased"
+          },
+          "tú": {
+            "conjugation": "cesabas",
+            "translation": "ceased"
+          },
+          "él": {
+            "conjugation": "cesaba",
+            "translation": "ceased"
+          },
+          "nosotros": {
+            "conjugation": "cesábamos",
+            "translation": "ceased"
+          },
+          "ellos": {
+            "conjugation": "cesaban",
+            "translation": "ceased"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "cesaré",
+            "translation": "will cease"
+          },
+          "tú": {
+            "conjugation": "cesarás",
+            "translation": "will cease"
+          },
+          "él": {
+            "conjugation": "cesará",
+            "translation": "will cease"
+          },
+          "nosotros": {
+            "conjugation": "cesaremos",
+            "translation": "will cease"
+          },
+          "ellos": {
+            "conjugation": "cesarán",
+            "translation": "will cease"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "cesaría",
+            "translation": "would cease"
+          },
+          "tú": {
+            "conjugation": "cesarías",
+            "translation": "would cease"
+          },
+          "él": {
+            "conjugation": "cesaría",
+            "translation": "would cease"
+          },
+          "nosotros": {
+            "conjugation": "cesaríamos",
+            "translation": "would cease"
+          },
+          "ellos": {
+            "conjugation": "cesarían",
+            "translation": "would cease"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "resaltar",
+    "meaning": "to stand out, to highlight",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "resalto",
+            "translation": "highlight"
+          },
+          "tú": {
+            "conjugation": "resaltas",
+            "translation": "highlight"
+          },
+          "él": {
+            "conjugation": "resalta",
+            "translation": "stands out"
+          },
+          "nosotros": {
+            "conjugation": "resaltamos",
+            "translation": "highlight"
+          },
+          "ellos": {
+            "conjugation": "resaltan",
+            "translation": "stand out"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "resalté",
+            "translation": "highlighted"
+          },
+          "tú": {
+            "conjugation": "resaltaste",
+            "translation": "highlighted"
+          },
+          "él": {
+            "conjugation": "resaltó",
+            "translation": "highlighted"
+          },
+          "nosotros": {
+            "conjugation": "resaltamos",
+            "translation": "highlight"
+          },
+          "ellos": {
+            "conjugation": "resaltaron",
+            "translation": "highlighted"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "resaltaba",
+            "translation": "highlighted"
+          },
+          "tú": {
+            "conjugation": "resaltabas",
+            "translation": "stood out"
+          },
+          "él": {
+            "conjugation": "resaltaba",
+            "translation": "stood out"
+          },
+          "nosotros": {
+            "conjugation": "resaltábamos",
+            "translation": "stood out"
+          },
+          "ellos": {
+            "conjugation": "resaltaban",
+            "translation": "stood out"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "resaltaré",
+            "translation": "will highlight"
+          },
+          "tú": {
+            "conjugation": "resaltarás",
+            "translation": "will highlight"
+          },
+          "él": {
+            "conjugation": "resaltará",
+            "translation": "will highlight"
+          },
+          "nosotros": {
+            "conjugation": "resaltaremos",
+            "translation": "will highlight"
+          },
+          "ellos": {
+            "conjugation": "resaltarán",
+            "translation": "will highlight"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "resaltaría",
+            "translation": "would highlight"
+          },
+          "tú": {
+            "conjugation": "resaltarías",
+            "translation": "would highlight"
+          },
+          "él": {
+            "conjugation": "resaltaría",
+            "translation": "would highlight"
+          },
+          "nosotros": {
+            "conjugation": "resaltaríamos",
+            "translation": "would highlight"
+          },
+          "ellos": {
+            "conjugation": "resaltarían",
+            "translation": "would highlight"
+          }
+        }
+      }
+    }
+  },
+  {
+    "infinitive": "causar",
+    "meaning": "to cause",
+    "type": "Regular",
+    "conjugations": {
+      "indicative": {
+        "present": {
+          "yo": {
+            "conjugation": "causo",
+            "translation": "caused"
+          },
+          "tú": {
+            "conjugation": "causas",
+            "translation": "cause"
+          },
+          "él": {
+            "conjugation": "causa",
+            "translation": "causes"
+          },
+          "nosotros": {
+            "conjugation": "causamos",
+            "translation": "cause"
+          },
+          "ellos": {
+            "conjugation": "causan",
+            "translation": "cause"
+          }
+        },
+        "preterite": {
+          "yo": {
+            "conjugation": "causé",
+            "translation": "caused"
+          },
+          "tú": {
+            "conjugation": "causaste",
+            "translation": "caused"
+          },
+          "él": {
+            "conjugation": "causó",
+            "translation": "caused"
+          },
+          "nosotros": {
+            "conjugation": "causamos",
+            "translation": "cause"
+          },
+          "ellos": {
+            "conjugation": "causaron",
+            "translation": "caused"
+          }
+        },
+        "imperfect": {
+          "yo": {
+            "conjugation": "causaba",
+            "translation": "caused"
+          },
+          "tú": {
+            "conjugation": "causabas",
+            "translation": "caused"
+          },
+          "él": {
+            "conjugation": "causaba",
+            "translation": "caused"
+          },
+          "nosotros": {
+            "conjugation": "causábamos",
+            "translation": "caused"
+          },
+          "ellos": {
+            "conjugation": "causaban",
+            "translation": "caused"
+          }
+        },
+        "future": {
+          "yo": {
+            "conjugation": "causaré",
+            "translation": "will cause"
+          },
+          "tú": {
+            "conjugation": "causarás",
+            "translation": "will cause"
+          },
+          "él": {
+            "conjugation": "causará",
+            "translation": "will cause"
+          },
+          "nosotros": {
+            "conjugation": "causaremos",
+            "translation": "will cause"
+          },
+          "ellos": {
+            "conjugation": "causarán",
+            "translation": "will cause"
+          }
+        },
+        "conditional": {
+          "yo": {
+            "conjugation": "causaría",
+            "translation": "would cause"
+          },
+          "tú": {
+            "conjugation": "causarías",
+            "translation": "would cause"
+          },
+          "él": {
+            "conjugation": "causaría",
+            "translation": "would cause"
+          },
+          "nosotros": {
+            "conjugation": "causaríamos",
+            "translation": "would cause"
+          },
+          "ellos": {
+            "conjugation": "causarían",
+            "translation": "would cause"
+          }
+        }
+      }
+    }
+  }
+]
