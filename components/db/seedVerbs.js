@@ -11,6 +11,11 @@ export const seedVerbs = () => {
   }
 };
 
+const aliasMap = {
+  él: ["ella", "usted"],
+  ellos: ["ellas", "ustedes"],
+};
+
 const seedVerbFromJson = async (verbData) => {
   console.log(`Seeding: ${verbData.infinitive}`);
 

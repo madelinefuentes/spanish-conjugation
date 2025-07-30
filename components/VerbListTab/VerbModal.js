@@ -1,6 +1,6 @@
 import Modal from "react-native-modal";
 import styled from "@emotion/native";
-import { Text, Pressable, View } from "react-native";
+import { Text, Pressable, View, ScrollView } from "react-native";
 import { ChevronLeft } from "lucide-react-native";
 import { useTheme } from "@emotion/react";
 import { getHexWithOpacity } from "../util/ColorHelper";
@@ -117,7 +117,6 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
         const structured = {};
 
         for (const row of results) {
-          // console.log(row);
           if (!structured[row.mood]) {
             structured[row.mood] = {};
           }
@@ -196,20 +195,22 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
         />
-        {Object.entries(tenses).map(([tenseKey, description]) => {
-          const conj = conjugationData?.[moodKey]?.[tenseKey];
+        <ScrollView style={{ marginTop: theme.s3 }}>
+          {Object.entries(tenses).map(([tenseKey, description]) => {
+            const tenseConjugations = conjugationData?.[moodKey]?.[tenseKey];
 
-          if (!conj) return null;
+            if (!tenseConjugations) return null;
 
-          return (
-            <Table
-              key={tenseKey}
-              tense={tenseKey}
-              description={description}
-              conjugations={conjugationData}
-            />
-          );
-        })}
+            return (
+              <Table
+                key={tenseKey}
+                tense={tenseKey}
+                description={description}
+                tenseConjugations={tenseConjugations}
+              />
+            );
+          })}
+        </ScrollView>
       </ModalContainer>
     </Modal>
   );
@@ -231,12 +232,19 @@ const DescriptionText = styled.Text(({ theme }) => ({
   marginBottom: theme.s2,
 }));
 
-const Row = styled.View(({ theme }) => ({
+const ConjugationTable = styled.View(({ theme }) => ({
+  borderRadius: theme.s3,
+  borderWidth: 1,
+  borderBottomWidth: 3,
+  borderColor: theme.colors.line,
+}));
+
+const Row = styled.View(({ theme, isLastRow }) => ({
   flexDirection: "row",
   justifyContent: "space-between",
   alignItems: "center",
-  paddingVertical: theme.s2,
-  borderBottomWidth: 1,
+  padding: theme.s3,
+  borderBottomWidth: isLastRow ? 0 : 1,
   borderBottomColor: theme.colors.line,
 }));
 
@@ -252,11 +260,28 @@ const English = styled.Text(({ theme }) => ({
   color: theme.colors.greyText,
 }));
 
-const Table = ({ tense, description }) => {
+const Table = ({ tense, description, tenseConjugations }) => {
+  const subjects = ["yo", "tú", "él", "ellos", "nosotros"];
+
   return (
     <TableContainer>
-      <TenseHeader>{tense}</TenseHeader>
+      <TenseHeader>
+        {tense.charAt(0).toUpperCase() + tense.slice(1)}
+      </TenseHeader>
       <DescriptionText>{description}</DescriptionText>
+      <ConjugationTable>
+        {subjects.map((s, i) => {
+          const spanish = tenseConjugations[s].conjugation;
+          const english = tenseConjugations[s].translation;
+
+          return (
+            <Row key={s} isLastRow={i == subjects.length - 1}>
+              <Spanish>{s + " " + spanish}</Spanish>
+              <English>{english}</English>
+            </Row>
+          );
+        })}
+      </ConjugationTable>
     </TableContainer>
   );
 };
