@@ -2,6 +2,7 @@ import { db } from "./client";
 import { verbs, conjugations, srsReviews } from "./schema";
 import conjugatedVerbs from "../../scripts/conjugated_verbs.json";
 import { State } from "ts-fsrs";
+import { eq } from "drizzle-orm";
 
 // TODO prevent this from blocking
 export const seedVerbs = () => {
@@ -93,19 +94,19 @@ const seedVerbFromJson = async (verbData) => {
           const conjugationId = conjugationRow.id;
 
           // Insert SRS review
-          await db.insert(srsReviews).values({
-            conjugationId,
-            difficulty: 0,
-            dueAt: new Date(),
-            elapsedDays: 0,
-            lapses: 0,
-            // lastReviewAt: null,
-            learningSteps: 0,
-            reps: 0,
-            scheduledDays: 0,
-            stability: 0,
-            state: State.New,
-          });
+          // await db.insert(srsReviews).values({
+          //   conjugationId,
+          //   difficulty: 0,
+          //   dueAt: Math.floor(Date.now() / 1000),
+          //   elapsedDays: 0,
+          //   lapses: 0,
+          //   // lastReviewAt: null,
+          //   learningSteps: 0,
+          //   reps: 0,
+          //   scheduledDays: 0,
+          //   stability: 0,
+          //   state: State.New,
+          // });
         }
       }
     }

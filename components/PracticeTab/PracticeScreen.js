@@ -3,27 +3,37 @@ import { PracticeCard } from "./PracticeCard";
 import { db } from "../db/client";
 import { conjugations, verbs, srsReviews } from "../db/schema";
 import { useEffect, useState } from "react";
+import { desc, eq, isNull, lte } from "drizzle-orm";
+import { useLocalStorageStore } from "../stores/LocalStorageStore";
 
-const testItem = {
-  english: "you spoke",
-  subject: "tú",
-  tense: "preterite",
-  correctAnswer: "hablé",
-};
+const SESSION_COUNT = 50;
 
 export const PracticeScreen = () => {
   const [cards, setCards] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const lastDate = useLocalStorageStore((state) => state.lastDate);
+  const resetStudySession = useLocalStorageStore(
+    (state) => state.resetStudySession
+  );
+
+  const resetDaily = async () => {
+    const today = dayjs();
+
+    if (lastDate.isBefore(today, "day")) {
+      resetStudySession();
+    }
+  };
+
+  const fetchCards = async () => {
+    const result = await getStudySessionCards(SESSION_COUNT);
+    setCards(result);
+  };
 
   useEffect(() => {
-    const fetchCards = async () => {
-      const result = await getStudySessionCards(5);
-      setCards(result);
-    };
-
+    resetDaily();
     fetchCards();
   }, []);
-
-  console.log(cards);
 
   const handleResult = (isCorrect) => {
     // alert(isCorrect ? "Correct!" : "Wrong, Try Again");
@@ -32,7 +42,7 @@ export const PracticeScreen = () => {
   return (
     <>
       <ProgressBar />
-      <PracticeCard item={testItem} onSubmit={handleResult} />
+      <PracticeCard item={cards[currentIndex]} onSubmit={handleResult} />
     </>
   );
 };
@@ -40,31 +50,10 @@ export const PracticeScreen = () => {
 PracticeScreen.whyDidYouRender = true;
 
 export const getStudySessionCards = async (numCards) => {
-  const now = Date.now();
+  try {
+    const now = Math.floor(Date.now() / 1000);
 
-  const dueCards = await db
-    .select({
-      id: conjugations.id,
-      mood: conjugations.mood,
-      tense: conjugations.tense,
-      person: conjugations.person,
-      conjugation: conjugations.conjugation,
-      translation: conjugations.translation,
-      infinitive: verbs.infinitive,
-      meaning: verbs.meaning,
-    })
-    .from(srsReviews)
-    .innerJoin(conjugations, eq(srsReviews.conjugationId, conjugations.id))
-    .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
-    .where(lte(srsReviews.dueAt, now))
-    .orderBy(srsReviews.dueAt)
-    .limit(numCards);
-
-  const remaining = numCards - dueCards.length;
-
-  let newCards = [];
-  if (remaining > 0) {
-    newCards = await db
+    const dueCards = await db
       .select({
         id: conjugations.id,
         mood: conjugations.mood,
@@ -75,13 +64,38 @@ export const getStudySessionCards = async (numCards) => {
         infinitive: verbs.infinitive,
         meaning: verbs.meaning,
       })
-      .from(conjugations)
-      .leftJoin(srsReviews, eq(srsReviews.conjugationId, conjugations.id))
+      .from(srsReviews)
+      .innerJoin(conjugations, eq(srsReviews.conjugationId, conjugations.id))
       .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
-      .where(isNull(srsReviews.id))
-      .orderBy(desc(verbs.frequency))
-      .limit(remaining);
-  }
+      .where(lte(srsReviews.dueAt, now))
+      .orderBy(srsReviews.dueAt)
+      .limit(numCards);
 
-  return [...dueCards, ...newCards];
+    const remaining = numCards - dueCards.length;
+
+    let newCards = [];
+    if (remaining > 0) {
+      newCards = await db
+        .select({
+          id: conjugations.id,
+          mood: conjugations.mood,
+          tense: conjugations.tense,
+          person: conjugations.person,
+          conjugation: conjugations.conjugation,
+          translation: conjugations.translation,
+          infinitive: verbs.infinitive,
+          meaning: verbs.meaning,
+        })
+        .from(conjugations)
+        .leftJoin(srsReviews, eq(srsReviews.conjugationId, conjugations.id))
+        .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
+        .where(isNull(srsReviews.id))
+        .orderBy(desc(verbs.frequency))
+        .limit(remaining);
+    }
+
+    return [...dueCards, ...newCards];
+  } catch (error) {
+    console.error("Error in getStudySessionCards:", error);
+  }
 };

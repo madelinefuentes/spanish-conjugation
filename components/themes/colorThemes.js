@@ -6,11 +6,12 @@ export const lightTheme = {
   colors: {
     text: "#18181b",
     background: "#FFFDFA",
+    modalBackground: "#FFFDFA",
     greyBackground: "#f4f4f5",
-    greyClickable: "#e4e4e7",
+    greyClickable: "#d4d4d8",
     line: "#d4d4d8",
     iconColor: "#334155",
-    greyDisabled: "#b9bfc8",
+    greyDisabled: "#e4e4e7",
     primary: "#4D8BFF",
     white: "#FFFDFA",
     black: "#212529",
@@ -25,6 +26,7 @@ export const darkTheme = {
   colors: {
     text: "#F2F2F2",
     background: "#18181b",
+    modalBackground: "#212121",
     greyBackground: "#27272a",
     greyClickable: "#52525b",
     greyDisabled: "#27272a",

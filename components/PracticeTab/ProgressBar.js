@@ -1,8 +1,9 @@
-import { Pressable } from "react-native";
+import { Pressable, View } from "react-native";
 import styled from "@emotion/native";
 import { responsiveScale } from "../util/ResponsiveScale";
-import { Eye } from "lucide-react-native";
+import { Eye, EyeClosed } from "lucide-react-native";
 import { useTheme } from "@emotion/react";
+import { useLocalStorageStore } from "../stores/LocalStorageStore";
 
 const Container = styled.View(({ theme }) => ({
   flexDirection: "row",
@@ -11,12 +12,12 @@ const Container = styled.View(({ theme }) => ({
 }));
 
 const BarContainer = styled.View(({ theme }) => ({
-  flex: 1,
   height: theme.s4,
-  backgroundColor: "#E0E0E0",
+  backgroundColor: theme.colors.greyBackground,
   borderRadius: theme.s3,
   overflow: "hidden",
   marginHorizontal: theme.s3,
+  flex: 1,
 }));
 
 const BarFill = styled.View(({ theme }) => ({
@@ -42,20 +43,47 @@ const StyledText = styled.Text(({ theme }) => ({
   fontWeight: "600",
 }));
 
-export const ProgressBar = ({ progress = 0.6 }) => {
+const VisibleSection = styled.View(() => ({
+  flex: 1,
+  flexDirection: "row",
+  alignItems: "center",
+}));
+
+export const ProgressBar = ({}) => {
+  const cardsStudied = useLocalStorageStore((state) => state.cardsStudied);
+  const sessionCount = useLocalStorageStore((state) => state.sessionCount);
+  const isProgressVisible = useLocalStorageStore(
+    (state) => state.isProgressVisible
+  );
+  const toggleProgressVisible = useLocalStorageStore(
+    (state) => state.toggleProgressVisible
+  );
+
   const theme = useTheme();
 
   return (
     <Container>
-      <Pressable>
-        <Eye size={theme.t11} color={theme.colors.iconColor} />
+      <Pressable onPress={toggleProgressVisible}>
+        {isProgressVisible ? (
+          <Eye size={theme.t11} color={theme.colors.iconColor} />
+        ) : (
+          <EyeClosed size={theme.t11} color={theme.colors.iconColor} />
+        )}
       </Pressable>
-      <BarContainer>
-        <BarFill style={{ width: `${progress * 100}%` }}>
-          <BarHighlight />
-        </BarFill>
-      </BarContainer>
-      <StyledText>11/15</StyledText>
+      {isProgressVisible && (
+        <VisibleSection>
+          <BarContainer>
+            <BarFill
+              style={{
+                width: `${Math.min(1, cardsStudied / sessionCount) * 100}%`,
+              }}
+            >
+              <BarHighlight />
+            </BarFill>
+          </BarContainer>
+          <StyledText>{`${cardsStudied} / ${sessionCount}`}</StyledText>
+        </VisibleSection>
+      )}
     </Container>
   );
 };
