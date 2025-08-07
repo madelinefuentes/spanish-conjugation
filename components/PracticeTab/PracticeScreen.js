@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { desc, eq, isNull, lte } from "drizzle-orm";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
 
-const SESSION_COUNT = 50;
+const SESSION_COUNT = 20;
 
 export const PracticeScreen = () => {
   const [cards, setCards] = useState([]);
@@ -35,14 +35,20 @@ export const PracticeScreen = () => {
     fetchCards();
   }, []);
 
-  const handleResult = (isCorrect) => {
-    // alert(isCorrect ? "Correct!" : "Wrong, Try Again");
+  const incrementCard = async () => {
+    if (currentIndex == cards.length - 1) {
+      const result = await getStudySessionCards(SESSION_COUNT);
+      setCards(result);
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex((prev) => prev + 1);
+    }
   };
 
   return (
     <>
       <ProgressBar />
-      <PracticeCard item={cards[currentIndex]} onSubmit={handleResult} />
+      <PracticeCard item={cards[currentIndex]} incrementCard={incrementCard} />
     </>
   );
 };

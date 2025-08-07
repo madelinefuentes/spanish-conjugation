@@ -22,7 +22,7 @@ import {
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
 import { useDatabaseMigration } from "./db/client";
-import { CorrectionModal } from "./PracticeTab/CorrectionModal";
+import { ModalManager } from "./ModalManager";
 
 export default function App() {
   const themeSetting = useLocalStorageStore((state) => state.theme);
@@ -82,7 +82,7 @@ const AppContent = () => {
       }}
     >
       <BottomTabs />
-      <CorrectionModal />
+      <ModalManager />
     </View>
   );
 };

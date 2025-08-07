@@ -5,8 +5,6 @@ export const verbs = sqliteTable("verbs", {
   infinitive: text("infinitive").notNull(),
   meaning: text("meaning").notNull(),
   type: text("type").notNull(),
-  group: text("group").notNull(),
-  status: text("status").notNull(), // new, learning, mastered
   frequency: real("frequency"),
 });
 
@@ -27,11 +25,9 @@ export const srsReviews = sqliteTable("srs_reviews", {
   conjugationId: integer("conjugation_id")
     .notNull()
     .references(() => conjugations.id),
-
   dueAt: integer("due_at").notNull(),
   stability: integer("stability").notNull(),
   difficulty: integer("difficulty").notNull(),
-  elapsedDays: integer("elapsed_days").notNull(),
   scheduledDays: integer("scheduled_days").notNull(),
   learningSteps: integer("learning_steps").notNull(),
   reps: integer("reps").notNull(),

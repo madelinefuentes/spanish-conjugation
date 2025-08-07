@@ -6,7 +6,17 @@ import { Eye, EyeOff, LogIn } from "lucide-react-native";
 import { getHexWithOpacity } from "../util/ColorHelper";
 import { ShadowButton } from "../buttons/ShadowButton";
 import { Pressable } from "react-native";
-import { CorrectionModal } from "./CorrectionModal";
+import { useModalStore } from "../stores/ModalStore";
+import { createEmptyCard, FSRS, Rating } from "ts-fsrs";
+import { db } from "../db/client";
+import { srsReviews } from "../db/schema";
+import { eq } from "drizzle-orm";
+import dayjs from "dayjs";
+import Animated, {
+  interpolateColor,
+  useAnimatedStyle,
+  useSharedValue,
+} from "react-native-reanimated";
 
 const Container = styled.View(({ theme }) => ({
   alignItems: "center",
@@ -71,29 +81,120 @@ const AnswerContainer = styled.View(({ theme }) => ({
   borderColor: theme.colors.line,
 }));
 
-export const PracticeCard = ({ item }) => {
-  const [focused, setFocused] = useState(false);
-  const [answer, setAnswer] = useState("");
-  const [showInfinitive, setShowInfinitive] = useState(false);
-  const [isCorrectionModalVisible, setIsCorrectionModalVisible] =
-    useState(false);
-
+export const PracticeCard = ({ item, incrementCard }) => {
   const theme = useTheme();
+
+  const [focused, setFocused] = useState(false);
+  const [userAnswer, setUserAnswer] = useState("");
+  const [showInfinitive, setShowInfinitive] = useState(false);
+  const [buttonColor, setButtonColor] = useState(theme.colors.primary);
+
+  const openModal = useModalStore((state) => state.openModal);
 
   const accents = ["á", "é", "í", "ó", "ú", "ñ"];
 
+  const buttonScale = useSharedValue(1);
+  const correctTextOpacity = useSharedValue(0);
+  const correctTextTranslateY = useSharedValue(10);
+
+  const animatedCorrectTextStyle = useAnimatedStyle(() => ({
+    opacity: correctTextOpacity.value,
+    transform: [{ translateY: correctTextTranslateY.value }],
+  }));
+
   const insertAccent = (char) => {
-    setAnswer((prev) => prev + char);
+    setUserAnswer((prev) => prev + char);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const correct =
-      answer.trim().toLowerCase() === item.conjugation.toLowerCase();
+      userAnswer.trim().toLowerCase() === item.conjugation.toLowerCase();
+    const rating = correct ? Rating.Good : Rating.Again;
+    const now = dayjs();
+
+    try {
+      const [existingReview] = await db
+        .select()
+        .from(srsReviews)
+        .where(eq(srsReviews.conjugationId, item.id))
+        .limit(1);
+
+      let card = createEmptyCard();
+
+      if (existingReview) {
+        card.stability = existingReview.stability;
+        card.difficulty = existingReview.difficulty;
+        card.scheduled_days = existingReview.scheduledDays;
+        card.learning_steps = existingReview.learningSteps;
+        card.reps = existingReview.reps;
+        card.lapses = existingReview.lapses;
+        card.state = Number(existingReview.state); // TODO change schema so state is an integer
+        card.last_review = dayjs.unix(existingReview.lastReviewAt).toDate();
+        card.due = dayjs.unix(existingReview.dueAt).toDate();
+      }
+
+      const fsrs = new FSRS();
+      const { card: resultCard } = fsrs.next(card, now.toDate(), rating);
+
+      const reviewData = {
+        dueAt: dayjs(resultCard.due).unix(),
+        stability: resultCard.stability,
+        difficulty: resultCard.difficulty,
+        scheduledDays: resultCard.scheduled_days,
+        learningSteps: resultCard.learning_steps,
+        reps: resultCard.reps,
+        lapses: resultCard.lapses,
+        state: resultCard.state,
+        lastReviewAt: now.unix(),
+      };
+
+      if (existingReview) {
+        await db
+          .update(srsReviews)
+          .set(reviewData)
+          .where(eq(srsReviews.id, existingReview.id));
+      } else {
+        await db.insert(srsReviews).values({
+          conjugationId: item.id,
+          ...reviewData,
+        });
+      }
+    } catch (err) {
+      console.error("Failed to update SRS review:", err);
+    }
 
     if (correct) {
+      setButtonColor("#22c55e");
+
+      // correctTextOpacity.value = withTiming(1, { duration: 200 });
+      // correctTextTranslateY.value = withTiming(0, { duration: 200 });
+
+      // buttonScale.value = withSequence(
+      //   withTiming(1.2, { duration: 100 }),
+      //   withTiming(1, { duration: 100 })
+      // );
+
+      setTimeout(() => {
+        // correctTextOpacity.value = withTiming(0, { duration: 150 });
+        // correctTextTranslateY.value = withTiming(10, { duration: 150 });
+        setButtonColor(theme.colors.primary);
+        handleIncrement();
+      }, 600);
     } else {
-      setIsCorrectionModalVisible(true);
+      openModal("WRONG_ANSWER", {
+        english: item.translation,
+        infinitive: item.infinitive,
+        userAnswer,
+        correctAnswer: item.conjugation,
+        incrementCard: handleIncrement,
+      });
     }
+  };
+
+  const handleIncrement = () => {
+    incrementCard();
+    setUserAnswer("");
+    setShowInfinitive(false);
   };
 
   if (!item) return;
@@ -125,8 +226,8 @@ export const PracticeCard = ({ item }) => {
           {item.person + (showInfinitive ? " (" + item.infinitive + ")" : "")}
         </Pronoun>
         <StyledInput
-          value={answer}
-          onChangeText={setAnswer}
+          value={userAnswer}
+          onChangeText={setUserAnswer}
           autoCapitalize="none"
           autoCorrect={false}
           onFocus={() => setFocused(true)}
@@ -134,6 +235,19 @@ export const PracticeCard = ({ item }) => {
           focused={focused}
         />
       </AnswerContainer>
+      {/* <Animated.Text
+        style={[
+          {
+            fontSize: theme.t10,
+            // fontWeight: "bold",
+            color: "#22c55e",
+            marginBottom: theme.s3,
+          },
+          animatedCorrectTextStyle,
+        ]}
+      >
+        Correct!
+      </Animated.Text> */}
       <AccentRow>
         {accents.map((accent) => (
           <ShadowButton
@@ -150,7 +264,7 @@ export const PracticeCard = ({ item }) => {
         <ShadowButton
           width={responsiveScale(40)}
           height={responsiveScale(40)}
-          buttonColor={theme.colors.primary}
+          buttonColor={buttonColor}
           onPressHandler={handleSubmit}
           icon={
             <LogIn
@@ -161,10 +275,6 @@ export const PracticeCard = ({ item }) => {
           }
         />
       </AccentRow>
-      {/* <CorrectionModal
-        isVisible={isCorrectionModalVisible}
-        closeModal={() => setIsCorrectionModalVisible(false)}
-      /> */}
     </Container>
   );
 };

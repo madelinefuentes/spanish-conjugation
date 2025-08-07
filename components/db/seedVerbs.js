@@ -68,7 +68,7 @@ const seedVerbFromJson = async (verbData) => {
 
     const verbId = insertedVerb.id;
 
-    // Step 2: Insert conjugations and linked SRS records
+    // Step 2: Insert conjugations
     for (const mood in verbData.conjugations) {
       const tenses = verbData.conjugations[mood];
 
@@ -79,7 +79,7 @@ const seedVerbFromJson = async (verbData) => {
           const entry = persons[person];
 
           // Insert conjugation
-          const [conjugationRow] = await db
+          await db
             .insert(conjugations)
             .values({
               verbId,
@@ -90,23 +90,6 @@ const seedVerbFromJson = async (verbData) => {
               translation: entry.translation,
             })
             .returning({ id: conjugations.id });
-
-          const conjugationId = conjugationRow.id;
-
-          // Insert SRS review
-          // await db.insert(srsReviews).values({
-          //   conjugationId,
-          //   difficulty: 0,
-          //   dueAt: Math.floor(Date.now() / 1000),
-          //   elapsedDays: 0,
-          //   lapses: 0,
-          //   // lastReviewAt: null,
-          //   learningSteps: 0,
-          //   reps: 0,
-          //   scheduledDays: 0,
-          //   stability: 0,
-          //   state: State.New,
-          // });
         }
       }
     }

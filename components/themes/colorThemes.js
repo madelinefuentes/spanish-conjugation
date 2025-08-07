@@ -26,7 +26,7 @@ export const darkTheme = {
   colors: {
     text: "#F2F2F2",
     background: "#18181b",
-    modalBackground: "#212121",
+    modalBackground: "#1e1e1e",
     greyBackground: "#27272a",
     greyClickable: "#52525b",
     greyDisabled: "#27272a",

@@ -42,7 +42,7 @@
     "react-native-simple-default-props": "^1.0.0",
     "react-native-size-matters": "^0.4.2",
     "react-native-svg": "15.11.2",
-    "ts-fsrs": "^5.0.0",
+    "ts-fsrs": "^5.2.1",
     "zustand": "^5.0.5"
   },
   "devDependencies": {
