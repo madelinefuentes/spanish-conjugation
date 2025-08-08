@@ -5,6 +5,7 @@ export const useModalStore = create((set) => ({
   setIsTaskFromOpen: (visible) => set({ isTaskFormOpen: visible }),
   modals: {
     WRONG_ANSWER: { isVisible: false, props: {} },
+    CUSTOM_STUDY: { isVisible: false, props: {} },
   },
   openModal: (type, props = {}) =>
     set((state) => ({

@@ -1,10 +1,8 @@
 import { ProgressBar } from "./ProgressBar";
 import { PracticeCard } from "./PracticeCard";
-import { db } from "../db/client";
-import { conjugations, verbs, srsReviews } from "../db/schema";
 import { useEffect, useState } from "react";
-import { desc, eq, isNull, lte } from "drizzle-orm";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
+import { getStudySessionCards } from "../db/dbFunctions";
 
 const SESSION_COUNT = 20;
 
@@ -54,54 +52,3 @@ export const PracticeScreen = () => {
 };
 
 PracticeScreen.whyDidYouRender = true;
-
-export const getStudySessionCards = async (numCards) => {
-  try {
-    const now = Math.floor(Date.now() / 1000);
-
-    const dueCards = await db
-      .select({
-        id: conjugations.id,
-        mood: conjugations.mood,
-        tense: conjugations.tense,
-        person: conjugations.person,
-        conjugation: conjugations.conjugation,
-        translation: conjugations.translation,
-        infinitive: verbs.infinitive,
-        meaning: verbs.meaning,
-      })
-      .from(srsReviews)
-      .innerJoin(conjugations, eq(srsReviews.conjugationId, conjugations.id))
-      .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
-      .where(lte(srsReviews.dueAt, now))
-      .orderBy(srsReviews.dueAt)
-      .limit(numCards);
-
-    const remaining = numCards - dueCards.length;
-
-    let newCards = [];
-    if (remaining > 0) {
-      newCards = await db
-        .select({
-          id: conjugations.id,
-          mood: conjugations.mood,
-          tense: conjugations.tense,
-          person: conjugations.person,
-          conjugation: conjugations.conjugation,
-          translation: conjugations.translation,
-          infinitive: verbs.infinitive,
-          meaning: verbs.meaning,
-        })
-        .from(conjugations)
-        .leftJoin(srsReviews, eq(srsReviews.conjugationId, conjugations.id))
-        .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
-        .where(isNull(srsReviews.id))
-        .orderBy(desc(verbs.frequency))
-        .limit(remaining);
-    }
-
-    return [...dueCards, ...newCards];
-  } catch (error) {
-    console.error("Error in getStudySessionCards:", error);
-  }
-};

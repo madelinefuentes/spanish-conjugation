@@ -14,9 +14,13 @@ import { eq } from "drizzle-orm";
 import dayjs from "dayjs";
 import Animated, {
   interpolateColor,
+  withTiming,
   useAnimatedStyle,
   useSharedValue,
+  withSequence,
+  withSpring,
 } from "react-native-reanimated";
+import { useLocalStorageStore } from "../stores/LocalStorageStore";
 
 const Container = styled.View(({ theme }) => ({
   alignItems: "center",
@@ -81,6 +85,15 @@ const AnswerContainer = styled.View(({ theme }) => ({
   borderColor: theme.colors.line,
 }));
 
+const CorrectText = styled(Animated.Text)(({ theme }) => ({
+  fontSize: theme.t7,
+  color: "#22c55e",
+  position: "absolute",
+  right: theme.s2,
+  pointerEvents: "none",
+  fontFamily: "Inter_600SemiBold",
+}));
+
 export const PracticeCard = ({ item, incrementCard }) => {
   const theme = useTheme();
 
@@ -88,14 +101,23 @@ export const PracticeCard = ({ item, incrementCard }) => {
   const [userAnswer, setUserAnswer] = useState("");
   const [showInfinitive, setShowInfinitive] = useState(false);
   const [buttonColor, setButtonColor] = useState(theme.colors.primary);
+  const [accentRowHeight, setAccentRowHeight] = useState(0);
+  const [buttonLayout, setButtonLayout] = useState({ x: 0, width: 0 });
 
+  const incrementCardsStudied = useLocalStorageStore(
+    (state) => state.incrementCardsStudied
+  );
   const openModal = useModalStore((state) => state.openModal);
 
   const accents = ["á", "é", "í", "ó", "ú", "ñ"];
 
   const buttonScale = useSharedValue(1);
   const correctTextOpacity = useSharedValue(0);
-  const correctTextTranslateY = useSharedValue(10);
+  const correctTextTranslateY = useSharedValue(12);
+
+  const animatedButtonStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: buttonScale.value }],
+  }));
 
   const animatedCorrectTextStyle = useAnimatedStyle(() => ({
     opacity: correctTextOpacity.value,
@@ -148,35 +170,34 @@ export const PracticeCard = ({ item, incrementCard }) => {
         lastReviewAt: now.unix(),
       };
 
-      if (existingReview) {
-        await db
-          .update(srsReviews)
-          .set(reviewData)
-          .where(eq(srsReviews.id, existingReview.id));
-      } else {
-        await db.insert(srsReviews).values({
-          conjugationId: item.id,
-          ...reviewData,
-        });
-      }
+      // if (existingReview) {
+      //   await db
+      //     .update(srsReviews)
+      //     .set(reviewData)
+      //     .where(eq(srsReviews.id, existingReview.id));
+      // } else {
+      //   await db.insert(srsReviews).values({
+      //     conjugationId: item.id,
+      //     ...reviewData,
+      //   });
+      // }
     } catch (err) {
       console.error("Failed to update SRS review:", err);
     }
 
     if (correct) {
+      correctTextOpacity.value = withTiming(1, { duration: 160 });
+      correctTextTranslateY.value = withTiming(0, { duration: 160 });
       setButtonColor("#22c55e");
 
-      // correctTextOpacity.value = withTiming(1, { duration: 200 });
-      // correctTextTranslateY.value = withTiming(0, { duration: 200 });
-
-      // buttonScale.value = withSequence(
-      //   withTiming(1.2, { duration: 100 }),
-      //   withTiming(1, { duration: 100 })
-      // );
+      buttonScale.value = withSequence(
+        withTiming(1.12, { duration: 90 }),
+        withSpring(1, { mass: 1, stiffness: 240, damping: 14 })
+      );
 
       setTimeout(() => {
-        // correctTextOpacity.value = withTiming(0, { duration: 150 });
-        // correctTextTranslateY.value = withTiming(10, { duration: 150 });
+        correctTextOpacity.value = withTiming(0, { duration: 140 });
+        correctTextTranslateY.value = withTiming(10, { duration: 140 });
         setButtonColor(theme.colors.primary);
         handleIncrement();
       }, 600);
@@ -192,6 +213,7 @@ export const PracticeCard = ({ item, incrementCard }) => {
   };
 
   const handleIncrement = () => {
+    incrementCardsStudied();
     incrementCard();
     setUserAnswer("");
     setShowInfinitive(false);
@@ -235,20 +257,20 @@ export const PracticeCard = ({ item, incrementCard }) => {
           focused={focused}
         />
       </AnswerContainer>
-      {/* <Animated.Text
+      <CorrectText
         style={[
-          {
-            fontSize: theme.t10,
-            // fontWeight: "bold",
-            color: "#22c55e",
-            marginBottom: theme.s3,
-          },
           animatedCorrectTextStyle,
+          {
+            bottom: accentRowHeight + theme.s2,
+            left: buttonLayout.x + buttonLayout.width / 3,
+          },
         ]}
       >
         Correct!
-      </Animated.Text> */}
-      <AccentRow>
+      </CorrectText>
+      <AccentRow
+        onLayout={(e) => setAccentRowHeight(e.nativeEvent.layout.height)}
+      >
         {accents.map((accent) => (
           <ShadowButton
             key={accent}
@@ -261,19 +283,27 @@ export const PracticeCard = ({ item, incrementCard }) => {
             fontSize={theme.t7}
           />
         ))}
-        <ShadowButton
-          width={responsiveScale(40)}
-          height={responsiveScale(40)}
-          buttonColor={buttonColor}
-          onPressHandler={handleSubmit}
-          icon={
-            <LogIn
-              size={theme.t7}
-              color={theme.colors.white}
-              strokeWidth={2.5}
-            />
-          }
-        />
+        <Animated.View
+          style={animatedButtonStyle}
+          onLayout={(e) => {
+            const { x, width } = e.nativeEvent.layout;
+            setButtonLayout({ x, width });
+          }}
+        >
+          <ShadowButton
+            width={responsiveScale(40)}
+            height={responsiveScale(40)}
+            buttonColor={buttonColor}
+            onPressHandler={handleSubmit}
+            icon={
+              <LogIn
+                size={theme.t7}
+                color={theme.colors.white}
+                strokeWidth={2.5}
+              />
+            }
+          />
+        </Animated.View>
       </AccentRow>
     </Container>
   );

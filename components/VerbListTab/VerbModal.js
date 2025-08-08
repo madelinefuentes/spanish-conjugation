@@ -36,15 +36,22 @@ const Infinitive = styled.Text(({ theme }) => ({
   color: theme.colors.text,
 }));
 
-const MeaningContainer = styled.View(({ theme }) => ({
+const MeaningBlock = styled.View(({ theme }) => ({
   padding: theme.s4,
   gap: theme.s3,
 }));
 
-const Meaning = styled.Text(({ theme }) => ({
+const MeaningRow = styled.View(({ theme }) => ({
+  flexDirection: "row",
+  alignItems: "center",
+}));
+
+const MeaningText = styled.Text(({ theme }) => ({
+  flex: 1,
   fontSize: theme.t6,
   color: theme.colors.text,
   fontFamily: "Inter_400Regular_Italic",
+  marginRight: theme.s3,
 }));
 
 const Divider = styled.View(({ theme }) => ({
@@ -67,6 +74,19 @@ const TagContainer = styled.View(({ theme, color }) => ({
 const TagText = styled.Text(({ theme, color }) => ({
   fontSize: theme.t5,
   color,
+}));
+
+const QuizButton = styled.View(({ theme }) => ({
+  paddingVertical: theme.s1,
+  paddingHorizontal: theme.s3,
+  borderRadius: theme.s3,
+  borderWidth: 1,
+  borderColor: theme.colors.primary,
+}));
+
+const QuizButtonText = styled.Text(({ theme }) => ({
+  fontSize: theme.t5,
+  color: theme.colors.white,
 }));
 
 export const moodArray = [
@@ -176,26 +196,35 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
           <View style={{ width: theme.t13 }} />
         </Header>
         <Divider />
-        <MeaningContainer>
-          <Meaning>{verb.meaning}</Meaning>
-          <TagRow>
-            <TagContainer color={typeColor}>
-              <TagText color={typeColor}>{verb.type}</TagText>
-            </TagContainer>
-            {verb.infinitive && verb.infinitive.slice(-2) == "se" && (
-              <TagContainer color={theme.colors.primary}>
-                <TagText color={theme.colors.primary}>Reflexive</TagText>
+        <ScrollView>
+          <MeaningBlock>
+            <MeaningRow>
+              <MeaningText>{verb.meaning}</MeaningText>
+              <Pressable>
+                <QuizButton>
+                  <QuizButtonText>Quiz All</QuizButtonText>
+                </QuizButton>
+              </Pressable>
+            </MeaningRow>
+
+            <TagRow>
+              <TagContainer color={typeColor}>
+                <TagText color={typeColor}>{verb.type}</TagText>
               </TagContainer>
-            )}
-          </TagRow>
-        </MeaningContainer>
-        <Divider />
-        <TabControl
-          tabs={["Indicative", "Subjunctive", "Imperative"]}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        />
-        <ScrollView style={{ marginTop: theme.s3 }}>
+              {verb.infinitive && verb.infinitive.slice(-2) == "se" && (
+                <TagContainer color={theme.colors.primary}>
+                  <TagText color={theme.colors.primary}>Reflexive</TagText>
+                </TagContainer>
+              )}
+            </TagRow>
+          </MeaningBlock>
+          <Divider />
+          <TabControl
+            tabs={["Indicative", "Subjunctive", "Imperative"]}
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+          />
+
           {Object.entries(tenses).map(([tenseKey, description]) => {
             const tenseConjugations = conjugationData?.[moodKey]?.[tenseKey];
 
@@ -218,6 +247,12 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
 
 const TableContainer = styled.View(({ theme }) => ({
   padding: theme.s4,
+}));
+
+const TenseHeaderRow = styled.View(({ theme }) => ({
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
 }));
 
 const TenseHeader = styled.Text(({ theme }) => ({
@@ -265,9 +300,16 @@ const Table = ({ tense, description, tenseConjugations }) => {
 
   return (
     <TableContainer>
-      <TenseHeader>
-        {tense.charAt(0).toUpperCase() + tense.slice(1)}
-      </TenseHeader>
+      <TenseHeaderRow>
+        <TenseHeader>
+          {tense.charAt(0).toUpperCase() + tense.slice(1)}
+        </TenseHeader>
+        <Pressable>
+          <QuizButton>
+            <QuizButtonText>Quiz</QuizButtonText>
+          </QuizButton>
+        </Pressable>
+      </TenseHeaderRow>
       <DescriptionText>{description}</DescriptionText>
       <ConjugationTable>
         {subjects.map((s, i) => {
