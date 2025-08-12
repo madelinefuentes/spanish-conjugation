@@ -49,9 +49,7 @@ const VisibleSection = styled.View(() => ({
   alignItems: "center",
 }));
 
-export const ProgressBar = ({}) => {
-  const cardsStudied = useLocalStorageStore((state) => state.cardsStudied);
-  const sessionCount = useLocalStorageStore((state) => state.sessionCount);
+export const ProgressBar = ({ cardsStudied, sessionCount }) => {
   const isProgressVisible = useLocalStorageStore(
     (state) => state.isProgressVisible
   );

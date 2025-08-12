@@ -7,9 +7,13 @@ import { getHexWithOpacity } from "../util/ColorHelper";
 import { useEffect, useState } from "react";
 import { TabControl } from "./TabControl";
 import { db } from "../db/client";
-import { useLiveQuery } from "drizzle-orm/expo-sqlite";
 import { conjugations } from "../db/schema";
 import { eq } from "drizzle-orm";
+import { useModalStore } from "../stores/ModalStore";
+import {
+  getConjugationsByVerb,
+  getConjugationsByVerbAndTense,
+} from "../db/dbFunctions";
 
 const ModalContainer = styled.View(({ theme }) => ({
   flex: 1,
@@ -124,7 +128,14 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [conjugationData, setConjugationData] = useState({});
 
+  const openModal = useModalStore((state) => state.openModal);
   const theme = useTheme();
+
+  const handleQuizAll = async () => {
+    const cards = await getConjugationsByVerb(verb.id);
+
+    openModal("CUSTOM_STUDY", { cards });
+  };
 
   useEffect(() => {
     const loadConjugations = async () => {
@@ -200,7 +211,7 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
           <MeaningBlock>
             <MeaningRow>
               <MeaningText>{verb.meaning}</MeaningText>
-              <Pressable>
+              <Pressable onPress={handleQuizAll} hitSlop={15}>
                 <QuizButton>
                   <QuizButtonText>Quiz All</QuizButtonText>
                 </QuizButton>
@@ -233,6 +244,7 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
             return (
               <Table
                 key={tenseKey}
+                verbId={verb.id}
                 tense={tenseKey}
                 description={description}
                 tenseConjugations={tenseConjugations}
@@ -295,8 +307,16 @@ const English = styled.Text(({ theme }) => ({
   color: theme.colors.greyText,
 }));
 
-const Table = ({ tense, description, tenseConjugations }) => {
+const Table = ({ verbId, tense, description, tenseConjugations }) => {
+  const openModal = useModalStore((state) => state.openModal);
+
   const subjects = ["yo", "tú", "él", "ellos", "nosotros"];
+
+  const handleQuiz = async () => {
+    const cards = await getConjugationsByVerbAndTense(verbId, tense);
+
+    openModal("CUSTOM_STUDY", { cards });
+  };
 
   return (
     <TableContainer>
@@ -304,7 +324,7 @@ const Table = ({ tense, description, tenseConjugations }) => {
         <TenseHeader>
           {tense.charAt(0).toUpperCase() + tense.slice(1)}
         </TenseHeader>
-        <Pressable>
+        <Pressable onPress={handleQuiz} hitSlop={15}>
           <QuizButton>
             <QuizButtonText>Quiz</QuizButtonText>
           </QuizButton>

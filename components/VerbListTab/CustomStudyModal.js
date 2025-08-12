@@ -1,9 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "react-native-modal";
 import { PracticeCard } from "../PracticeTab/PracticeCard";
+import styled from "@emotion/native";
+import { ProgressBar } from "../PracticeTab/ProgressBar";
+import { BackHandler } from "react-native";
+
+// TODO avoid statusbar properly
+const ModalContainer = styled.View(({ theme }) => ({
+  flex: 1,
+  backgroundColor: theme.colors.background,
+  paddingTop: theme.s6,
+}));
 
 export const CustomStudyModal = ({ cards, isVisible, closeModal }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const backAction = () => {
+      if (isVisible) {
+        closeModal();
+        return true;
+      }
+
+      return false;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      "hardwareBackPress",
+      backAction
+    );
+
+    return () => backHandler.remove();
+  }, [isVisible]);
 
   const incrementCard = async () => {
     if (currentIndex == cards.length - 1) {
@@ -30,7 +58,13 @@ export const CustomStudyModal = ({ cards, isVisible, closeModal }) => {
       coverScreen={false}
       // deviceHeight={height}
     >
-      <PracticeCard item={cards[currentIndex]} incrementCard={incrementCard} />
+      <ModalContainer>
+        <ProgressBar cardsStudied={currentIndex} sessionCount={cards.length} />
+        <PracticeCard
+          item={cards[currentIndex]}
+          incrementCard={incrementCard}
+        />
+      </ModalContainer>
     </Modal>
   );
 };

@@ -1,6 +1,6 @@
 import { db } from "../db/client";
 import { conjugations, verbs, srsReviews } from "../db/schema";
-import { desc, eq, isNull, lte } from "drizzle-orm";
+import { and, desc, eq, isNull, lte } from "drizzle-orm";
 
 export const getStudySessionCards = async (numCards) => {
   try {
@@ -53,6 +53,36 @@ export const getStudySessionCards = async (numCards) => {
   }
 };
 
-export const getConjugationsByVerb = () => {};
+export const getConjugationsByVerb = async (verbId) => {
+  return await db
+    .select({
+      id: conjugations.id,
+      mood: conjugations.mood,
+      tense: conjugations.tense,
+      person: conjugations.person,
+      conjugation: conjugations.conjugation,
+      translation: conjugations.translation,
+      infinitive: verbs.infinitive,
+      meaning: verbs.meaning,
+    })
+    .from(conjugations)
+    .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
+    .where(eq(conjugations.verbId, verbId));
+};
 
-export const getConjugationsByVerbAndTense = () => {};
+export const getConjugationsByVerbAndTense = async (verbId, tense) => {
+  return await db
+    .select({
+      id: conjugations.id,
+      mood: conjugations.mood,
+      tense: conjugations.tense,
+      person: conjugations.person,
+      conjugation: conjugations.conjugation,
+      translation: conjugations.translation,
+      infinitive: verbs.infinitive,
+      meaning: verbs.meaning,
+    })
+    .from(conjugations)
+    .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
+    .where(and(eq(conjugations.verbId, verbId), eq(conjugations.tense, tense)));
+};

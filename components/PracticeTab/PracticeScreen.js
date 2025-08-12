@@ -3,6 +3,7 @@ import { PracticeCard } from "./PracticeCard";
 import { useEffect, useState } from "react";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
 import { getStudySessionCards } from "../db/dbFunctions";
+import dayjs from "dayjs";
 
 const SESSION_COUNT = 20;
 
@@ -10,15 +11,15 @@ export const PracticeScreen = () => {
   const [cards, setCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const cardsStudied = useLocalStorageStore((state) => state.cardsStudied);
+  const sessionCount = useLocalStorageStore((state) => state.sessionCount);
   const lastDate = useLocalStorageStore((state) => state.lastDate);
   const resetStudySession = useLocalStorageStore(
     (state) => state.resetStudySession
   );
 
   const resetDaily = async () => {
-    const today = dayjs();
-
-    if (lastDate.isBefore(today, "day")) {
+    if (lastDate.isBefore(dayjs(), "day")) {
       resetStudySession();
     }
   };
@@ -45,7 +46,7 @@ export const PracticeScreen = () => {
 
   return (
     <>
-      <ProgressBar />
+      <ProgressBar cardsStudied={cardsStudied} sessionCount={sessionCount} />
       <PracticeCard item={cards[currentIndex]} incrementCard={incrementCard} />
     </>
   );
