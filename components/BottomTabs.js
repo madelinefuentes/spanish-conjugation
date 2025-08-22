@@ -3,9 +3,15 @@ import { responsiveScale } from "./util/ResponsiveScale";
 import { PracticeScreen } from "./PracticeTab/PracticeScreen";
 import { DebugScreen } from "./DebugTab/DebugScreen";
 import { useTheme } from "@emotion/react";
-import { Dumbbell, SquareTerminal, BookText } from "lucide-react-native";
+import {
+  Dumbbell,
+  SquareTerminal,
+  BookText,
+  ChartColumn,
+} from "lucide-react-native";
 import { Pressable } from "react-native";
 import { VerbListScreen } from "./VerbListTab/VerbListScreen";
+import { ProgressScreen } from "./ProgressTab/ProgressScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -42,6 +48,20 @@ export const BottomTabs = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <Dumbbell
+              size={theme.t10}
+              color={
+                focused ? theme.colors.primary : theme.colors.greyClickable
+              }
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="progress"
+        component={ProgressScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <ChartColumn
               size={theme.t10}
               color={
                 focused ? theme.colors.primary : theme.colors.greyClickable

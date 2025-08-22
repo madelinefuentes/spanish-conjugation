@@ -43,6 +43,7 @@ export default function App() {
   };
 
   if (!fontsLoaded && !success) {
+    console.log("error");
     return null;
   }
 
