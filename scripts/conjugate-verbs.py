@@ -42,7 +42,6 @@ tenses_map = {
     "conditional": ("Condicional", "Condicional Condicional")
 }
 
-
 def generate_conjugation_data(input_csv: str, output_json: str, sample_size: int = 50):
     df = pd.read_csv(input_csv).sample(sample_size, random_state=42)
     output = []
@@ -128,7 +127,6 @@ def add_frequency_to_json(json_path: str) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     print(f"Updated frequency data saved to {json_path}")
-
 
 # generate_conjugation_data("common-spanish-verbs.csv", "conjugated_verbs.json")
 add_frequency_to_json("conjugated_verbs.json")
