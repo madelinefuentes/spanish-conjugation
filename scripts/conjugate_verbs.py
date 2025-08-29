@@ -19,7 +19,7 @@ TENSES = {
 
     # # Subjunctive
     # "Subjunctive Present": ("Subjuntivo", "Subjuntivo Presente"),
-    # "Subjunctive Imperfect": ("Subjuntivo", "Subjuntivo Pretérito imperfecto 1"), 
+    # "Subjunctive Imperfect": ("Subju ntivo", "Subjuntivo Pretérito imperfecto 1"), 
     # "Subjunctive Present Perfect": ("Subjuntivo", "Subjuntivo Pretérito perfecto"),
     # "Subjunctive Past Perfect": ("Subjuntivo", "Subjuntivo Pretérito pluscuamperfecto 1"),
 

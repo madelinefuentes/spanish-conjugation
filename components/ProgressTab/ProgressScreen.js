@@ -4,8 +4,8 @@ import { ScrollView } from "react-native";
 import { Flame, BookOpen } from "lucide-react-native";
 import dayjs from "dayjs";
 import { responsiveScale } from "../util/ResponsiveScale";
+import { useLocalStorageStore } from "../stores/LocalStorageStore";
 
-// ---------- Styled ----------
 const Container = styled(ScrollView)(({ theme }) => ({
   flex: 1,
   backgroundColor: theme.colors.background,
@@ -53,6 +53,20 @@ const StatValue = styled.Text(({ theme }) => ({
   color: theme.colors.text,
 }));
 
+const VerbMasteryCard = styled.View(({ theme }) => ({
+  borderRadius: theme.s4,
+  padding: theme.s4,
+  borderWidth: 1.5,
+  borderBottomWidth: 4,
+  borderColor: theme.colors.line,
+  flexDirection: "row",
+  justifyContent: "space-between",
+}));
+
+const VerbMasterySub = styled.View(() => ({
+  alignItems: "center",
+}));
+
 const StatLabel = styled.Text(({ theme }) => ({
   fontSize: theme.t6,
   color: theme.colors.greyText,
@@ -94,12 +108,13 @@ const ProgressBarFill = styled.View(({ pct, color }) => ({
 }));
 
 export const ProgressScreen = () => {
+  const dailyStreak = useLocalStorageStore((state) => state.dailyStreak);
+  const cardsStudied = useLocalStorageStore((state) => state.cardsStudied);
+  const sessionCount = useLocalStorageStore((state) => state.sessionCount);
+
   const theme = useTheme();
 
   // TODO replace with db queries
-  const streakDays = 5;
-  const cardsStudied = 12;
-  const totalDue = 20;
   const tenseMastery = [
     { label: "Indicative · Present", pct: 70 },
     { label: "Indicative · Past", pct: 40 },
@@ -109,15 +124,14 @@ export const ProgressScreen = () => {
   // status message
   let statusMessage = "You're all done for today 🎉";
   if (cardsStudied === 0) {
-    statusMessage = "No reviews yet, start your first one ✨";
-  } else if (cardsStudied < totalDue) {
-    statusMessage = `${totalDue - cardsStudied} reviews remaining today`;
+    statusMessage = "No reviews yet, start your first one 🌟";
+  } else if (cardsStudied < sessionCount) {
+    statusMessage = `${sessionCount - cardsStudied} reviews remaining today`;
   }
 
   return (
     <Container>
       <Header>
-        {/* <HeaderTitle>Progress</HeaderTitle> */}
         <HeaderSubtitle>{dayjs().format("dddd, MMM D")}</HeaderSubtitle>
         <HeaderStatus>{statusMessage}</HeaderStatus>
       </Header>
@@ -126,20 +140,20 @@ export const ProgressScreen = () => {
       <Row>
         <StatCard>
           <Flame
-            size={20}
+            size={theme.t8}
             color="#f59e0b"
             fill="#f59e0b"
             style={{ marginTop: responsiveScale(5) }}
           />
           <StatSubsection>
-            <StatValue>{streakDays}</StatValue>
+            <StatValue>{dailyStreak}</StatValue>
             <StatLabel>Daily streak</StatLabel>
           </StatSubsection>
         </StatCard>
 
         <StatCard>
           <BookOpen
-            size={20}
+            size={theme.t8}
             color={theme.colors.primary}
             style={{ marginTop: responsiveScale(5) }}
           />
@@ -161,6 +175,25 @@ export const ProgressScreen = () => {
             </ProgressBarBackground>
           </ProgressRow>
         ))}
+      </Section>
+
+      {/* Verb mastery */}
+      <Section>
+        <SectionTitle>Verb mastery</SectionTitle>
+        <VerbMasteryCard>
+          <VerbMasterySub>
+            <StatValue>0</StatValue>
+            <StatLabel>Not reviewed</StatLabel>
+          </VerbMasterySub>
+          <VerbMasterySub>
+            <StatValue>0</StatValue>
+            <StatLabel>Learning</StatLabel>
+          </VerbMasterySub>
+          <VerbMasterySub>
+            <StatValue>0</StatValue>
+            <StatLabel>Mastered</StatLabel>
+          </VerbMasterySub>
+        </VerbMasteryCard>
       </Section>
     </Container>
   );

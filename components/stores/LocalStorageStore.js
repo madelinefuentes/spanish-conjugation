@@ -12,6 +12,7 @@ const localStorageSlice = (set, get) => ({
   lastDate: dayjs(),
   cardsStudied: 0,
   sessionCount: 50,
+  dailyStreak: 0,
   isProgressVisible: true,
   setTheme: (newTheme) => set({ theme: newTheme }),
   toggleTheme: () => {
@@ -25,6 +26,7 @@ const localStorageSlice = (set, get) => ({
   setSessionCount: (count) => set({ sessionCount: count }),
   toggleProgressVisible: () =>
     set({ isProgressVisible: !get().isProgressVisible }),
+  incrementDailyStreak: () => set({ dailyStreak: get().dailyStreak + 1 }),
 });
 
 export const useLocalStorageStore = create(
