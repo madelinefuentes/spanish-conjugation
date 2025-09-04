@@ -1,0 +1,932 @@
+Infinitive,Mood,Tense,1s,2s,3s,1p,3p
+Abandonar,Indicative,Present,abandono,abandonas,abandona,abandonamos,abandonan
+Abandonar,Indicative,Preterite,abandoné,abandonaste,abandonó,abandonamos,abandonaron
+Abandonar,Indicative,Imperfect,abandonaba,abandonabas,abandonaba,abandonábamos,abandonaban
+Abandonar,Indicative,Present Continuous,estoy abandonando,estás abandonando,está abandonando,estamos abandonando,están abandonando
+Abandonar,Indicative,Informal Future,voy a abandonar,vas a abandonar,va a abandonar,vamos a abandonar,van a abandonar
+Abandonar,Indicative,Future,abandonaré,abandonarás,abandonará,abandonaremos,abandonarán
+Abandonar,Indicative,Conditional,abandonaría,abandonarías,abandonaría,abandonaríamos,abandonarían
+Abandonar,Indicative,Present Perfect,he abandonado,has abandonado,ha abandonado,hemos abandonado,han abandonado
+Abandonar,Indicative,Past Perfect,había abandonado,habías abandonado,había abandonado,habíamos abandonado,habían abandonado
+Abandonar,Indicative,Future Perfect,habré abandonado,habrás abandonado,habrá abandonado,habremos abandonado,habrán abandonado
+Abandonar,Indicative,Conditional Perfect,habría abandonado,habrías abandonado,habría abandonado,habríamos abandonado,habrían abandonado
+Abandonar,Subjunctive,Present,abandone,abandones,abandone,abandonemos,abandonen
+Abandonar,Subjunctive,Imperfect,abandonara,abandonaras,abandonara,abandonáramos,abandonaran
+Abandonar,Subjunctive,Future,abandonare,abandonares,abandonare,abandonáremos,abandonaren
+Abandonar,Subjunctive,Present Perfect,haya abandonado,hayas abandonado,haya abandonado,hayamos abandonado,hayan abandonado
+Abandonar,Subjunctive,Past Perfect,hubiera abandonado,hubieras abandonado,hubiera abandonado,hubiéramos abandonado,hubieran abandonado
+Abandonar,Subjunctive,Future Perfect,hubiere abandonado,hubieres abandonado,hubiere abandonado,hubiéremos abandonado,hubieren abandonado
+Abandonar,Imperative,Affirmative,-,abandona,abandone,abandonemos,abandonen
+Abandonar,Imperative,Negative,-,no abandones,no abandone,no abandonemos,no abandonen
+Abrazar,Indicative,Present,abrazo,abrazas,abraza,abrazamos,abrazan
+Abrazar,Indicative,Preterite,abracé,abrazaste,abrazó,abrazamos,abrazaron
+Abrazar,Indicative,Imperfect,abrazaba,abrazabas,abrazaba,abrazábamos,abrazaban
+Abrazar,Indicative,Present Continuous,estoy abrazando,estás abrazando,está abrazando,estamos abrazando,están abrazando
+Abrazar,Indicative,Informal Future,voy a abrazar,vas a abrazar,va a abrazar,vamos a abrazar,van a abrazar
+Abrazar,Indicative,Future,abrazaré,abrazarás,abrazará,abrazaremos,abrazarán
+Abrazar,Indicative,Conditional,abrazaría,abrazarías,abrazaría,abrazaríamos,abrazarían
+Abrazar,Indicative,Present Perfect,he abrazado,has abrazado,ha abrazado,hemos abrazado,han abrazado
+Abrazar,Indicative,Past Perfect,había abrazado,habías abrazado,había abrazado,habíamos abrazado,habían abrazado
+Abrazar,Indicative,Future Perfect,habré abrazado,habrás abrazado,habrá abrazado,habremos abrazado,habrán abrazado
+Abrazar,Indicative,Conditional Perfect,habría abrazado,habrías abrazado,habría abrazado,habríamos abrazado,habrían abrazado
+Abrazar,Subjunctive,Present,abrace,abraces,abrace,abracemos,abracen
+Abrazar,Subjunctive,Imperfect,abrazara,abrazaras,abrazara,abrazáramos,abrazaran
+Abrazar,Subjunctive,Future,abrazares,abrazares,abrazares,abrazáremos,abrazares
+Abrazar,Subjunctive,Present Perfect,haya abrazado,hayas abrazado,haya abrazado,hayamos abrazado,hayan abrazado
+Abrazar,Subjunctive,Past Perfect,hubiera abrazado,hubieras abrazado,hubiera abrazado,hubiéramos abrazado,hubieran abrazado
+Abrazar,Subjunctive,Future Perfect,hubiere abrazado,hubieres abrazado,hubiere abrazado,hubiéremos abrazado,hubieren abrazado
+Abrazar,Imperative,Affirmative,-,abraza,abrace,abracemos,abracen
+Abrazar,Imperative,Negative,-,no abraces,no abrace,no abracemos,no abracen
+Abrir,Indicative,Present,abro,abres,abre,abrimos,abren
+Abrir,Indicative,Preterite,abrí,abriste,abrió,abrimos,abrieron
+Abrir,Indicative,Imperfect,abría,abrías,abría,abríamos,abrían
+Abrir,Indicative,Present Continuous,estoy abriendo,estás abriendo,está abriendo,estamos abriendo,están abriendo
+Abrir,Indicative,Informal Future,voy a abrir,vas a abrir,va a abrir,vamos a abrir,van a abrir
+Abrir,Indicative,Future,abriré,abrirás,abrirá,abriremos,abrirán
+Abrir,Indicative,Conditional,abriría,abrirías,abriría,abriríamos,abrirían
+Abrir,Indicative,Present Perfect,he abierto,has abierto,ha abierto,hemos abierto,han abierto
+Abrir,Indicative,Past Perfect,había abierto,habías abierto,había abierto,habíamos abierto,habían abierto
+Abrir,Indicative,Future Perfect,habré abierto,habrás abierto,habrá abierto,habremos abierto,habrán abierto
+Abrir,Indicative,Conditional Perfect,habría abierto,habrías abierto,habría abierto,habríamos abierto,habrían abierto
+Abrir,Subjunctive,Present,abra,abras,abra,abramos,abran
+Abrir,Subjunctive,Imperfect,abriera,abrieras,abriera,abriéramos,abrieran
+Abrir,Subjunctive,Future,abriere,abrieres,abriere,abriéremos,abrieren
+Abrir,Subjunctive,Present Perfect,haya abierto,hayas abierto,haya abierto,hayamos abierto,hayan abierto
+Abrir,Subjunctive,Past Perfect,hubiera abierto,hubieras abierto,hubiera abierto,hubiéramos abierto,hubieran abierto
+Abrir,Subjunctive,Future Perfect,hubiere abierto,hubieres abierto,hubiere abierto,hubiéremos abierto,hubieren abierto
+Abrir,Imperative,Affirmative,-,abre,abra,abramos,abran
+Abrir,Imperative,Negative,-,no abras,no abra,no abramos,no abran
+Absorber,Indicative,Present,absorbo,absorbes,absorbe,absorbemos,absorben
+Absorber,Indicative,Preterite,absorbí,absorbiste,absorbió,absorbimos,absorrieron
+Absorber,Indicative,Imperfect,absorbía,absorbías,absorbía,absorbíamos,absorbían
+Absorber,Indicative,Present Continuous,estoy absorbiendo,estás absorbiendo,está absorbiendo,estamos absorbiendo,están absorbiendo
+Absorber,Indicative,Informal Future,voy a absorber,vas a absorber,va a absorber,vamos a absorber,van a absorber
+Absorber,Indicative,Future,absorberé,absorberás,absorberá,absorberemos,absorberán
+Absorber,Indicative,Conditional,absorbería,absorberías,absorbería,absorberíamos,absorberían
+Absorber,Indicative,Present Perfect,he absorbido,has absorbido,ha absorbido,hemos absorbido,han absorbido
+Absorber,Indicative,Past Perfect,había absorbido,habías absorbido,había absorbido,habíamos absorbido,habían absorbido
+Absorber,Indicative,Future Perfect,habré absorbido,habrás absorbido,habrá absorbido,habremos absorbido,habrán absorbido
+Absorber,Indicative,Conditional Perfect,habría absorbido,habrías absorbido,habría absorbido,habríamos absorbido,habrían absorbido
+Absorber,Subjunctive,Present,absorba,absorbas,absorba,absorbamos,absorban
+Absorber,Subjunctive,Imperfect,absorbiera,absorbieras,absorbiera,absorbiéramos,absorbieran
+Absorber,Subjunctive,Future,absorbiere,absorbieres,absorbiere,absorbiéremos,absorbieren
+Absorber,Subjunctive,Present Perfect,haya absorbido,hayas absorbido,haya absorbido,hayamos absorbido,hayan absorbido
+Absorber,Subjunctive,Past Perfect,hubiera absorbido,hubieras absorbido,hubiera absorbido,hubiéramos absorbido,hubieran absorbido
+Absorber,Subjunctive,Future Perfect,hubiere absorbido,hubieres absorbido,hubiere absorbido,hubiéremos absorbido,hubieren absorbido
+Absorber,Imperative,Affirmative,-,absorbe,absorba,absorbamos,absorban
+Absorber,Imperative,Negative,-,no absorbas,no absorba,no absorbamos,no absorban
+Abundar,Indicative,Present,abundo,abundas,abunda,abundamos,abundan
+Abundar,Indicative,Preterite,abundé,abundaste,abundó,abundamos,abundaron
+Abundar,Indicative,Imperfect,abundaba,abundabas,abundaba,abundábamos,abundaban
+Abundar,Indicative,Present Continuous,estoy abundando,estás abundando,está abundando,estamos abundando,están abundando
+Abundar,Indicative,Informal Future,voy a abundar,vas a abundar,va a abundar,vamos a abundar,van a abundar
+Abundar,Indicative,Future,abundaré,abundarás,abundará,abundaremos,abundarán
+Abundar,Indicative,Conditional,abundaría,abundarías,abundaría,abundaríamos,abundarían
+Abundar,Indicative,Present Perfect,he abundado,has abundado,ha abundado,hemos abundado,han abundado
+Abundar,Indicative,Past Perfect,había abundado,habías abundado,había abundado,habíamos abundado,habían abundado
+Abundar,Indicative,Future Perfect,habré abundado,habrás abundado,habrá abundado,habremos abundado,habrán abundado
+Abundar,Indicative,Conditional Perfect,habría abundado,habrías abundado,habría abundado,habríamos abundado,habrían abundado
+Abundar,Subjunctive,Present,abunde,abundes,abunde,abundemos,abunden
+Abundar,Subjunctive,Imperfect,abundara,abundaras,abundara,abundáramos,abundaran
+Abundar,Subjunctive,Future,abundare,abundares,abundare,abundáremos,abundaren
+Abundar,Subjunctive,Present Perfect,haya abundado,hayas abundado,haya abundado,hayamos abundado,hayan abundado
+Abundar,Subjunctive,Past Perfect,hubiera abundado,hubieras abundado,hubiera abundado,hubiéramos abundado,hubieran abundado
+Abundar,Subjunctive,Future Perfect,hubiere abundado,hubieres abundado,hubiere abundado,hubiéremos abundado,hubieren abundado
+Abundar,Imperative,Affirmative,-,abunda,abunde,abundemos,abunden
+Abundar,Imperative,Negative,-,no abundes,no abunde,no abundemos,no abunden
+Aburrir,Indicative,Present,aburro,aburres,aburre,aburrimos,aburren
+Aburrir,Indicative,Preterite,aburrí,aburriste,aburrió,aburrimos,aburrieron
+Aburrir,Indicative,Imperfect,aburría,aburrías,aburría,aburríamos,aburrían
+Aburrir,Indicative,Present Continuous,estoy aburriendo,estás aburriendo,está aburriendo,estamos aburriendo,están aburriendo
+Aburrir,Indicative,Informal Future,voy a aburrir,vas a aburrir,va a aburrir,vamos a aburrir,van a aburrir
+Aburrir,Indicative,Future,aburriré,aburrirás,aburrirá,aburriremos,aburrirán
+Aburrir,Indicative,Conditional,aburriría,aburrirías,aburriría,aburriríamos,aburrirían
+Aburrir,Indicative,Present Perfect,he aburrido,has aburrido,ha aburrido,hemos aburrido,han aburrido
+Aburrir,Indicative,Past Perfect,había aburrido,habías aburrido,había aburrido,habíamos aburrido,habían aburrido
+Aburrir,Indicative,Future Perfect,habré aburrido,habrás aburrido,habrá aburrido,habremos aburrido,habrán aburrido
+Aburrir,Indicative,Conditional Perfect,habría aburrido,habrías aburrido,habría aburrido,habríamos aburrido,habrían aburrido
+Aburrir,Subjunctive,Present,aburra,aburras,aburra,aburramos,aburran
+Aburrir,Subjunctive,Imperfect,aburriera,aburrieras,aburriera,aburriéramos,aburrieran
+Aburrir,Subjunctive,Future,aburriere,aburrieres,aburriere,aburriéremos,aburrieren
+Aburrir,Subjunctive,Present Perfect,haya aburrido,hayas aburrido,haya aburrido,hayamos aburrido,hayan aburrido
+Aburrir,Subjunctive,Past Perfect,hubiera aburrido,hubieras aburrido,hubiera aburrido,hubiéramos aburrido,hubieran aburrido
+Aburrir,Subjunctive,Future Perfect,hubiere aburrido,hubieres aburrido,hubiere aburrido,hubiéremos aburrido,hubieren aburrido
+Aburrir,Imperative,Affirmative,-,aburre,aburra,aburramos,aburran
+Aburrir,Imperative,Negative,-,no aburras,no aburra,no aburramos,no aburran
+Aburrirse,Indicative,Present,aburro,aburres,aburre,aburrimos,aburren
+Aburrirse,Indicative,Preterite,aburrí,aburriste,aburrió,aburrimos,aburrieron
+Aburrirse,Indicative,Imperfect,aburría,aburrías,aburría,aburríamos,aburrían
+Aburrirse,Indicative,Present Continuous,estoy aburriéndose,estás aburriéndose,está aburriéndose,estamos aburriéndose,están aburriéndose
+Aburrirse,Indicative,Informal Future,voy a aburrirse,vas a aburrirse,va a aburrirse,vamos a aburrirse,van a aburrirse
+Aburrirse,Indicative,Future,aburriré,aburrirás,aburrirá,aburriremos,aburrirán
+Aburrirse,Indicative,Conditional,aburriría,aburrirías,aburriría,aburriríamos,aburrirían
+Aburrirse,Indicative,Present Perfect,he aburrido,has aburrido,ha aburrido,hemos aburrido,han aburrido
+Aburrirse,Indicative,Past Perfect,había aburrido,habías aburrido,había aburrido,habíamos aburrido,habían aburrido
+Aburrirse,Indicative,Future Perfect,habré aburrido,habrás aburrido,habrá aburrido,habremos aburrido,habrán aburrido
+Aburrirse,Indicative,Conditional Perfect,habría aburrido,habrías aburrido,habría aburrido,habríamos aburrido,habrían aburrido
+Aburrirse,Subjunctive,Present,aburra,aburras,aburra,aburramos,aburran
+Aburrirse,Subjunctive,Imperfect,aburriera,aburrieras,aburriera,aburriéramos,aburrieran
+Aburrirse,Subjunctive,Future,aburriere,aburrieres,aburriere,aburriéremos,aburrieren
+Aburrirse,Subjunctive,Present Perfect,haya aburrido,hayas aburrido,haya aburrido,hayamos aburrido,hayan aburrido
+Aburrirse,Subjunctive,Past Perfect,hubiera aburrido,hubieras aburrido,hubiera aburrido,hubiéramos aburrido,hubieran aburrido
+Aburrirse,Subjunctive,Future Perfect,hubiere aburrido,hubieres aburrido,hubiere aburrido,hubiéremos aburrido,hubieren aburrido
+Aburrirse,Imperative,Affirmative,-,abúrrete,abúrrase,aburrámonos,abúrranse
+Aburrirse,Imperative,Negative,-,no te aburras,no se aburra,no nos aburramos,no se aburran
+Abusar,Indicative,Present,abuso,abusas,abusa,abusamos,abusan
+Abusar,Indicative,Preterite,abusé,abusaste,abusó,abusamos,abusaron
+Abusar,Indicative,Imperfect,abusaba,abusabas,abusaba,abusábamos,abusaban
+Abusar,Indicative,Present Continuous,estoy abusando,estás abusando,está abusando,estamos abusando,están abusando
+Abusar,Indicative,Informal Future,voy a abusar,vas a abusar,va a abusar,vamos a abusar,van a abusar
+Abusar,Indicative,Future,abusaré,abusarás,abusará,abusaremos,abusarán
+Abusar,Indicative,Conditional,abusaría,abusarías,abusaría,abusaríamos,abusarían
+Abusar,Indicative,Present Perfect,he abusado,has abusado,ha abusado,hemos abusado,han abusado
+Abusar,Indicative,Past Perfect,había abusado,habías abusado,había abusado,habíamos abusado,habían abusado
+Abusar,Indicative,Future Perfect,habré abusado,habrás abusado,habrá abusado,habremos abusado,habrán abusado
+Abusar,Indicative,Conditional Perfect,habría abusado,habrías abusado,habría abusado,habríamos abusado,habrían abusado
+Abusar,Subjunctive,Present,abuse,abuses,abuse,abusemos,abusen
+Abusar,Subjunctive,Imperfect,abusara,abusaras,abusara,abusáramos,abusaran
+Abusar,Subjunctive,Future,abusare,abusares,abusare,abusáremos,abusaren
+Abusar,Subjunctive,Present Perfect,haya abusado,hayas abusado,haya abusado,hayamos abusado,hayan abusado
+Abusar,Subjunctive,Past Perfect,hubiera abusado,hubieras abusado,hubiera abusado,hubiéramos abusado,hubieran abusado
+Abusar,Subjunctive,Future Perfect,hubiere abusado,hubieres abusado,hubiere abusado,hubiéremos abusado,hubieren abusado
+Abusar,Imperative,Affirmative,-,abusa,abuse,abusemos,abusen
+Abusar,Imperative,Negative,-,no abuses,no abuse,no abusemos,no abusen
+Acabar,Indicative,Present,acabo,acabas,acaba,acabamos,acaban
+Acabar,Indicative,Preterite,acabé,acabaste,acabó,acabamos,acabaron
+Acabar,Indicative,Imperfect,acababa,acababas,acababa,acabábamos,acababan
+Acabar,Indicative,Present Continuous,estoy acabando,estás acabando,está acabando,estamos acabando,están acabando
+Acabar,Indicative,Informal Future,voy a acabar,vas a acabar,va a acabar,vamos a acabar,van a acabar
+Acabar,Indicative,Future,acabaré,acabarás,acabará,acabaremos,acabarán
+Acabar,Indicative,Conditional,acabaría,acabarías,acabaría,acabaríamos,acabarían
+Acabar,Indicative,Present Perfect,he acabado,has acabado,ha acabado,hemos acabado,han acabado
+Acabar,Indicative,Past Perfect,había acabado,habías acabado,había acabado,habíamos acabado,habían acabado
+Acabar,Indicative,Future Perfect,habré acabado,habrás acabado,habrá acabado,habremos acabado,habrán acabado
+Acabar,Indicative,Conditional Perfect,habría acabado,habrías acabado,habría acabado,habríamos acabado,habrían acabado
+Acabar,Subjunctive,Present,acabe,acabes,acabe,acabemos,acaben
+Acabar,Subjunctive,Imperfect,acabara,acabaras,acabara,acabáramos,acabaran
+Acabar,Subjunctive,Future,acabase,acabases,acabase,acabásemos,acabaseis
+Acabar,Subjunctive,Present Perfect,haya acabado,hayas acabado,haya acabado,hayamos acabado,hayan acabado
+Acabar,Subjunctive,Past Perfect,hubiera acabado,hubieras acabado,hubiera acabado,hubiéramos acabado,hubieran acabado
+Acabar,Subjunctive,Future Perfect,hubiere acabado,hubieres acabado,hubiere acabado,hubiéremos acabado,hubieren acabado
+Acabar,Imperative,Affirmative,-,acaba,acabe,acabemos,acaben
+Acabar,Imperative,Negative,-,no acabes,no acabe,no acabemos,no acaben
+Acampar,Indicative,Present,acampo,acampas,acampa,acampamos,acampan
+Acampar,Indicative,Preterite,acampé,acampaste,acampó,acampamos,acamparon
+Acampar,Indicative,Imperfect,acampaba,acampabas,acampaba,acampábamos,acampaban
+Acampar,Indicative,Present Continuous,estoy acampando,estás acampando,está acampando,estamos acampando,están acampando
+Acampar,Indicative,Informal Future,voy a acampar,vas a acampar,va a acampar,vamos a acampar,van a acampar
+Acampar,Indicative,Future,acamparé,acamparás,acampará,acamparemos,acamparán
+Acampar,Indicative,Conditional,acamparía,acamparías,acamparía,acamparíamos,acamparían
+Acampar,Indicative,Present Perfect,he acampado,has acampado,ha acampado,hemos acampado,han acampado
+Acampar,Indicative,Past Perfect,había acampado,habías acampado,había acampado,habíamos acampado,habían acampado
+Acampar,Indicative,Future Perfect,habré acampado,habrás acampado,habrá acampado,habremos acampado,habrán acampado
+Acampar,Indicative,Conditional Perfect,habría acampado,habrías acampado,habría acampado,habríamos acampado,habrían acampado
+Acampar,Subjunctive,Present,acampe,acampes,acampe,acampemos,acampen
+Acampar,Subjunctive,Imperfect,acampara,acamparas,acampara,acampáramos,acamparan
+Acampar,Subjunctive,Future,acampare,acampares,acampare,acampáremos,acampasen
+Acampar,Subjunctive,Present Perfect,haya acampado,hayas acampado,haya acampado,hayamos acampado,hayan acampado
+Acampar,Subjunctive,Past Perfect,hubiera acampado,hubieras acampado,hubiera acampado,hubiéramos acampado,hubieran acampado
+Acampar,Subjunctive,Future Perfect,hubiere acampado,hubieres acampado,hubiere acampado,hubiéremos acampado,hubieren acampado
+Acampar,Imperative,Affirmative,-,acampa,acampe,acampemos,acampen
+Acampar,Imperative,Negative,-,no acampes,no acampe,no acampemos,no acampen
+Acceder,Indicative,Present,accedo,accedes,accede,accedemos,acceden
+Acceder,Indicative,Preterite,accedí,accediste,accedió,accedimos,accedieron
+Acceder,Indicative,Imperfect,accedía,accedías,accedía,accedíamos,accedían
+Acceder,Indicative,Present Continuous,estoy accediendo,estás accediendo,está accediendo,estamos accediendo,están accediendo
+Acceder,Indicative,Informal Future,voy a acceder,vas a acceder,va a acceder,vamos a acceder,van a acceder
+Acceder,Indicative,Future,accederé,accederás,accederá,accederemos,accederán
+Acceder,Indicative,Conditional,accedería,accederías,accedería,accederíamos,accederían
+Acceder,Indicative,Present Perfect,he accedido,has accedido,ha accedido,hemos accedido,han accedido
+Acceder,Indicative,Past Perfect,había accedido,habías accedido,había accedido,habíamos accedido,habían accedido
+Acceder,Indicative,Future Perfect,habré accedido,habrás accedido,habrá accedido,habremos accedido,habrán accedido
+Acceder,Indicative,Conditional Perfect,habría accedido,habrías accedido,habría accedido,habríamos accedido,habrían accedido
+Acceder,Subjunctive,Present,acceda,accedas,acceda,accedamos,accedan
+Acceder,Subjunctive,Imperfect,accediera,accedieras,accediera,accediéramos,accedieran
+Acceder,Subjunctive,Future,accediere,accedieres,accediere,accediéremos,accedieren
+Acceder,Subjunctive,Present Perfect,haya accedido,hayas accedido,haya accedido,hayamos accedido,hayan accedido
+Acceder,Subjunctive,Past Perfect,hubiera accedido,hubieras accedido,hubiera accedido,hubiéramos accedido,hubieran accedido
+Acceder,Subjunctive,Future Perfect,hubiere accedido,hubieres accedido,hubiere accedido,hubiéremos accedido,hubieren accedido
+Acceder,Imperative,Affirmative,-,accede,acceda,accedamos,accedan
+Acceder,Imperative,Negative,-,no accedas,no acceda,no accedamos,no accedan
+Acelerar,Indicative,Present,acelero,aceleras,acelera,aceleramos,aceleran
+Acelerar,Indicative,Preterite,aceleré,aceleraste,aceleró,aceleramos,aceleraron
+Acelerar,Indicative,Imperfect,aceleraba,acelerabas,aceleraba,acelerábamos,aceleraban
+Acelerar,Indicative,Present Continuous,estoy acelerando,estás acelerando,está acelerando,estamos acelerando,están acelerando
+Acelerar,Indicative,Informal Future,voy a acelerar,vas a acelerar,va a acelerar,vamos a acelerar,van a acelerar
+Acelerar,Indicative,Future,aceleraré,acelerarás,acelerará,aceleraremos,acelerarán
+Acelerar,Indicative,Conditional,aceleraría,acelerarías,aceleraría,aceleraríamos,acelerarían
+Acelerar,Indicative,Present Perfect,he acelerado,has acelerado,ha acelerado,hemos acelerado,han acelerado
+Acelerar,Indicative,Past Perfect,había acelerado,habías acelerado,había acelerado,habíamos acelerado,habían acelerado
+Acelerar,Indicative,Future Perfect,habré acelerado,habrás acelerado,habrá acelerado,habremos acelerado,habrán acelerado
+Acelerar,Indicative,Conditional Perfect,habría acelerado,habrías acelerado,habría acelerado,habríamos acelerado,habrían acelerado
+Acelerar,Subjunctive,Present,acelere,aceleres,acelere,aceleremos,aceleren
+Acelerar,Subjunctive,Imperfect,acelerara,aceleraras,acelerara,aceleráramos,aceleraran
+Acelerar,Subjunctive,Future,acelerare,acelerares,acelerare,aceleráremos,aceleraren
+Acelerar,Subjunctive,Present Perfect,haya acelerado,hayas acelerado,haya acelerado,hayamos acelerado,hayan acelerado
+Acelerar,Subjunctive,Past Perfect,hubiera acelerado,hubieras acelerado,hubiera acelerado,hubiéramos acelerado,hubieran acelerado
+Acelerar,Subjunctive,Future Perfect,hubiere acelerado,hubieres acelerado,hubiere acelerado,hubiéremos acelerado,hubieren acelerado
+Acelerar,Imperative,Affirmative,-,acelera,acelere,aceleremos,aceleren
+Acelerar,Imperative,Negative,-,no aceleres,no acelere,no aceleremos,no aceleren
+Aceptar,Indicative,Present,acepto,aceptas,acepta,aceptamos,aceptan
+Aceptar,Indicative,Preterite,acepté,aceptaste,aceptó,aceptamos,aceptaron
+Aceptar,Indicative,Imperfect,aceptaba,aceptabas,aceptaba,aceptábamos,aceptaban
+Aceptar,Indicative,Present Continuous,estoy aceptando,estás aceptando,está aceptando,estamos aceptando,están aceptando
+Aceptar,Indicative,Informal Future,voy a aceptar,vas a aceptar,va a aceptar,vamos a aceptar,van a aceptar
+Aceptar,Indicative,Future,aceptaré,aceptarás,aceptará,aceptaremos,aceptarán
+Aceptar,Indicative,Conditional,aceptaría,aceptarías,aceptaría,aceptaríamos,aceptarían
+Aceptar,Indicative,Present Perfect,he aceptado,has aceptado,ha aceptado,hemos aceptado,han aceptado
+Aceptar,Indicative,Past Perfect,había aceptado,habías aceptado,había aceptado,habíamos aceptado,habían aceptado
+Aceptar,Indicative,Future Perfect,habré aceptado,habrás aceptado,habrá aceptado,habremos aceptado,habrán aceptado
+Aceptar,Indicative,Conditional Perfect,habría aceptado,habrías aceptado,habría aceptado,habríamos aceptado,habrían aceptado
+Aceptar,Subjunctive,Present,acepte,aceptes,acepte,aceptemos,acepten
+Aceptar,Subjunctive,Imperfect,aceptara,aceptaras,aceptara,aceptáramos,aceptaran
+Aceptar,Subjunctive,Future,aceptare,aceptares,aceptare,aceptáremos,aceptaren
+Aceptar,Subjunctive,Present Perfect,haya aceptado,hayas aceptado,haya aceptado,hayamos aceptado,hayan aceptado
+Aceptar,Subjunctive,Past Perfect,hubiera aceptado,hubieras aceptado,hubiera aceptado,hubiéramos aceptado,hubieran aceptado
+Aceptar,Subjunctive,Future Perfect,hubiere aceptado,hubieres aceptado,hubiere aceptado,hubiéremos aceptado,hubieren aceptado
+Aceptar,Imperative,Affirmative,-,acepta,acepte,aceptemos,acepten
+Aceptar,Imperative,Negative,-,no aceptes,no acepte,no aceptemos,no acepten
+Acercar,Indicative,Present,acerco,acercas,acerca,acercamos,acercan
+Acercar,Indicative,Preterite,acerqué,acercaste,acercó,acercamos,acercaron
+Acercar,Indicative,Imperfect,acercaba,acercabas,acercaba,acercábamos,acercaban
+Acercar,Indicative,Present Continuous,estoy acercando,estás acercando,está acercando,estamos acercando,están acercando
+Acercar,Indicative,Informal Future,voy a acercar,vas a acercar,va a acercar,vamos a acercar,van a acercar
+Acercar,Indicative,Future,acercaré,acercarás,acercará,acercaremos,acercarán
+Acercar,Indicative,Conditional,acercaría,acercarías,acercaría,acercaríamos,acercarían
+Acercar,Indicative,Present Perfect,he acercado,has acercado,ha acercado,hemos acercado,han acercado
+Acercar,Indicative,Past Perfect,había acercado,habías acercado,había acercado,habíamos acercado,habían acercado
+Acercar,Indicative,Future Perfect,habré acercado,habrás acercado,habrá acercado,habremos acercado,habrán acercado
+Acercar,Indicative,Conditional Perfect,habría acercado,habrías acercado,habría acercado,habríamos acercado,habrían acercado
+Acercar,Subjunctive,Present,acerque,acerques,acerque,acerquemos,acerquen
+Acercar,Subjunctive,Imperfect,acercara,acercaras,acercara,acercáramos,acercaran
+Acercar,Subjunctive,Future,acercare,acercares,acercare,acercáremos,acercaren
+Acercar,Subjunctive,Present Perfect,haya acercado,hayas acercado,haya acercado,hayamos acercado,hayan acercado
+Acercar,Subjunctive,Past Perfect,hubiera acercado,hubieras acercado,hubiera acercado,hubiéramos acercado,hubieran acercado
+Acercar,Subjunctive,Future Perfect,hubiere acercado,hubieres acercado,hubiere acercado,hubiéremos acercado,hubieren acercado
+Acercar,Imperative,Affirmative,-,acerca,acerque,acerquemos,acerquen
+Acercar,Imperative,Negative,-,no acerques,no acerque,no acerquemos,no acerquen
+Acercarse,Indicative,Present,acerco,acercas,acerca,acercamos,acercan
+Acercarse,Indicative,Preterite,acerqué,acercaste,acercó,acercamos,acercaron
+Acercarse,Indicative,Imperfect,acercaba,acercabas,acercaba,acercábamos,acercaban
+Acercarse,Indicative,Present Continuous,estoy acercando,estás acercando,está acercando,estamos acercando,están acercando
+Acercarse,Indicative,Informal Future,voy a acercar,vas a acercar,va a acercar,vamos a acercar,van a acercar
+Acercarse,Indicative,Future,acercaré,acercarás,acercará,acercaremos,acercarán
+Acercarse,Indicative,Conditional,acercaría,acercarías,acercaría,acercaríamos,acercarían
+Acercarse,Indicative,Present Perfect,he acercado,has acercado,ha acercado,hemos acercado,han acercado
+Acercarse,Indicative,Past Perfect,había acercado,habías acercado,había acercado,habíamos acercado,habían acercado
+Acercarse,Indicative,Future Perfect,habré acercado,habrás acercado,habrá acercado,habremos acercado,habrán acercado
+Acercarse,Indicative,Conditional Perfect,habría acercado,habrías acercado,habría acercado,habríamos acercado,habrían acercado
+Acercarse,Subjunctive,Present,acerque,acerques,acerque,acerquemos,acerquen
+Acercarse,Subjunctive,Imperfect,acercara,acercaras,acercara,acercáramos,acercaran
+Acercarse,Subjunctive,Future,acercare,acercares,acercare,acercáremos,acercaren
+Acercarse,Subjunctive,Present Perfect,haya acercado,hayas acercado,haya acercado,hayamos acercado,hayan acercado
+Acercarse,Subjunctive,Past Perfect,hubiera acercado,hubieras acercado,hubiera acercado,hubiéramos acercado,hubieran acercado
+Acercarse,Subjunctive,Future Perfect,hubiere acercado,hubieres acercado,hubiere acercado,hubiéremos acercado,hubieren acercado
+Acercarse,Imperative,Affirmative,-,acérrcate,acérrquese,acerquémonos,acérquense
+Acercarse,Imperative,Negative,-,no te acerques,no se acerque,no nos acerquemos,no se acerquen
+Acompañar,Indicative,Present,acompaño,acompañas,acompaña,acompañamos,acompañan
+Acompañar,Indicative,Preterite,acompañé,acompañaste,acompañó,acompañamos,acompañaron
+Acompañar,Indicative,Imperfect,acompañaba,acompañabas,acompañaba,acompañábamos,acompañaban
+Acompañar,Indicative,Present Continuous,estoy acompañando,estás acompañando,está acompañando,estamos acompañando,están acompañando
+Acompañar,Indicative,Informal Future,voy a acompañar,vas a acompañar,va a acompañar,vamos a acompañar,van a acompañar
+Acompañar,Indicative,Future,acompañaré,acompañarás,acompañará,acompañaremos,acompañarán
+Acompañar,Indicative,Conditional,acompañaría,acompañarías,acompañaría,acompañaríamos,acompañarían
+Acompañar,Indicative,Present Perfect,he acompañado,has acompañado,ha acompañado,hemos acompañado,han acompañado
+Acompañar,Indicative,Past Perfect,había acompañado,habías acompañado,había acompañado,habíamos acompañado,habían acompañado
+Acompañar,Indicative,Future Perfect,habré acompañado,habrás acompañado,habrá acompañado,habremos acompañado,habrán acompañado
+Acompañar,Indicative,Conditional Perfect,habría acompañado,habrías acompañado,habría acompañado,habríamos acompañado,habrían acompañado
+Acompañar,Subjunctive,Present,acompañe,acompañes,acompañe,acompañemos,acompañen
+Acompañar,Subjunctive,Imperfect,acompañara,acompañaras,acompañara,acompañáramos,acompañaran
+Acompañar,Subjunctive,Future,acompañare,acompañares,acompañare,acompañáremos,acompañaren
+Acompañar,Subjunctive,Present Perfect,haya acompañado,hayas acompañado,haya acompañado,hayamos acompañado,hayan acompañado
+Acompañar,Subjunctive,Past Perfect,hubiera acompañado,hubieras acompañado,hubiera acompañado,hubiéramos acompañado,hubieran acompañado
+Acompañar,Subjunctive,Future Perfect,hubiere acompañado,hubieres acompañado,hubiere acompañado,hubiéremos acompañado,hubieren acompañado
+Acompañar,Imperative,Affirmative,-,acompaña,acompañe,acompañemos,acompañen
+Acompañar,Imperative,Negative,-,no acompañes,no acompañe,no acompañemos,no acompañen
+Aconsejar,Indicative,Present,aconsejo,aconsejas,aconseja,aconsejamos,aconsejan
+Aconsejar,Indicative,Preterite,aconsejé,aconsejaste,aconsejó,aconsejamos,aconsejaron
+Aconsejar,Indicative,Imperfect,aconsejaba,aconsejabas,aconsejaba,aconsejábamos,aconsejaban
+Aconsejar,Indicative,Present Continuous,estoy aconsejando,estás aconsejando,está aconsejando,estamos aconsejando,están aconsejando
+Aconsejar,Indicative,Informal Future,voy a aconsejar,vas a aconsejar,va a aconsejar,vamos a aconsejar,van a aconsejar
+Aconsejar,Indicative,Future,aconsejaré,aconsejarás,aconsejará,aconsejaremos,aconsejarán
+Aconsejar,Indicative,Conditional,aconsejaría,aconsejarías,aconsejaría,aconsejaríamos,aconsejarían
+Aconsejar,Indicative,Present Perfect,he aconsejado,has aconsejado,ha aconsejado,hemos aconsejado,han aconsejado
+Aconsejar,Indicative,Past Perfect,había aconsejado,habías aconsejado,había aconsejado,habíamos aconsejado,habían aconsejado
+Aconsejar,Indicative,Future Perfect,habré aconsejado,habrás aconsejado,habrá aconsejado,habremos aconsejado,habrán aconsejado
+Aconsejar,Indicative,Conditional Perfect,habría aconsejado,habrías aconsejado,habría aconsejado,habríamos aconsejado,habrían aconsejado
+Aconsejar,Subjunctive,Present,aconseje,aconsejes,aconseje,aconsejemos,aconsejen
+Aconsejar,Subjunctive,Imperfect,aconsejara,aconsejaras,aconsejara,aconsejáramos,aconsejaran
+Aconsejar,Subjunctive,Future,aconsejare,aconsejares,aconsejare,aconsejáremos,aconsejaren
+Aconsejar,Subjunctive,Present Perfect,haya aconsejado,hayas aconsejado,haya aconsejado,hayamos aconsejado,hayan aconsejado
+Aconsejar,Subjunctive,Past Perfect,hubiera aconsejado,hubieras aconsejado,hubiera aconsejado,hubiéramos aconsejado,hubieran aconsejado
+Aconsejar,Subjunctive,Future Perfect,hubiere aconsejado,hubieres aconsejado,hubiere aconsejado,hubiéremos aconsejado,hubieren aconsejado
+Aconsejar,Imperative,Affirmative,-,aconseja,aconseje,aconsejemos,aconsejen
+Aconsejar,Imperative,Negative,-,no aconsejes,no aconseje,no aconsejemos,no aconsejen
+Acordar,Indicative,Present,acuerdo,acuerdas,acuerda,acordamos,acuerdan
+Acordar,Indicative,Preterite,acordé,acordaste,acordó,acordamos,acordaron
+Acordar,Indicative,Imperfect,acordaba,acordabas,acordaba,acordábamos,acordaban
+Acordar,Indicative,Present Continuous,estoy acordando,estás acordando,está acordando,estamos acordando,están acordando
+Acordar,Indicative,Informal Future,voy a acordar,vas a acordar,va a acordar,vamos a acordar,van a acordar
+Acordar,Indicative,Future,acordaré,acordarás,acordará,acordaremos,acordarán
+Acordar,Indicative,Conditional,acordaría,acordarías,acordaría,acordaríamos,acordarían
+Acordar,Indicative,Present Perfect,he acordado,has acordado,ha acordado,hemos acordado,han acordado
+Acordar,Indicative,Past Perfect,había acordado,habías acordado,había acordado,habíamos acordado,habían acordado
+Acordar,Indicative,Future Perfect,habré acordado,habrás acordado,habrá acordado,habremos acordado,habrán acordado
+Acordar,Indicative,Conditional Perfect,habría acordado,habrías acordado,habría acordado,habríamos acordado,habrían acordado
+Acordar,Subjunctive,Present,acuerde,acuerdes,acuerde,acordemos,acuerden
+Acordar,Subjunctive,Imperfect,acordara,acordaras,acordara,acordáramos,acordaran
+Acordar,Subjunctive,Future,acordare,acordares,acordare,acordáremos,acordaren
+Acordar,Subjunctive,Present Perfect,haya acordado,hayas acordado,haya acordado,hayamos acordado,hayan acordado
+Acordar,Subjunctive,Past Perfect,hubiera acordado,hubieras acordado,hubiera acordado,hubiéramos acordado,hubieran acordado
+Acordar,Subjunctive,Future Perfect,hubiere acordado,hubieres acordado,hubiere acordado,hubiéremos acordado,hubieren acordado
+Acordar,Imperative,Affirmative,-,acuerda,acuerde,acordemos,acuerden
+Acordar,Imperative,Negative,-,no acuerdes,no acuerde,no acordemos,no acuerden
+Acordarse,Indicative,Present,acuerdo,acuerdas,acuerda,acordamos,acuerdan
+Acordarse,Indicative,Preterite,acordé,acordaste,acordó,acordamos,acordaron
+Acordarse,Indicative,Imperfect,acordaba,acordabas,acordaba,acordábamos,acordaban
+Acordarse,Indicative,Present Continuous,estoy acordando,estás acordando,está acordando,estamos acordando,están acordando
+Acordarse,Indicative,Informal Future,voy a acordar,vas a acordar,va a acordar,vamos a acordar,van a acordar
+Acordarse,Indicative,Future,acordaré,acordarás,acordará,acordaremos,acordarán
+Acordarse,Indicative,Conditional,acordaría,acordarías,acordaría,acordaríamos,acordarían
+Acordarse,Indicative,Present Perfect,he acordado,has acordado,ha acordado,hemos acordado,han acordado
+Acordarse,Indicative,Past Perfect,había acordado,habías acordado,había acordado,habíamos acordado,habían acordado
+Acordarse,Indicative,Future Perfect,habré acordado,habrás acordado,habrá acordado,habremos acordado,habrán acordado
+Acordarse,Indicative,Conditional Perfect,habría acordado,habrías acordado,habría acordado,habríamos acordado,habrían acordado
+Acordarse,Subjunctive,Present,acuerde,acuerdes,acuerde,acordemos,acuerden
+Acordarse,Subjunctive,Imperfect,acordara,acordaras,acordara,acordáramos,acordaran
+Acordarse,Subjunctive,Future,acordare,acordares,acordare,acordáremos,acordaren
+Acordarse,Subjunctive,Present Perfect,haya acordado,hayas acordado,haya acordado,hayamos acordado,hayan acordado
+Acordarse,Subjunctive,Past Perfect,hubiera acordado,hubieras acordado,hubiera acordado,hubiéramos acordado,hubieran acordado
+Acordarse,Subjunctive,Future Perfect,hubiere acordado,hubieres acordado,hubiere acordado,hubiéremos acordado,hubieren acordado
+Acordarse,Imperative,Affirmative,-,acuérdate,acuérdese,acordémonos,acuérdense
+Acordarse,Imperative,Negative,-,no te acuerdes,no se acuerde,no nos acordemos,no se acuerden
+Acostar,Indicative,Present,acuesto,acuestas,acuesta,acostamos,acuestan
+Acostar,Indicative,Preterite,acosté,acostaste,acostó,acostamos,acostaron
+Acostar,Indicative,Imperfect,acostaba,acostabas,acostaba,acostábamos,acostaban
+Acostar,Indicative,Present Continuous,estoy acostando,estás acostando,está acostando,estamos acostando,están acostando
+Acostar,Indicative,Informal Future,voy a acostar,vas a acostar,va a acostar,vamos a acostar,van a acostar
+Acostar,Indicative,Future,acostaré,acostarás,acostará,acostaremos,acostarán
+Acostar,Indicative,Conditional,acostaría,acostarías,acostaría,acostaríamos,acostarían
+Acostar,Indicative,Present Perfect,he acostado,has acostado,ha acostado,hemos acostado,han acostado
+Acostar,Indicative,Past Perfect,había acostado,habías acostado,había acostado,habíamos acostado,habían acostado
+Acostar,Indicative,Future Perfect,habré acostado,habrás acostado,habrá acostado,habremos acostado,habrán acostado
+Acostar,Indicative,Conditional Perfect,habría acostado,habrías acostado,habría acostado,habríamos acostado,habrían acostado
+Acostar,Subjunctive,Present,acueste,acuestes,acueste,acostemos,acuesten
+Acostar,Subjunctive,Imperfect,acostara,acostaras,acostara,acostáramos,acostaran
+Acostar,Subjunctive,Future,acostare,acostares,acostare,acostáremos,acostaren
+Acostar,Subjunctive,Present Perfect,haya acostado,hayas acostado,haya acostado,hayamos acostado,hayan acostado
+Acostar,Subjunctive,Past Perfect,hubiera acostado,hubieras acostado,hubiera acostado,hubiéramos acostado,hubieran acostado
+Acostar,Subjunctive,Future Perfect,hubiere acostado,hubieres acostado,hubiere acostado,hubiéremos acostado,hubieren acostado
+Acostar,Imperative,Affirmative,-,acuesta,acueste,acostemos,acuesten
+Acostar,Imperative,Negative,-,no acuestes,no acueste,no acostemos,no acuesten
+Acostarse,Indicative,Present,acuesto,acuestas,acuesta,acostamos,acuestan
+Acostarse,Indicative,Preterite,acosté,acostaste,acostó,acostamos,acostaron
+Acostarse,Indicative,Imperfect,acostaba,acostabas,acostaba,acostábamos,acostaban
+Acostarse,Indicative,Present Continuous,estoy acostando,estás acostando,está acostando,estamos acostando,están acostando
+Acostarse,Indicative,Informal Future,voy a acostar,vas a acostar,va a acostar,vamos a acostar,van a acostar
+Acostarse,Indicative,Future,acostaré,acostarás,acostará,acostaremos,acostarán
+Acostarse,Indicative,Conditional,acostaría,acostarías,acostaría,acostaríamos,acostarían
+Acostarse,Indicative,Present Perfect,he acostado,has acostado,ha acostado,hemos acostado,han acostado
+Acostarse,Indicative,Past Perfect,había acostado,habías acostado,había acostado,habíamos acostado,habían acostado
+Acostarse,Indicative,Future Perfect,habré acostado,habrás acostado,habrá acostado,habremos acostado,habrán acostado
+Acostarse,Indicative,Conditional Perfect,habría acostado,habrías acostado,habría acostado,habríamos acostado,habrían acostado
+Acostarse,Subjunctive,Present,acueste,acuestes,acueste,acostemos,acuesten
+Acostarse,Subjunctive,Imperfect,acostara,acostaras,acostara,acostáramos,acostaran
+Acostarse,Subjunctive,Future,acostare,acostares,acostare,acostáremos,acostaren
+Acostarse,Subjunctive,Present Perfect,haya acostado,hayas acostado,haya acostado,hayamos acostado,hayan acostado
+Acostarse,Subjunctive,Past Perfect,hubiera acostado,hubieras acostado,hubiera acostado,hubiéramos acostado,hubieran acostado
+Acostarse,Subjunctive,Future Perfect,hubiere acostado,hubieres acostado,hubiere acostado,hubiéremos acostado,hubieren acostado
+Acostarse,Imperative,Affirmative,-,acuesta,acueste,acostemos,acuesten
+Acostarse,Imperative,Negative,-,no acuestes,no acueste,no acostemos,no acuesten
+Acostumbrar,Indicative,Present,acostumbro,acostumbras,acostumbra,acostumbramos,acostumbran
+Acostumbrar,Indicative,Preterite,acostumbré,acostumbraste,acostumbró,acostumbramos,acostumbraron
+Acostumbrar,Indicative,Imperfect,acostumbraba,acostumbrabas,acostumbraba,acostumbrábamos,acostumbraban
+Acostumbrar,Indicative,Present Continuous,estoy acostumbrando,estás acostumbrando,está acostumbrando,estamos acostumbrando,están acostumbrando
+Acostumbrar,Indicative,Informal Future,voy a acostumbrar,vas a acostumbrar,va a acostumbrar,vamos a acostumbrar,van a acostumbrar
+Acostumbrar,Indicative,Future,acostumbraré,acostumbrarás,acostumbrará,acostumbraremos,acostumbrarán
+Acostumbrar,Indicative,Conditional,acostumbraría,acostumbrarías,acostumbraría,acostumbraríamos,acostumbrarían
+Acostumbrar,Indicative,Present Perfect,he acostumbrado,has acostumbrado,ha acostumbrado,hemos acostumbrado,han acostumbrado
+Acostumbrar,Indicative,Past Perfect,había acostumbrado,habías acostumbrado,había acostumbrado,habíamos acostumbrado,habían acostumbrado
+Acostumbrar,Indicative,Future Perfect,habré acostumbrado,habrás acostumbrado,habrá acostumbrado,habremos acostumbrado,habrán acostumbrado
+Acostumbrar,Indicative,Conditional Perfect,habría acostumbrado,habrías acostumbrado,habría acostumbrado,habríamos acostumbrado,habrían acostumbrado
+Acostumbrar,Subjunctive,Present,acostumbre,acostumbres,acostumbre,acostumbremos,acostumbren
+Acostumbrar,Subjunctive,Imperfect,acostumbrara,acostumbraras,acostumbrara,acostumbráramos,acostumbraran
+Acostumbrar,Subjunctive,Future,acostumbrare,acostumbrares,acostumbrare,acostumbráremos,acostumbraren
+Acostumbrar,Subjunctive,Present Perfect,haya acostumbrado,hayas acostumbrado,haya acostumbrado,hayamos acostumbrado,hayan acostumbrado
+Acostumbrar,Subjunctive,Past Perfect,hubiera acostumbrado,hubieras acostumbrado,hubiera acostumbrado,hubiéramos acostumbrado,hubieran acostumbrado
+Acostumbrar,Subjunctive,Future Perfect,hubiere acostumbrado,hubieres acostumbrado,hubiere acostumbrado,hubiéremos acostumbrado,hubieren acostumbrado
+Acostumbrar,Imperative,Affirmative,-,acostumbra,acostumbre,acostumbremos,acostumbren
+Acostumbrar,Imperative,Negative,-,no acostumbres,no acostumbre,no acostumbremos,no acostumbren
+Actualizar,Indicative,Present,actualizo,actualizas,actualiza,actualizamos,actualizan
+Actualizar,Indicative,Preterite,actualicé,actualizaste,actualizó,actualizamos,actualizaron
+Actualizar,Indicative,Imperfect,actualizaba,actualizabas,actualizaba,actualizábamos,actualizaban
+Actualizar,Indicative,Present Continuous,estoy actualizando,estás actualizando,está actualizando,estamos actualizando,están actualizando
+Actualizar,Indicative,Informal Future,voy a actualizar,vas a actualizar,va a actualizar,vamos a actualizar,van a actualizar
+Actualizar,Indicative,Future,actualizaré,actualizarás,actualizará,actualizaremos,actualizarán
+Actualizar,Indicative,Conditional,actualizaría,actualizarías,actualizaría,actualizaríamos,actualizarían
+Actualizar,Indicative,Present Perfect,he actualizado,has actualizado,ha actualizado,hemos actualizado,han actualizado
+Actualizar,Indicative,Past Perfect,había actualizado,habías actualizado,había actualizado,habíamos actualizado,habían actualizado
+Actualizar,Indicative,Future Perfect,habré actualizado,habrás actualizado,habrá actualizado,habremos actualizado,habrán actualizado
+Actualizar,Indicative,Conditional Perfect,habría actualizado,habrías actualizado,habría actualizado,habríamos actualizado,habrían actualizado
+Actualizar,Subjunctive,Present,actualice,actualices,actualice,actualicemos,actualicen
+Actualizar,Subjunctive,Imperfect,actualizara,actualizaras,actualizara,actualizáramos,actualizaran
+Actualizar,Subjunctive,Future,actualizare,actualizares,actualizare,actualizáremos,actualizaren
+Actualizar,Subjunctive,Present Perfect,haya actualizado,hayas actualizado,haya actualizado,hayamos actualizado,hayan actualizado
+Actualizar,Subjunctive,Past Perfect,hubiera actualizado,hubieras actualizado,hubiera actualizado,hubiéramos actualizado,hubieran actualizado
+Actualizar,Subjunctive,Future Perfect,hubiere actualizado,hubieres actualizado,hubiere actualizado,hubiéremos actualizado,hubieren actualizado
+Actualizar,Imperative,Affirmative,-,actualiza,actualice,actualicemos,actualicen
+Actualizar,Imperative,Negative,-,no actualices,no actualice,no actualicemos,no actualicen
+Actualizarse,Indicative,Present,actualizo,actualizas,actualiza,actualizamos,actualizan
+Actualizarse,Indicative,Preterite,actualicé,actualizaste,actualizó,actualizamos,actualizaron
+Actualizarse,Indicative,Imperfect,actualizaba,actualizabas,actualizaba,actualizábamos,actualizaban
+Actualizarse,Indicative,Present Continuous,estoy actualizando,estás actualizando,está actualizando,estamos actualizando,están actualizando
+Actualizarse,Indicative,Informal Future,voy a actualizar,vas a actualizar,va a actualizar,vamos a actualizar,van a actualizar
+Actualizarse,Indicative,Future,actualizaré,actualizarás,actualizará,actualizaremos,actualizarán
+Actualizarse,Indicative,Conditional,actualizaría,actualizarías,actualizaría,actualizaríamos,actualizarían
+Actualizarse,Indicative,Present Perfect,he actualizado,has actualizado,ha actualizado,hemos actualizado,han actualizado
+Actualizarse,Indicative,Past Perfect,había actualizado,habías actualizado,había actualizado,habíamos actualizado,habían actualizado
+Actualizarse,Indicative,Future Perfect,habré actualizado,habrás actualizado,habrá actualizado,habremos actualizado,habrán actualizado
+Actualizarse,Indicative,Conditional Perfect,habría actualizado,habrías actualizado,habría actualizado,habríamos actualizado,habrían actualizado
+Actualizarse,Subjunctive,Present,actualice,actualices,actualice,actualicemos,actualicen
+Actualizarse,Subjunctive,Imperfect,actualizara,actualizaras,actualizara,actualizáramos,actualizaran
+Actualizarse,Subjunctive,Future,actualizare,actualizares,actualizare,actualizáremos,actualizaren
+Actualizarse,Subjunctive,Present Perfect,haya actualizado,hayas actualizado,haya actualizado,hayamos actualizado,hayan actualizado
+Actualizarse,Subjunctive,Past Perfect,hubiera actualizado,hubieras actualizado,hubiera actualizado,hubiéramos actualizado,hubieran actualizado
+Actualizarse,Subjunctive,Future Perfect,hubiere actualizado,hubieres actualizado,hubiere actualizado,hubiéremos actualizado,hubieren actualizado
+Actualizarse,Imperative,Affirmative,-,actualiza,actualice,actualicemos,actualicen
+Actualizarse,Imperative,Negative,-,no actualices,no actualice,no actualicemos,no actualicen
+Actuar,Indicative,Present,actúo,actúas,actúa,actuamos,actúan
+Actuar,Indicative,Preterite,actué,actuaste,actuó,actuamos,actuaron
+Actuar,Indicative,Imperfect,actuaba,actuabas,actuaba,actuábamos,actuaban
+Actuar,Indicative,Present Continuous,estoy actuando,estás actuando,está actuando,estamos actuando,están actuando
+Actuar,Indicative,Informal Future,voy a actuar,vas a actuar,va a actuar,vamos a actuar,van a actuar
+Actuar,Indicative,Future,actuaré,actuarás,actuará,actuaremos,actuarán
+Actuar,Indicative,Conditional,actuaría,actuarías,actuaría,actuaríamos,actuarían
+Actuar,Indicative,Present Perfect,he actuado,has actuado,ha actuado,hemos actuado,han actuado
+Actuar,Indicative,Past Perfect,había actuado,habías actuado,había actuado,habíamos actuado,habían actuado
+Actuar,Indicative,Future Perfect,habré actuado,habrás actuado,habrá actuado,habremos actuado,habrán actuado
+Actuar,Indicative,Conditional Perfect,habría actuado,habrías actuado,habría actuado,habríamos actuado,habrían actuado
+Actuar,Subjunctive,Present,actúe,actúes,actúe,actuemos,actúen
+Actuar,Subjunctive,Imperfect,actuara,actuaras,actuara,actuáramos,actuaran
+Actuar,Subjunctive,Future,actuare,actuares,actuare,actuáremos,actuaren
+Actuar,Subjunctive,Present Perfect,haya actuado,hayas actuado,haya actuado,hayamos actuado,hayan actuado
+Actuar,Subjunctive,Past Perfect,hubiera actuado,hubieras actuado,hubiera actuado,hubiéramos actuado,hubieran actuado
+Actuar,Subjunctive,Future Perfect,hubiere actuado,hubieres actuado,hubiere actuado,hubiéremos actuado,hubieren actuado
+Actuar,Imperative,Affirmative,-,actúa,actúe,actuemos,actúen
+Actuar,Imperative,Negative,-,no actúes,no actúe,no actuemos,no actúen
+Acudir,Indicative,Present,acudo,acudes,acude,acudimos,acuden
+Acudir,Indicative,Preterite,acudí,acudiste,acudió,acudimos,acudieron
+Acudir,Indicative,Imperfect,acudía,acudías,acudía,acudíamos,acudían
+Acudir,Indicative,Present Continuous,estoy acudiendo,estás acudiendo,está acudiendo,estamos acudiendo,están acudiendo
+Acudir,Indicative,Informal Future,voy a acudir,vas a acudir,va a acudir,vamos a acudir,van a acudir
+Acudir,Indicative,Future,acudiré,acudirás,acudirá,acudiremos,acudirán
+Acudir,Indicative,Conditional,acudiría,acudirías,acudiría,acudiríamos,acudirían
+Acudir,Indicative,Present Perfect,he acudido,has acudido,ha acudido,hemos acudido,han acudido
+Acudir,Indicative,Past Perfect,había acudido,habías acudido,había acudido,habíamos acudido,habían acudido
+Acudir,Indicative,Future Perfect,habré acudido,habrás acudido,habrá acudido,habremos acudido,habrán acudido
+Acudir,Indicative,Conditional Perfect,habría acudido,habrías acudido,habría acudido,habríamos acudido,habrían acudido
+Acudir,Subjunctive,Present,acuda,acudas,acuda,acudamos,acudan
+Acudir,Subjunctive,Imperfect,acudiera,acudieras,acudiera,acudiéramos,acudieran
+Acudir,Subjunctive,Future,acudiere,acudieres,acudiere,acudiéremos,acudieren
+Acudir,Subjunctive,Present Perfect,haya acudido,hayas acudido,haya acudido,hayamos acudido,hayan acudido
+Acudir,Subjunctive,Past Perfect,hubiera acudido,hubieras acudido,hubiera acudido,hubiéramos acudido,hubieran acudido
+Acudir,Subjunctive,Future Perfect,hubiere acudido,hubieres acudido,hubiere acudido,hubiéremos acudido,hubieren acudido
+Acudir,Imperative,Affirmative,-,acude,acuda,acudamos,acudan
+Acudir,Imperative,Negative,-,no acudas,no acuda,no acudamos,no acudan
+Acumular,Indicative,Present,acumulo,acumulas,acumula,acumulamos,acumulan
+Acumular,Indicative,Preterite,acumulé,acumulaste,acumuló,acumulamos,acumularon
+Acumular,Indicative,Imperfect,acumulaba,acumulabas,acumulaba,acumulábamos,acumulaban
+Acumular,Indicative,Present Continuous,estoy acumulando,estás acumulando,está acumulando,estamos acumulando,están acumulando
+Acumular,Indicative,Informal Future,voy a acumular,vas a acumular,va a acumular,vamos a acumular,van a acumular
+Acumular,Indicative,Future,acumularé,acumularás,acumulará,acumularemos,acumularán
+Acumular,Indicative,Conditional,acumularía,acumularías,acumularía,acumularíamos,acumularían
+Acumular,Indicative,Present Perfect,he acumulado,has acumulado,ha acumulado,hemos acumulado,han acumulado
+Acumular,Indicative,Past Perfect,había acumulado,habías acumulado,había acumulado,habíamos acumulado,habían acumulado
+Acumular,Indicative,Future Perfect,habré acumulado,habrás acumulado,habrá acumulado,habremos acumulado,habrán acumulado
+Acumular,Indicative,Conditional Perfect,habría acumulado,habrías acumulado,habría acumulado,habríamos acumulado,habrían acumulado
+Acumular,Subjunctive,Present,acumule,acumules,acumule,acumulemos,acumulen
+Acumular,Subjunctive,Imperfect,acumulara,acumularas,acumulara,acumuláramos,acumularan
+Acumular,Subjunctive,Future,acumulare,acumulares,acumulare,acumuláremos,acumularen
+Acumular,Subjunctive,Present Perfect,haya acumulado,hayas acumulado,haya acumulado,hayamos acumulado,hayan acumulado
+Acumular,Subjunctive,Past Perfect,hubiera acumulado,hubieras acumulado,hubiera acumulado,hubiéramos acumulado,hubieran acumulado
+Acumular,Subjunctive,Future Perfect,hubiere acumulado,hubieres acumulado,hubiere acumulado,hubiéremos acumulado,hubieren acumulado
+Acumular,Imperative,Affirmative,-,acumula,acumule,acumulemos,acumulen
+Acumular,Imperative,Negative,-,no acumules,no acumule,no acumulemos,no acumulen
+Acusar,Indicative,Present,acuso,acusas,acusa,acusamos,acusan
+Acusar,Indicative,Preterite,acusé,acusaste,acusó,acusamos,acusaron
+Acusar,Indicative,Imperfect,acusaba,acusabas,acusaba,acusábamos,acusaban
+Acusar,Indicative,Present Continuous,estoy acusando,estás acusando,está acusando,estamos acusando,están acusando
+Acusar,Indicative,Informal Future,voy a acusar,vas a acusar,va a acusar,vamos a acusar,van a acusar
+Acusar,Indicative,Future,acusaré,acusarás,acusará,acusaremos,acusarán
+Acusar,Indicative,Conditional,acusaría,acusarías,acusaría,acusaríamos,acusarían
+Acusar,Indicative,Present Perfect,he acusado,has acusado,ha acusado,hemos acusado,han acusado
+Acusar,Indicative,Past Perfect,había acusado,habías acusado,había acusado,habíamos acusado,habían acusado
+Acusar,Indicative,Future Perfect,habré acusado,habrás acusado,habrá acusado,habremos acusado,habrán acusado
+Acusar,Indicative,Conditional Perfect,habría acusado,habrías acusado,habría acusado,habríamos acusado,habrían acusado
+Acusar,Subjunctive,Present,acuse,acuses,acuse,acusemos,acusen
+Acusar,Subjunctive,Imperfect,acusara,acusaras,acusara,acusáramos,acusaran
+Acusar,Subjunctive,Future,acusare,acusares,acusare,acusáremos,acusaren
+Acusar,Subjunctive,Present Perfect,haya acusado,hayas acusado,haya acusado,hayamos acusado,hayan acusado
+Acusar,Subjunctive,Past Perfect,hubiera acusado,hubieras acusado,hubiera acusado,hubiéramos acusado,hubieran acusado
+Acusar,Subjunctive,Future Perfect,hubiere acusado,hubieres acusado,hubiere acusado,hubiéremos acusado,hubieren acusado
+Acusar,Imperative,Affirmative,-,acusa,acuse,acusemos,acusen
+Acusar,Imperative,Negative,-,no acuses,no acuse,no acusemos,no acusen
+Adaptar,Indicative,Present,adapto,adaptas,adapta,adaptamos,adaptan
+Adaptar,Indicative,Preterite,adapté,adaptaste,adaptó,adaptamos,adaptaron
+Adaptar,Indicative,Imperfect,adaptaba,adaptabas,adaptaba,adaptábamos,adaptaban
+Adaptar,Indicative,Present Continuous,estoy adaptando,estás adaptando,está adaptando,estamos adaptando,están adaptando
+Adaptar,Indicative,Informal Future,voy a adaptar,vas a adaptar,va a adaptar,vamos a adaptar,van a adaptar
+Adaptar,Indicative,Future,adaptaré,adaptarás,adaptará,adaptaremos,adaptarán
+Adaptar,Indicative,Conditional,adaptaría,adaptarías,adaptaría,adaptaríamos,adaptarían
+Adaptar,Indicative,Present Perfect,he adaptado,has adaptado,ha adaptado,hemos adaptado,han adaptado
+Adaptar,Indicative,Past Perfect,había adaptado,habías adaptado,había adaptado,habíamos adaptado,habían adaptado
+Adaptar,Indicative,Future Perfect,habré adaptado,habrás adaptado,habrá adaptado,habremos adaptado,habrán adaptado
+Adaptar,Indicative,Conditional Perfect,habría adaptado,habrías adaptado,habría adaptado,habríamos adaptado,habrían adaptado
+Adaptar,Subjunctive,Present,adapte,adaptes,adapte,adaptemos,adapten
+Adaptar,Subjunctive,Imperfect,adaptara,adaptaras,adaptara,adaptáramos,adaptaran
+Adaptar,Subjunctive,Future,adaptare,adaptares,adaptare,adaptáremos,adaptaren
+Adaptar,Subjunctive,Present Perfect,haya adaptado,hayas adaptado,haya adaptado,hayamos adaptado,hayan adaptado
+Adaptar,Subjunctive,Past Perfect,hubiera adaptado,hubieras adaptado,hubiera adaptado,hubiéramos adaptado,hubieran adaptado
+Adaptar,Subjunctive,Future Perfect,hubiere adaptado,hubieres adaptado,hubiere adaptado,hubiéremos adaptado,hubieren adaptado
+Adaptar,Imperative,Affirmative,-,adapta,adapte,adaptemos,adapten
+Adaptar,Imperative,Negative,-,no adaptes,no adapte,no adaptemos,no adapten
+Adelantar,Indicative,Present,adelanto,adelantas,adelanta,adelantamos,adelantan
+Adelantar,Indicative,Preterite,adelanté,adelantaste,adelantó,adelantamos,adelantaron
+Adelantar,Indicative,Imperfect,adelantaba,adelantabas,adelantaba,adelantábamos,adelantaban
+Adelantar,Indicative,Present Continuous,estoy adelantando,estás adelantando,está adelantando,estamos adelantando,están adelantando
+Adelantar,Indicative,Informal Future,voy a adelantar,vas a adelantar,va a adelantar,vamos a adelantar,van a adelantar
+Adelantar,Indicative,Future,adelantaré,adelantarás,adelantará,adelantaremos,adelantarán
+Adelantar,Indicative,Conditional,adelantaría,adelantarías,adelantaría,adelantaríamos,adelantarían
+Adelantar,Indicative,Present Perfect,he adelantado,has adelantado,ha adelantado,hemos adelantado,han adelantado
+Adelantar,Indicative,Past Perfect,había adelantado,habías adelantado,había adelantado,habíamos adelantado,habían adelantado
+Adelantar,Indicative,Future Perfect,habré adelantado,habrás adelantado,habrá adelantado,habremos adelantado,habrán adelantado
+Adelantar,Indicative,Conditional Perfect,habría adelantado,habrías adelantado,habría adelantado,habríamos adelantado,habrían adelantado
+Adelantar,Subjunctive,Present,adelante,adelantes,adelante,adelantemos,adelanten
+Adelantar,Subjunctive,Imperfect,adelantara,adelantaras,adelantara,adelantáramos,adelantaran
+Adelantar,Subjunctive,Future,adelantare,adelantares,adelantare,adelantáremos,adelantaren
+Adelantar,Subjunctive,Present Perfect,haya adelantado,hayas adelantado,haya adelantado,hayamos adelantado,hayan adelantado
+Adelantar,Subjunctive,Past Perfect,hubiera adelantado,hubieras adelantado,hubiera adelantado,hubiéramos adelantado,hubieran adelantado
+Adelantar,Subjunctive,Future Perfect,hubiere adelantado,hubieres adelantado,hubiere adelantado,hubiéremos adelantado,hubieren adelantado
+Adelantar,Imperative,Affirmative,-,adelanta,adelante,adelantemos,adelanten
+Adelantar,Imperative,Negative,-,no adelantes,no adelante,no adelantemos,no adelanten
+Adelgazar,Indicative,Present,adelgazo,adelgazas,adelgaza,adelgazamos,adelgazan
+Adelgazar,Indicative,Preterite,adelgacé,adelgazaste,adelgazó,adelgazamos,adelgazaron
+Adelgazar,Indicative,Imperfect,adelgazaba,adelgazabas,adelgazaba,adelgazábamos,adelgazaban
+Adelgazar,Indicative,Present Continuous,estoy adelgazando,estás adelgazando,está adelgazando,estamos adelgazando,están adelgazando
+Adelgazar,Indicative,Informal Future,voy a adelgazar,vas a adelgazar,va a adelgazar,vamos a adelgazar,van a adelgazar
+Adelgazar,Indicative,Future,adelgazaré,adelgazarás,adelgazará,adelgazaremos,adelgazarán
+Adelgazar,Indicative,Conditional,adelgazía,adelgazarías,adelgazía,adelgazaríamos,adelgazarían
+Adelgazar,Indicative,Present Perfect,he adelgazado,has adelgazado,ha adelgazado,hemos adelgazado,han adelgazado
+Adelgazar,Indicative,Past Perfect,había adelgazado,habías adelgazado,había adelgazado,habíamos adelgazado,habían adelgazado
+Adelgazar,Indicative,Future Perfect,habré adelgazado,habrás adelgazado,habrá adelgazado,habremos adelgazado,habrán adelgazado
+Adelgazar,Indicative,Conditional Perfect,habría adelgazado,habrías adelgazado,habría adelgazado,habríamos adelgazado,habrían adelgazado
+Adelgazar,Subjunctive,Present,adelgace,adelgaces,adelgace,adelgacemos,adelgacen
+Adelgazar,Subjunctive,Imperfect,adelgazara,adelgazaras,adelgazara,adelgazáramos,adelgazaran
+Adelgazar,Subjunctive,Future,adelgazare,adelgazares,adelgazare,adelgazáremos,adelgazaren
+Adelgazar,Subjunctive,Present Perfect,haya adelgazado,hayas adelgazado,haya adelgazado,hayamos adelgazado,hayan adelgazado
+Adelgazar,Subjunctive,Past Perfect,hubiera adelgazado,hubieras adelgazado,hubiera adelgazado,hubiéramos adelgazado,hubieran adelgazado
+Adelgazar,Subjunctive,Future Perfect,hubiere adelgazado,hubieres adelgazado,hubiere adelgazado,hubiéremos adelgazado,hubieren adelgazado
+Adelgazar,Imperative,Affirmative,-,adelgaza,adelgace,adelgacemos,adelgacen
+Adelgazar,Imperative,Negative,-,no adelgaces,no adelgace,no adelgacemos,no adelgacen
+Admirar,Indicative,Present,admiro,admiras,admira,admiramos,admiran
+Admirar,Indicative,Preterite,admiré,admiraste,admiró,admiramos,admiraron
+Admirar,Indicative,Imperfect,admiraba,admirabas,admiraba,admirábamos,admiraban
+Admirar,Indicative,Present Continuous,estoy admirando,estás admirando,está admirando,estamos admirando,están admirando
+Admirar,Indicative,Informal Future,voy a admirar,vas a admirar,va a admirar,vamos a admirar,van a admirar
+Admirar,Indicative,Future,admiraré,admirarás,admirará,admiraremos,admirarán
+Admirar,Indicative,Conditional,admiraría,admirarías,admiraría,admiraríamos,admirarían
+Admirar,Indicative,Present Perfect,he admirado,has admirado,ha admirado,hemos admirado,han admirado
+Admirar,Indicative,Past Perfect,había admirado,habías admirado,había admirado,habíamos admirado,habían admirado
+Admirar,Indicative,Future Perfect,habré admirado,habrás admirado,habrá admirado,habremos admirado,habrán admirado
+Admirar,Indicative,Conditional Perfect,habría admirado,habrías admirado,habría admirado,habríamos admirado,habrían admirado
+Admirar,Subjunctive,Present,admire,admires,admire,admiremos,admiren
+Admirar,Subjunctive,Imperfect,admirara,admiraras,admirara,admiráramos,admiraran
+Admirar,Subjunctive,Future,admirare,admirares,admirare,admiráremos,admiraren
+Admirar,Subjunctive,Present Perfect,haya admirado,hayas admirado,haya admirado,hayamos admirado,hayan admirado
+Admirar,Subjunctive,Past Perfect,hubiera admirado,hubieras admirado,hubiera admirado,hubiéramos admirado,hubieran admirado
+Admirar,Subjunctive,Future Perfect,hubiere admirado,hubieres admirado,hubiere admirado,hubiéremos admirado,hubieren admirado
+Admirar,Imperative,Affirmative,-,admira,admire,admiremos,admiren
+Admirar,Imperative,Negative,-,no admires,no admire,no admiremos,no admiren
+Admitir,Indicative,Present,admito,admites,admite,admitimos,admiten
+Admitir,Indicative,Preterite,admití,admitiste,admitió,admitimos,admitieron
+Admitir,Indicative,Imperfect,admitía,admitías,admitía,admitíamos,admitían
+Admitir,Indicative,Present Continuous,estoy admitiendo,estás admitiendo,está admitiendo,estamos admitiendo,están admitiendo
+Admitir,Indicative,Informal Future,voy a admitir,vas a admitir,va a admitir,vamos a admitir,van a admitir
+Admitir,Indicative,Future,admitiré,admitirás,admitirá,admitiremos,admitirán
+Admitir,Indicative,Conditional,admitiría,admitirías,admitiría,admitiríamos,admitirían
+Admitir,Indicative,Present Perfect,he admitido,has admitido,ha admitido,hemos admitido,han admitido
+Admitir,Indicative,Past Perfect,había admitido,habías admitido,había admitido,habíamos admitido,habían admitido
+Admitir,Indicative,Future Perfect,habré admitido,habrás admitido,habrá admitido,habremos admitido,habrán admitido
+Admitir,Indicative,Conditional Perfect,habría admitido,habrías admitido,habría admitido,habríamos admitido,habrían admitido
+Admitir,Subjunctive,Present,admita,admitas,admita,admitamos,admitan
+Admitir,Subjunctive,Imperfect,admitiera,admitieras,admitiera,admitiéramos,admitieran
+Admitir,Subjunctive,Future,admitiere,admitieres,admitiere,admitiéremos,admitieren
+Admitir,Subjunctive,Present Perfect,haya admitido,hayas admitido,haya admitido,hayamos admitido,hayan admitido
+Admitir,Subjunctive,Past Perfect,hubiera admitido,hubieras admitido,hubiera admitido,hubiéramos admitido,hubieran admitido
+Admitir,Subjunctive,Future Perfect,hubiere admitido,hubieres admitido,hubiere admitido,hubiéremos admitido,hubieren admitido
+Admitir,Imperative,Affirmative,-,admite,admita,admitamos,admitan
+Admitir,Imperative,Negative,-,no admitas,no admita,no admitamos,no admitan
+Adoptar,Indicative,Present,adopto,adoptas,adopta,adoptamos,adoptan
+Adoptar,Indicative,Preterite,adopté,adoptaste,adoptó,adoptamos,adoptaron
+Adoptar,Indicative,Imperfect,adoptaba,adoptabas,adoptaba,adoptábamos,adoptaban
+Adoptar,Indicative,Present Continuous,estoy adoptando,estás adoptando,está adoptando,estamos adoptando,están adoptando
+Adoptar,Indicative,Informal Future,voy a adoptar,vas a adoptar,va a adoptar,vamos a adoptar,van a adoptar
+Adoptar,Indicative,Future,adoptaré,adoptarás,adoptará,adoptaremos,adoptarán
+Adoptar,Indicative,Conditional,adoptaría,adoptarías,adoptaría,adoptaríamos,adoptarían
+Adoptar,Indicative,Present Perfect,he adoptado,has adoptado,ha adoptado,hemos adoptado,han adoptado
+Adoptar,Indicative,Past Perfect,había adoptado,habías adoptado,había adoptado,habíamos adoptado,habían adoptado
+Adoptar,Indicative,Future Perfect,habré adoptado,habrás adoptado,habrá adoptado,habremos adoptado,habrán adoptado
+Adoptar,Indicative,Conditional Perfect,habría adoptado,habrías adoptado,habría adoptado,habríamos adoptado,habrían adoptado
+Adoptar,Subjunctive,Present,adopte,adoptes,adopte,adoptemos,adopten
+Adoptar,Subjunctive,Imperfect,adoptara,adoptaras,adoptara,adoptáramos,adoptaran
+Adoptar,Subjunctive,Future,adoptare,adoptares,adoptare,adoptáremos,adoptaren
+Adoptar,Subjunctive,Present Perfect,haya adoptado,hayas adoptado,haya adoptado,hayamos adoptado,hayan adoptado
+Adoptar,Subjunctive,Past Perfect,hubiera adoptado,hubieras adoptado,hubiera adoptado,hubiéramos adoptado,hubieran adoptado
+Adoptar,Subjunctive,Future Perfect,hubiere adoptado,hubieres adoptado,hubiere adoptado,hubiéremos adoptado,hubieren adoptado
+Adoptar,Imperative,Affirmative,-,adopta,adopte,adoptemos,adopten
+Adoptar,Imperative,Negative,-,no adoptes,no adopte,no adoptemos,no adopten
+Adquirir,Indicative,Present,adquiero,adquieres,adquiere,adquirimos,adquieren
+Adquirir,Indicative,Preterite,adquirí,adquiriste,adquirió,adquirimos,adquirieron
+Adquirir,Indicative,Imperfect,adquiría,adquirías,adquiría,adquiríamos,adquirían
+Adquirir,Indicative,Present Continuous,estoy adquiriendo,estás adquiriendo,está adquiriendo,estamos adquiriendo,están adquiriendo
+Adquirir,Indicative,Informal Future,voy a adquirir,vas a adquirir,va a adquirir,vamos a adquirir,van a adquirir
+Adquirir,Indicative,Future,adquiriré,adquirirás,adquirirá,adquiriremos,adquirirán
+Adquirir,Indicative,Conditional,adquiriría,adquirirías,adquiriría,adquiriríamos,adquirirían
+Adquirir,Indicative,Present Perfect,he adquirido,has adquirido,ha adquirido,hemos adquirido,han adquirido
+Adquirir,Indicative,Past Perfect,había adquirido,habías adquirido,había adquirido,habíamos adquirido,habían adquirido
+Adquirir,Indicative,Future Perfect,habré adquirido,habrás adquirido,habrá adquirido,habremos adquirido,habrán adquirido
+Adquirir,Indicative,Conditional Perfect,habría adquirido,habrías adquirido,habría adquirido,habríamos adquirido,habrían adquirido
+Adquirir,Subjunctive,Present,adquiera,adquieras,adquiera,adquiramos,adquieran
+Adquirir,Subjunctive,Imperfect,adquiriera,adquirieras,adquiriera,adquiriéramos,adquirieran
+Adquirir,Subjunctive,Future,adquiriere,adquirieres,adquiriere,adquiriéremos,adquirieren
+Adquirir,Subjunctive,Present Perfect,haya adquirido,hayas adquirido,haya adquirido,hayamos adquirido,hayan adquirido
+Adquirir,Subjunctive,Past Perfect,hubiera adquirido,hubieras adquirido,hubiera adquirido,hubiéramos adquirido,hubieran adquirido
+Adquirir,Subjunctive,Future Perfect,hubiere adquirido,hubieres adquirido,hubiere adquirido,hubiéremos adquirido,hubieren adquirido
+Adquirir,Imperative,Affirmative,-,adquiere,adquiera,adquiramos,adquieran
+Adquirir,Imperative,Negative,-,no adquieras,no adquiera,no adquiramos,no adquieran
+Advertir,Indicative,Present,advierto,adviertes,advierte,advertimos,advierten
+Advertir,Indicative,Preterite,advertí,advertiste,advirtió,advertimos,advirtieron
+Advertir,Indicative,Imperfect,advertía,advertías,advertía,advertíamos,advertían
+Advertir,Indicative,Present Continuous,estoy advirtiendo,estás advirtiendo,está advirtiendo,estamos advirtiendo,están advirtiendo
+Advertir,Indicative,Informal Future,voy a advertir,vas a advertir,va a advertir,vamos a advertir,van a advertir
+Advertir,Indicative,Future,advertiré,advertirás,advertirá,advertiremos,advertirán
+Advertir,Indicative,Conditional,advertiría,advertirías,advertiría,advertiríamos,advertirían
+Advertir,Indicative,Present Perfect,he advertido,has advertido,ha advertido,hemos advertido,han advertido
+Advertir,Indicative,Past Perfect,había advertido,habías advertido,había advertido,habíamos advertido,habían advertido
+Advertir,Indicative,Future Perfect,habré advertido,habrás advertido,habrá advertido,habremos advertido,habrán advertido
+Advertir,Indicative,Conditional Perfect,habría advertido,habrías advertido,habría advertido,habríamos advertido,habrían advertido
+Advertir,Subjunctive,Present,advierta,adviertas,advierta,advirtamos,adviertan
+Advertir,Subjunctive,Imperfect,advirtiera,advirtieras,advirtiera,advirtiéramos,advirtieran
+Advertir,Subjunctive,Future,advirtiere,advirtieres,advirtiere,advirtiéremos,advirtieren
+Advertir,Subjunctive,Present Perfect,haya advertido,hayas advertido,haya advertido,hayamos advertido,hayan advertido
+Advertir,Subjunctive,Past Perfect,hubiera advertido,hubieras advertido,hubiera advertido,hubiéramos advertido,hubieran advertido
+Advertir,Subjunctive,Future Perfect,hubiere advertido,hubieres advertido,hubiere advertido,hubiéremos advertido,hubieren advertido
+Advertir,Imperative,Affirmative,-,advierte,advierta,advirtamos,adviertan
+Advertir,Imperative,Negative,-,no adviertas,no advierta,no advirtamos,no adviertan
+Afirmar,Indicative,Present,afirmo,afirmas,afirma,afirmamos,afirman
+Afirmar,Indicative,Preterite,afirmé,afirmaste,afirmó,afirmamos,afirmaron
+Afirmar,Indicative,Imperfect,afirmaba,afirmabas,afirmaba,afirmábamos,afirmaban
+Afirmar,Indicative,Present Continuous,estoy afirmando,estás afirmando,está afirmando,estamos afirmando,están afirmando
+Afirmar,Indicative,Informal Future,voy a afirmar,vas a afirmar,va a afirmar,vamos a afirmar,van a afirmar
+Afirmar,Indicative,Future,afirmaré,afirmarás,afirmará,afirmaremos,afirmarán
+Afirmar,Indicative,Conditional,afirmaría,afirmarías,afirmaría,afirmaríamos,afirmarían
+Afirmar,Indicative,Present Perfect,he afirmado,has afirmado,ha afirmado,hemos afirmado,han afirmado
+Afirmar,Indicative,Past Perfect,había afirmado,habías afirmado,había afirmado,habíamos afirmado,habían afirmado
+Afirmar,Indicative,Future Perfect,habré afirmado,habrás afirmado,habrá afirmado,habremos afirmado,habrán afirmado
+Afirmar,Indicative,Conditional Perfect,habría afirmado,habrías afirmado,habría afirmado,habríamos afirmado,habrían afirmado
+Afirmar,Subjunctive,Present,afirme,afirmes,afirme,afirmemos,afirmen
+Afirmar,Subjunctive,Imperfect,afirmara,afirmaras,afirmara,afirmáramos,afirmaran
+Afirmar,Subjunctive,Future,afirmare,afirmares,afirmare,afirmáremos,afirmaren
+Afirmar,Subjunctive,Present Perfect,haya afirmado,hayas afirmado,haya afirmado,hayamos afirmado,hayan afirmado
+Afirmar,Subjunctive,Past Perfect,hubiera afirmado,hubieras afirmado,hubiera afirmado,hubiéramos afirmado,hubieran afirmado
+Afirmar,Subjunctive,Future Perfect,hubiere afirmado,hubieres afirmado,hubiere afirmado,hubiéremos afirmado,hubieren afirmado
+Afirmar,Imperative,Affirmative,-,afirma,afirme,afirmemos,afirmen
+Afirmar,Imperative,Negative,-,no afirmes,no afirme,no afirmemos,no afirmen
+Agradecer,Indicative,Present,agradezco,agradeces,agradece,agradecemos,agradecen
+Agradecer,Indicative,Preterite,agradecí,agradeciste,agradeció,agradecimos,agradecieron
+Agradecer,Indicative,Imperfect,agradecía,agradecías,agradecía,agradecíamos,agradecían
+Agradecer,Indicative,Present Continuous,estoy agradeciendo,estás agradeciendo,está agradeciendo,estamos agradeciendo,están agradeciendo
+Agradecer,Indicative,Informal Future,voy a agradecer,vas a agradecer,va a agradecer,vamos a agradecer,van a agradecer
+Agradecer,Indicative,Future,agradeceré,agradecerás,agradecerá,agradeceremos,agradecerán
+Agradecer,Indicative,Conditional,agradecería,agradecerías,agradecería,agradeceríamos,agradecerían
+Agradecer,Indicative,Present Perfect,he agradecido,has agradecido,ha agradecido,hemos agradecido,han agradecido
+Agradecer,Indicative,Past Perfect,había agradecido,habías agradecido,había agradecido,habíamos agradecido,habían agradecido
+Agradecer,Indicative,Future Perfect,habré agradecido,habrás agradecido,habrá agradecido,habremos agradecido,habrán agradecido
+Agradecer,Indicative,Conditional Perfect,habría agradecido,habrías agradecido,habría agradecido,habríamos agradecido,habrían agradecido
+Agradecer,Subjunctive,Present,agradezca,agradezcas,agradezca,agradezcamos,agradezcan
+Agradecer,Subjunctive,Imperfect,agradeciera,agradecieras,agradeciera,agradeciéramos,agradecieran
+Agradecer,Subjunctive,Future,agradeciere,agradecieres,agradeciere,agradeciéremos,agradecieren
+Agradecer,Subjunctive,Present Perfect,haya agradecido,hayas agradecido,haya agradecido,hayamos agradecido,hayan agradecido
+Agradecer,Subjunctive,Past Perfect,hubiera agradecido,hubieras agradecido,hubiera agradecido,hubiéramos agradecido,hubieran agradecido
+Agradecer,Subjunctive,Future Perfect,hubiere agradecido,hubieres agradecido,hubiere agradecido,hubiéremos agradecido,hubieren agradecido
+Agradecer,Imperative,Affirmative,-,agradece,agradezca,agradezcamos,agradezcan
+Agradecer,Imperative,Negative,-,no agradezcas,no agradezca,no agradezcamos,no agradezcan
+Aguantar,Indicative,Present,aguanto,aguantas,aguanta,aguantamos,aguantan
+Aguantar,Indicative,Preterite,aguanté,aguantaste,aguantó,aguantamos,aguantaron
+Aguantar,Indicative,Imperfect,aguantaba,aguantabas,aguantaba,aguantábamos,aguantaban
+Aguantar,Indicative,Present Continuous,estoy aguantando,estás aguantando,está aguantando,estamos aguantando,están aguantando
+Aguantar,Indicative,Informal Future,voy a aguantar,vas a aguantar,va a aguantar,vamos a aguantar,van a aguantar
+Aguantar,Indicative,Future,aguantaré,aguantarás,aguantará,aguantaremos,aguantarán
+Aguantar,Indicative,Conditional,aguantaría,aguantarías,aguantaría,aguantaríamos,aguantarían
+Aguantar,Indicative,Present Perfect,he aguantado,has aguantado,ha aguantado,hemos aguantado,han aguantado
+Aguantar,Indicative,Past Perfect,había aguantado,habías aguantado,había aguantado,habíamos aguantado,habían aguantado
+Aguantar,Indicative,Future Perfect,habré aguantado,habrás aguantado,habrá aguantado,habremos aguantado,habrán aguantado
+Aguantar,Indicative,Conditional Perfect,habría aguantado,habrías aguantado,habría aguantado,habríamos aguantado,habrían aguantado
+Aguantar,Subjunctive,Present,aguante,aguantes,aguante,aguantemos,aguanten
+Aguantar,Subjunctive,Imperfect,aguantara,aguantaras,aguantara,aguantáramos,aguantaran
+Aguantar,Subjunctive,Future,aguantare,aguantares,aguantare,aguantáremos,aguantaren
+Aguantar,Subjunctive,Present Perfect,haya aguantado,hayas aguantado,haya aguantado,hayamos aguantado,hayan aguantado
+Aguantar,Subjunctive,Past Perfect,hubiera aguantado,hubieras aguantado,hubiera aguantado,hubiéramos aguantado,hubieran aguantado
+Aguantar,Subjunctive,Future Perfect,hubiere aguantado,hubieres aguantado,hubiere aguantado,hubiéremos aguantado,hubieren aguantado
+Aguantar,Imperative,Affirmative,-,aguanta,aguante,aguantemos,aguanten
+Aguantar,Imperative,Negative,-,no aguantes,no aguante,no aguantemos,no aguanten
+Ahorrar,Indicative,Present,ahorro,ahorras,ahorra,ahorramos,ahorran
+Ahorrar,Indicative,Preterite,ahorré,ahorraste,ahorró,ahorramos,ahorraron
+Ahorrar,Indicative,Imperfect,ahorraba,ahorrabas,ahorraba,ahorrábamos,ahorraban
+Ahorrar,Indicative,Present Continuous,estoy ahorrando,estás ahorrando,está ahorrando,estamos ahorrando,están ahorrando
+Ahorrar,Indicative,Informal Future,voy a ahorrar,vas a ahorrar,va a ahorrar,vamos a ahorrar,van a ahorrar
+Ahorrar,Indicative,Future,ahorraré,ahorrarás,ahorrará,ahorraremos,ahorrarán
+Ahorrar,Indicative,Conditional,ahorraría,ahorrarías,ahorraría,ahorraríamos,ahorrarían
+Ahorrar,Indicative,Present Perfect,he ahorrado,has ahorrado,ha ahorrado,hemos ahorrado,han ahorrado
+Ahorrar,Indicative,Past Perfect,había ahorrado,habías ahorrado,había ahorrado,habíamos ahorrado,habían ahorrado
+Ahorrar,Indicative,Future Perfect,habré ahorrado,habrás ahorrado,habrá ahorrado,habremos ahorrado,habrán ahorrado
+Ahorrar,Indicative,Conditional Perfect,habría ahorrado,habrías ahorrado,habría ahorrado,habríamos ahorrado,habrían ahorrado
+Ahorrar,Subjunctive,Present,ahorre,ahorres,ahorre,ahorremos,ahorren
+Ahorrar,Subjunctive,Imperfect,ahorrara,ahorraras,ahorrara,ahorráramos,ahorraran
+Ahorrar,Subjunctive,Future,ahorrare,ahorrares,ahorrare,ahorráremos,ahorraren
+Ahorrar,Subjunctive,Present Perfect,haya ahorrado,hayas ahorrado,haya ahorrado,hayamos ahorrado,hayan ahorrado
+Ahorrar,Subjunctive,Past Perfect,hubiera ahorrado,hubieras ahorrado,hubiera ahorrado,hubiéramos ahorrado,hubieran ahorrado
+Ahorrar,Subjunctive,Future Perfect,hubiere ahorrado,hubieres ahorrado,hubiere ahorrado,hubiéremos ahorrado,hubieren ahorrado
+Ahorrar,Imperative,Affirmative,-,ahorra,ahorre,ahorremos,ahorren
+Ahorrar,Imperative,Negative,-,no ahorres,no ahorre,no ahorremos,no ahorren
+Aislar,Indicative,Present,aislo,aislas,aisla,aislamos,aislan
+Aislar,Indicative,Preterite,aislé,aislaste,aisló,aislamos,aislaron
+Aislar,Indicative,Imperfect,aislaba,aislabas,aislaba,aislábamos,aislaban
+Aislar,Indicative,Present Continuous,estoy aislando,estás aislando,está aislando,estamos aislando,están aislando
+Aislar,Indicative,Informal Future,voy a aislar,vas a aislar,va a aislar,vamos a aislar,van a aislar
+Aislar,Indicative,Future,aislaré,aislarás,aislará,aislaremos,aislarán
+Aislar,Indicative,Conditional,aislaría,aislarías,aislaría,aislaríamos,aislarían
+Aislar,Indicative,Present Perfect,he aislado,has aislado,ha aislado,hemos aislado,han aislado
+Aislar,Indicative,Past Perfect,había aislado,habías aislado,había aislado,habíamos aislado,habían aislado
+Aislar,Indicative,Future Perfect,habré aislado,habrás aislado,habrá aislado,habremos aislado,habrán aislado
+Aislar,Indicative,Conditional Perfect,habría aislado,habrías aislado,habría aislado,habríamos aislado,habrían aislado
+Aislar,Subjunctive,Present,aisle,aisles,aisle,aislemos,aislen
+Aislar,Subjunctive,Imperfect,aislara,aislaras,aislara,aisláramos,aislaran
+Aislar,Subjunctive,Future,aislare,aislares,aislare,aisláremos,aislaren
+Aislar,Subjunctive,Present Perfect,haya aislado,hayas aislado,haya aislado,hayamos aislado,hayan aislado
+Aislar,Subjunctive,Past Perfect,hubiera aislado,hubieras aislado,hubiera aislado,hubiéramos aislado,hubieran aislado
+Aislar,Subjunctive,Future Perfect,hubiere aislado,hubieres aislado,hubiere aislado,hubiéremos aislado,hubieren aislado
+Aislar,Imperative,Affirmative,-,aisla,aisle,aislemos,aislen
+Aislar,Imperative,Negative,-,no aisles,no aisle,no aislemos,no aíslen
+Alcanzar,Indicative,Present,alcanzo,alcanzas,alcanza,alcanzamos,alcanzan
+Alcanzar,Indicative,Preterite,alcancé,alcanzaste,alcanzó,alcanzamos,alcanzaron
+Alcanzar,Indicative,Imperfect,alcanzaba,alcanzabas,alcanzaba,alcanzábamos,alcanzaban
+Alcanzar,Indicative,Present Continuous,estoy alcanzando,estás alcanzando,está alcanzando,estamos alcanzando,están alcanzando
+Alcanzar,Indicative,Informal Future,voy a alcanzar,vas a alcanzar,va a alcanzar,vamos a alcanzar,van a alcanzar
+Alcanzar,Indicative,Future,alcanzaré,alcanzarás,alcanzará,alcanzaremos,alcanzarán
+Alcanzar,Indicative,Conditional,alcanzaría,alcanzarías,alcanzaría,alcanzaríamos,alcanzarían
+Alcanzar,Indicative,Present Perfect,he alcanzado,has alcanzado,ha alcanzado,hemos alcanzado,han alcanzado
+Alcanzar,Indicative,Past Perfect,había alcanzado,habías alcanzado,había alcanzado,habíamos alcanzado,habían alcanzado
+Alcanzar,Indicative,Future Perfect,habré alcanzado,habrás alcanzado,habrá alcanzado,habremos alcanzado,habrán alcanzado
+Alcanzar,Indicative,Conditional Perfect,habría alcanzado,habrías alcanzado,habría alcanzado,habríamos alcanzado,habrían alcanzado
+Alcanzar,Subjunctive,Present,alcance,alcances,alcance,alcancemos,alcancen
+Alcanzar,Subjunctive,Imperfect,alcanzara,alcanzaras,alcanzara,alcanzáramos,alcanzaran
+Alcanzar,Subjunctive,Future,alcanzare,alcanzares,alcanzare,alcanzáremos,alcanzaren
+Alcanzar,Subjunctive,Present Perfect,haya alcanzado,hayas alcanzado,haya alcanzado,hayamos alcanzado,hayan alcanzado
+Alcanzar,Subjunctive,Past Perfect,hubiera alcanzado,hubieras alcanzado,hubiera alcanzado,hubiéramos alcanzado,hubieran alcanzado
+Alcanzar,Subjunctive,Future Perfect,hubiere alcanzado,hubieres alcanzado,hubiere alcanzado,hubiéremos alcanzado,hubieren alcanzado
+Alcanzar,Imperative,Affirmative,-,alcanza,alcance,alcancemos,alcancen
+Alcanzar,Imperative,Negative,-,no alcances,no alcance,no alcancemos,no alcancen
+Alegrar,Indicative,Present,alegro,alegras,alegra,alegramos,alegran
+Alegrar,Indicative,Preterite,alegré,alegraste,alegró,alegramos,alegraron
+Alegrar,Indicative,Imperfect,alegraba,alegrabas,alegraba,alegrábamos,alegraban
+Alegrar,Indicative,Present Continuous,estoy alegrando,estás alegrando,está alegrando,estamos alegrando,están alegrando
+Alegrar,Indicative,Informal Future,voy a alegrar,vas a alegrar,va a alegrar,vamos a alegrar,van a alegrar
+Alegrar,Indicative,Future,alegraré,alegrarás,alegrará,alegraremos,alegrarán
+Alegrar,Indicative,Conditional,alegraría,alegrarías,alegraría,alegraríamos,alegrarían
+Alegrar,Indicative,Present Perfect,he alegrado,has alegrado,ha alegrado,hemos alegrado,han alegrado
+Alegrar,Indicative,Past Perfect,había alegrado,habías alegrado,había alegrado,habíamos alegrado,habían alegrado
+Alegrar,Indicative,Future Perfect,habré alegrado,habrás alegrado,habrá alegrado,habremos alegrado,habrán alegrado
+Alegrar,Indicative,Conditional Perfect,habría alegrado,habrías alegrado,habría alegrado,habríamos alegrado,habrían alegrado
+Alegrar,Subjunctive,Present,alegre,alegres,alegre,alegremos,alegren
+Alegrar,Subjunctive,Imperfect,alegrara,alegraras,alegrara,alegráramos,alegraran
+Alegrar,Subjunctive,Future,alegrare,alegrares,alegrare,alegráremos,alegraren
+Alegrar,Subjunctive,Present Perfect,haya alegrado,hayas alegrado,haya alegrado,hayamos alegrado,hayan alegrado
+Alegrar,Subjunctive,Past Perfect,hubiera alegrado,hubieras alegrado,hubiera alegrado,hubiéramos alegrado,hubieran alegrado
+Alegrar,Subjunctive,Future Perfect,hubiere alegrado,hubieres alegrado,hubiere alegrado,hubiéremos alegrado,hubieren alegrado
+Alegrar,Imperative,Affirmative,-,alegra,alegre,alegremos,alegren
+Alegrar,Imperative,Negative,-,no alegres,no alegre,no alegremos,no alegren
+Alegrarse,Indicative,Present,alegro,alegras,alegra,alegramos,alegran
+Alegrarse,Indicative,Preterite,alegré,alegraste,alegró,alegramos,alegraron
+Alegrarse,Indicative,Imperfect,alegraba,alegrabas,alegraba,alegrábamos,alegraban
+Alegrarse,Indicative,Present Continuous,estoy alegrando,estás alegrando,está alegrando,estamos alegrando,están alegrando
+Alegrarse,Indicative,Informal Future,voy a alegrar,vas a alegrar,va a alegrar,vamos a alegrar,van a alegrar
+Alegrarse,Indicative,Future,alegraré,alegrarás,alegrará,alegraremos,alegrarán
+Alegrarse,Indicative,Conditional,alegraría,alegrarías,alegraría,alegraríamos,alegrarían
+Alegrarse,Indicative,Present Perfect,he alegrado,has alegrado,ha alegrado,hemos alegrado,han alegrado
+Alegrarse,Indicative,Past Perfect,había alegrado,habías alegrado,había alegrado,habíamos alegrado,habían alegrado
+Alegrarse,Indicative,Future Perfect,habré alegrado,habrás alegrado,habrá alegrado,habremos alegrado,habrán alegrado
+Alegrarse,Indicative,Conditional Perfect,habría alegrado,habrías alegrado,habría alegrado,habríamos alegrado,habrían alegrado
+Alegrarse,Subjunctive,Present,alegre,alegres,alegre,alegremos,alegren
+Alegrarse,Subjunctive,Imperfect,alegrara,alegraras,alegrara,alegráramos,alegraran
+Alegrarse,Subjunctive,Future,alegrare,alegrares,alegrare,alegráremos,alegraren
+Alegrarse,Subjunctive,Present Perfect,haya alegrado,hayas alegrado,haya alegrado,hayamos alegrado,hayan alegrado
+Alegrarse,Subjunctive,Past Perfect,hubiera alegrado,hubieras alegrado,hubiera alegrado,hubiéramos alegrado,hubieran alegrado
+Alegrarse,Subjunctive,Future Perfect,hubiere alegrado,hubieres alegrado,hubiere alegrado,hubiéremos alegrado,hubieren alegrado
+Alegrarse,Imperative,Affirmative,-,alégrate,alégrese,alegrémonos,alégrense
+Alegrarse,Imperative,Negative,-,no te alegres,no se alegre,no nos alegremos,no se alegren
+Alejar,Indicative,Present,alejo,alejas,aleja,alejamos,alejan
+Alejar,Indicative,Preterite,alejé,alejaste,alejó,alejamos,alejaron
+Alejar,Indicative,Imperfect,alejaba,alejabas,alejaba,alejábamos,alejaban
+Alejar,Indicative,Present Continuous,estoy alejando,estás alejando,está alejando,estamos alejando,están alejando
+Alejar,Indicative,Informal Future,voy a alejar,vas a alejar,va a alejar,vamos a alejar,van a alejar
+Alejar,Indicative,Future,alejaré,alejarás,alejará,alejaremos,alejarán
+Alejar,Indicative,Conditional,alejaría,alejarías,alejaría,alejaríamos,alejarían
+Alejar,Indicative,Present Perfect,he alejado,has alejado,ha alejado,hemos alejado,han alejado
+Alejar,Indicative,Past Perfect,había alejado,habías alejado,había alejado,habíamos alejado,habían alejado
+Alejar,Indicative,Future Perfect,habré alejado,habrás alejado,habrá alejado,habremos alejado,habrán alejado
+Alejar,Indicative,Conditional Perfect,habría alejado,habrías alejado,habría alejado,habríamos alejado,habrían alejado
+Alejar,Subjunctive,Present,aleje,alejes,aleje,alejemos,alejen
+Alejar,Subjunctive,Imperfect,alejara,alejaras,alejara,alejáramos,alejaran
+Alejar,Subjunctive,Future,alejare,alejares,alejare,alejáremos,alejaren
+Alejar,Subjunctive,Present Perfect,haya alejado,hayas alejado,haya alejado,hayamos alejado,hayan alejado
+Alejar,Subjunctive,Past Perfect,hubiera alejado,hubieras alejado,hubiera alejado,hubiéramos alejado,hubieran alejado
+Alejar,Subjunctive,Future Perfect,hubiere alejado,hubieres alejado,hubiere alejado,hubiéremos alejado,hubieren alejado
+Alejar,Imperative,Affirmative,-,aleja,aleje,alejemos,alejen
+Alejar,Imperative,Negative,-,no alejes,no aleje,no alejemos,no alejen
+Alimentar,Indicative,Present,alimento,alimentas,alimenta,alimentamos,alimentan
+Alimentar,Indicative,Preterite,alimenté,alimentaste,alimentó,alimentamos,alimentaron
+Alimentar,Indicative,Imperfect,alimentaba,alimentabas,alimentaba,alimentábamos,alimentaban
+Alimentar,Indicative,Present Continuous,estoy alimentando,estás alimentando,está alimentando,estamos alimentando,están alimentando
+Alimentar,Indicative,Informal Future,voy a alimentar,vas a alimentar,va a alimentar,vamos a alimentar,van a alimentar
+Alimentar,Indicative,Future,alimentaré,alimentarás,alimentará,alimentaremos,alimentarán
+Alimentar,Indicative,Conditional,alimentaría,alimentarías,alimentaría,alimentaríamos,alimentarían
+Alimentar,Indicative,Present Perfect,he alimentado,has alimentado,ha alimentado,hemos alimentado,han alimentado
+Alimentar,Indicative,Past Perfect,había alimentado,habías alimentado,había alimentado,habíamos alimentado,habían alimentado
+Alimentar,Indicative,Future Perfect,habré alimentado,habrás alimentado,habrá alimentado,habremos alimentado,habrán alimentado
+Alimentar,Indicative,Conditional Perfect,habría alimentado,habrías alimentado,habría alimentado,habríamos alimentado,habrían alimentado
+Alimentar,Subjunctive,Present,alimente,alimentes,alimente,alimentemos,alimenten
+Alimentar,Subjunctive,Imperfect,alimentara,alimentaras,alimentara,alimentáramos,alimentaran
+Alimentar,Subjunctive,Future,alimentare,alimentares,alimentare,alimentáremos,alimentaren
+Alimentar,Subjunctive,Present Perfect,haya alimentado,hayas alimentado,haya alimentado,hayamos alimentado,hayan alimentado
+Alimentar,Subjunctive,Past Perfect,hubiera alimentado,hubieras alimentado,hubiera alimentado,hubiéramos alimentado,hubieran alimentado
+Alimentar,Subjunctive,Future Perfect,hubiere alimentado,hubieres alimentado,hubiere alimentado,hubiéremos alimentado,hubieren alimentado
+Alimentar,Imperative,Affirmative,-,alimenta,alimente,alimentemos,alimenten
+Alimentar,Imperative,Negative,-,no alimentes,no alimente,no alimentemos,no alimenten
+Almacenar,Indicative,Present,almaceno,almacenas,almacena,almacenamos,almacenan
+Almacenar,Indicative,Preterite,almacené,almacenaste,almacenó,almacenamos,almacenaron
+Almacenar,Indicative,Imperfect,almacenaba,almacenabas,almacenaba,almacenábamos,almacenaban
+Almacenar,Indicative,Present Continuous,estoy almacenando,estás almacenando,está almacenando,estamos almacenando,están almacenando
+Almacenar,Indicative,Informal Future,voy a almacenar,vas a almacenar,va a almacenar,vamos a almacenar,van a almacenar
+Almacenar,Indicative,Future,almacenaré,almacenarás,almacenará,almacenaremos,almacenarán
+Almacenar,Indicative,Conditional,almacenaría,almacenarías,almacenaría,almacenaríamos,almacenarían
+Almacenar,Indicative,Present Perfect,he almacenado,has almacenado,ha almacenado,hemos almacenado,han almacenado
+Almacenar,Indicative,Past Perfect,había almacenado,habías almacenado,había almacenado,habíamos almacenado,habían almacenado
+Almacenar,Indicative,Future Perfect,habré almacenado,habrás almacenado,habrá almacenado,habremos almacenado,habrán almacenado
+Almacenar,Indicative,Conditional Perfect,habría almacenado,habrías almacenado,habría almacenado,habríamos almacenado,habrían almacenado
+Almacenar,Subjunctive,Present,almacene,almacenes,almacene,almacenemos,almacenen
+Almacenar,Subjunctive,Imperfect,almacenara,almacenaras,almacenara,almacenáramos,almacenaran
+Almacenar,Subjunctive,Future,almacenare,almacenares,almacenare,almacenáremos,almacenaren
+Almacenar,Subjunctive,Present Perfect,haya almacenado,hayas almacenado,haya almacenado,hayamos almacenado,hayan almacenado
+Almacenar,Subjunctive,Past Perfect,hubiera almacenado,hubieras almacenado,hubiera almacenado,hubiéramos almacenado,hubieran almacenado
+Almacenar,Subjunctive,Future Perfect,hubiere almacenado,hubieres almacenado,hubiere almacenado,hubiéremos almacenado,hubieren almacenado
+Almacenar,Imperative,Affirmative,-,almacena,almacene,almacenemos,almacenen
+Almacenar,Imperative,Negative,-,no almacenes,no almacene,no almacenemos,no almacenen
+Almorzar,Indicative,Present,almuerzo,almuerzas,almuerza,almorzamos,almuerzan
+Almorzar,Indicative,Preterite,almorcé,almorzaste,almorzó,almorzamos,almorzaron
+Almorzar,Indicative,Imperfect,almorzaba,almorzabas,almorzaba,almorzábamos,almorzaban
+Almorzar,Indicative,Present Continuous,estoy almorzando,estás almorzando,está almorzando,estamos almorzando,están almorzando
+Almorzar,Indicative,Informal Future,voy a almorzar,vas a almorzar,va a almorzar,vamos a almorzar,van a almorzar
+Almorzar,Indicative,Future,almorzaré,almorzarás,almorzará,almorzaremos,almorzarán
+Almorzar,Indicative,Conditional,almorzaría,almorzarías,almorzaría,almorzaríamos,almorzarían
+Almorzar,Indicative,Present Perfect,he almorzado,has almorzado,ha almorzado,hemos almorzado,han almorzado
+Almorzar,Indicative,Past Perfect,había almorzado,habías almorzado,había almorzado,habíamos almorzado,habían almorzado
+Almorzar,Indicative,Future Perfect,habré almorzado,habrás almorzado,habrá almorzado,habremos almorzado,habrán almorzado
+Almorzar,Indicative,Conditional Perfect,habría almorzado,habrías almorzado,habría almorzado,habríamos almorzado,habrían almorzado
+Almorzar,Subjunctive,Present,almuerce,almuerces,almuerce,almorcemos,almuercen
+Almorzar,Subjunctive,Imperfect,almorzara,almorzaras,almorzara,almorzáramos,almorzaran
+Almorzar,Subjunctive,Future,almorzare,almorzares,almorzare,almorzáremos,almorzaren
+Almorzar,Subjunctive,Present Perfect,haya almorzado,hayas almorzado,haya almorzado,hayamos almorzado,hayan almorzado
+Almorzar,Subjunctive,Past Perfect,hubiera almorzado,hubieras almorzado,hubiera almorzado,hubiéramos almorzado,hubieran almorzado
+Almorzar,Subjunctive,Future Perfect,hubiere almorzado,hubieres almorzado,hubiere almorzado,hubiéremos almorzado,hubieren almorzado
+Almorzar,Imperative,Affirmative,-,almuerza,almuerce,almorcemos,almuercen
+Almorzar,Imperative,Negative,-,no almuerces,no almuerce,no almorcemos,no almuercen
+Alquilar,Indicative,Present,alquilo,alquilas,alquila,alquilamos,alquilan
+Alquilar,Indicative,Preterite,alquilé,alquilaste,alquiló,alquilamos,alquilaron
+Alquilar,Indicative,Imperfect,alquilaba,alquilabas,alquilaba,alquilábamos,alquilaban
+Alquilar,Indicative,Present Continuous,estoy alquilando,estás alquilando,está alquilando,estamos alquilando,están alquilando
+Alquilar,Indicative,Informal Future,voy a alquilar,vas a alquilar,va a alquilar,vamos a alquilar,van a alquilar
+Alquilar,Indicative,Future,alquilaré,alquilarás,alquilará,alquilaremos,alquilarán
+Alquilar,Indicative,Conditional,alquilaría,alquilarías,alquilaría,alquilaríamos,alquilarían
+Alquilar,Indicative,Present Perfect,he alquilado,has alquilado,ha alquilado,hemos alquilado,han alquilado
+Alquilar,Indicative,Past Perfect,había alquilado,habías alquilado,había alquilado,habíamos alquilado,habían alquilado
+Alquilar,Indicative,Future Perfect,habré alquilado,habrás alquilado,habrá alquilado,habremos alquilado,habrán alquilado
+Alquilar,Indicative,Conditional Perfect,habría alquilado,habrías alquilado,habría alquilado,habríamos alquilado,habrían alquilado
+Alquilar,Subjunctive,Present,alquile,alquiles,alquile,alquilemos,alquilen
+Alquilar,Subjunctive,Imperfect,alquilara,alquilaras,alquilara,alquiláramos,alquilaran
+Alquilar,Subjunctive,Future,alquilare,alquilares,alquilare,alquiláremos,alquilaren
+Alquilar,Subjunctive,Present Perfect,haya alquilado,hayas alquilado,haya alquilado,hayamos alquilado,hayan alquilado
+Alquilar,Subjunctive,Past Perfect,hubiera alquilado,hubieras alquilado,hubiera alquilado,hubiéramos alquilado,hubieran alquilado
+Alquilar,Subjunctive,Future Perfect,hubiere alquilado,hubieres alquilado,hubiere alquilado,hubiéremos alquilado,hubieren alquilado
+Alquilar,Imperative,Affirmative,-,alquila,alquile,alquilemos,alquilen
+Alquilar,Imperative,Negative,-,no alquiles,no alquile,no alquilemos,no alquilen

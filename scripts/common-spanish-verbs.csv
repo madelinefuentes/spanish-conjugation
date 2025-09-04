@@ -1,53 +1,53 @@
-Verb,Translation,Irregularity
-Abandonar,"to abandon, to leave",Regular
-Abrazar,"to hug, to embrace",Irregular
-Abrir,to open,Irregular
-Absorber,to absorb,Regular
-Abundar,to abound,Regular
-Aburrir,to bore,Regular
-Aburrirse,to get bored,Regular
-Abusar,to abuse,Regular
-Acabar,"to finish, to end, to complete",Regular
-Acampar,to camp,Regular
-Acceder,to access,Regular
-Acelerar,to accelerate,Regular
-Aceptar,to accept,Regular
-Acercar,to bring closer,Irregular
-Acercarse,to approach (oneself),Irregular
-Acompañar,to accompany,Regular
-Aconsejar,"to advise, to suggest, to counsel",Regular
-Acordar,"to agree, to agree on or upon",Irregular
-Acordarse,to remember,Irregular
-Acostar,"to put to bed, to lay down",Irregular
-Acostarse,"to go to bed, to lie down",Irregular
-Acostumbrar,"to accustom, to habituate",Regular
-Actualizar,"to update, to refresh",Irregular
-Actualizarse,to update (oneself),Irregular
-Actuar,"to act, to perform",Irregular
-Acudir,"to go, to turn up",Regular
-Acumular,to accumulate,Regular
-Acusar,to accuse,Regular
-Adaptar,to adapt,Regular
-Adelantar,"to go ahead, to move forward, to overtake",Regular
-Adelgazar,"to slim down, to lose weight",Irregular
-Admirar,to admire,Regular
-Admitir,to admit,Regular
-Adoptar,to adopt,Regular
-Adquirir,"to acquire, to purchase",Irregular
-Advertir,"to warn, to note, to caution, to notice",Irregular
-Afirmar,to affirm,Regular
-Agradecer,"to thank, to be grateful for",Irregular
-Aguantar,"to endure, to put up with",Regular
-Ahorrar,"to save (money), to spare",Regular
+Infinitive,English,Type,Participle_ES,Participle_EN,Gerund_ES,Gerund_EN
+Abandonar,"to abandon, to leave",Regular,abandonado,abandoned,abandonando,abandoning
+Abrazar,"to hug, to embrace",Irregular,abrazado,hugged,abrazando,hugging
+Abrir,to open,Irregular,abierto,opened,abriendo,opening
+Absorber,to absorb,Regular,absorbido,absorbed,absorbiendo,absorbing
+Abundar,to abound,Regular,abundado,abounded,abundando,abounding
+Aburrir,to bore,Regular,aburrido,bored,aburriendo,boring
+Aburrirse,to get bored,Regular,aburrido,bored,aburriendo,boring
+Acabar,"to finish, to end, to complete",Regular,acabado,finished,acabando,finishing
+Acampar,to camp,Regular,acampado,camped,acampando,camping
+Acceder,to access,Regular,accedido,accessed,accediendo,accessing
+Acelerar,to accelerate,Regular,acelerado,accelerated,acelerando,accelerating
+Aceptar,to accept,Regular,aceptado,accepted,aceptando,accepting
+Acercar,to bring closer,Irregular,acercado,brought closer,acercando,bringing closer
+Acercarse,to approach (oneself),Irregular,acercado,approached,acercando,approaching
+Acompañar,to accompany,Regular,acompañado,accompanied,acompañando,accompanying
+Aconsejar,"to advise, to suggest, to counsel",Regular,aconsejado,advised,aconsejando,advising
+Acordar,"to agree, to agree on or upon",Irregular,acordado,agreed,acordando,agreeing
+Acordarse,to remember,Irregular,acordado,remembered,acordando,remembering
+Acostar,"to put to bed, to lay down",Irregular,acostado,laid down,acostando,laying down
+Acostarse,"to go to bed, to lie down",Irregular,acostado,gone to bed,acostándose,going to bed
+Acostumbrar,"to accustom, to habituate",Regular,acostumbrado,accustomed,acostumbrando,accustoming
+Actualizar,"to update, to refresh",Irregular,actualizado,updated,actualizando,updating
+Actualizarse,to update (oneself),Irregular,actualizado,updated,actualizándose,updating oneself
+Actuar,"to act, to perform",Irregular,actuado,acted,actuando,acting
+Acudir,"to go, to turn up",Regular,acudido,gone,acudiendo,going
+Acumular,to accumulate,Regular,acumulado,accumulated,acumulando,accumulating
+Acusar,to accuse,Regular,acusado,accused,acusando,accusing
+Adaptar,to adapt,Regular,adaptado,adapted,adaptando,adapting
+Adelantar,"to go ahead, to move forward, to overtake",Regular,adelantado,gone ahead,adelantando,going ahead
+Adelgazar,"to slim down, to lose weight",Irregular,adelgazado,slimmed down,adelgazando,slimming down
+Admirar,to admire,Regular,admirado,admired,admirando,admiring
+Admitir,to admit,Regular,admitido,admitted,admitiendo,admitting
+Adoptar,to adopt,Regular,adoptado,adopted,adoptando,adopting
+Adquirir,"to acquire, to purchase",Irregular,adquirido,acquired,adquiriendo,acquiring
+Advertir,"to warn, to note, to caution, to notice",Irregular,advertido,warned,advirtiendo,warning
+Afirmar,to affirm,Regular,afirmado,affirmed,afirmando,affirming
+Agradecer,"to thank, to be grateful for",Irregular,agradecido,thanked,agradeciendo,thanking
+Aguantar,"to endure, to put up with",Regular,aguantado,endured,aguantando,enduring
+Ahorrar,"to save (money), to spare",Regular,ahorrado,saved,ahorrando,saving
 Aislar,to isolate,Irregular
-Alcanzar,"to reach, to attain, to achieve, to accomplish",Irregular
-Alegrar,"to be happy, to be glad",Regular
-Alegrarse,"to be happy (oneself), to be glad (oneself)",Regular
-Alejar,to move (away),Regular
-Alimentar,"to feed, to nourish",Regular
-Almacenar,"to store, to stock up",Regular
-Almorzar,"to lunch, to eat lunch",Irregular
-Alquilar,"to rent, to hire",Regular
+Aislar,to isolate,Irregular,aislado,isolated,aislando,isolating
+Alcanzar,"to reach, to attain, to achieve, to accomplish",Irregular,alcanzado,reached,alcanzando,reaching
+Alegrar,"to be happy, to be glad",Regular,alegrado,gladdened,alegrando,gladdening
+Alegrarse,"to be happy (oneself), to be glad (oneself)",Regular,alegrado,gladdened,alegrándose,gladdening oneself
+Alejar,to move (away),Regular,alejado,moved,alejando,moving
+Alimentar,"to feed, to nourish",Regular,alimentado,fed,alimentando,feeding
+Almacenar,"to store, to stock up",Regular,almacenado,stored,almacenando,storing
+Almorzar,"to lunch, to eat lunch",Irregular,almorzado,lunched,almorzando,lunching
+Alquilar,"to rent, to hire",Regular,alquilado,rented,alquilando,renting
 Alterar,to alter,Regular
 Amanecer,to dawn,Irregular
 Amar,to love,Regular

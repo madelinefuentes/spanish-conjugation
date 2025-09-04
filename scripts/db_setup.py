@@ -13,6 +13,10 @@ CREATE TABLE IF NOT EXISTS verbs (
   meaning    TEXT,                   -- e.g. "to hope; to wait"
   type       TEXT,                   -- e.g. "Regular" / "Irregular"
   frequency  REAL DEFAULT 0
+  participle_es TEXT,                -- "esperado"
+  participle_en TEXT,                -- "hoped"
+  gerund_es    TEXT,                 -- "esperando"
+  gerund_en    TEXT                  -- "hoping"
 );
 
 CREATE TABLE IF NOT EXISTS conjugations (
@@ -42,21 +46,45 @@ def get_conn(db_path=DB_PATH):
     conn.execute("PRAGMA journal_mode=WAL;")
     return conn
 
-def upsert_verb(conn, infinitive, meaning=None, vtype=None, frequency=0.0):
+def upsert_verb(
+    conn,
+    infinitive,
+    meaning=None,
+    type=None,
+    frequency=0.0,
+    participle_es=None,
+    participle_en=None,
+    gerund_es=None,
+    gerund_en=None,
+):
     conn.execute(
         """
-        INSERT INTO verbs (infinitive, meaning, type, frequency)
-        VALUES (?, ?, ?, ?)
+        INSERT INTO verbs (infinitive, meaning, type, frequency,
+                           participle_es, participle_en, gerund_es, gerund_en)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(infinitive) DO UPDATE SET
-          meaning   = COALESCE(excluded.meaning, verbs.meaning),
-          type      = COALESCE(excluded.type, verbs.type),
-          frequency = MAX(verbs.frequency, excluded.frequency)
+          meaning       = COALESCE(excluded.meaning, verbs.meaning),
+          type          = COALESCE(excluded.type, verbs.type),
+          frequency     = MAX(verbs.frequency, excluded.frequency),
+          participle_es = COALESCE(NULLIF(excluded.participle_es,''), verbs.participle_es),
+          participle_en = COALESCE(NULLIF(excluded.participle_en,''), verbs.participle_en),
+          gerund_es     = COALESCE(NULLIF(excluded.gerund_es,''), verbs.gerund_es),
+          gerund_en     = COALESCE(NULLIF(excluded.gerund_en,''), verbs.gerund_en)
         """,
-        (infinitive.strip().lower(), meaning, vtype, float(frequency))
+        (
+            infinitive.strip().lower(),
+            meaning,
+            type,
+            float(frequency),
+            participle_es,
+            participle_en,
+            gerund_es,
+            gerund_en,
+        ),
     )
     row = conn.execute(
         "SELECT id FROM verbs WHERE infinitive = ?",
-        (infinitive.strip().lower(),)
+        (infinitive.strip().lower(),),
     ).fetchone()
     return int(row[0])
 
