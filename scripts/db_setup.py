@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS verbs (
   infinitive TEXT NOT NULL UNIQUE,   -- e.g. "esperar"
   meaning    TEXT,                   -- e.g. "to hope; to wait"
   type       TEXT,                   -- e.g. "Regular" / "Irregular"
-  frequency  REAL DEFAULT 0
+  frequency  REAL DEFAULT 0,
   participle_es TEXT,                -- "esperado"
   participle_en TEXT,                -- "hoped"
   gerund_es    TEXT,                 -- "esperando"

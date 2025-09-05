@@ -3,9 +3,13 @@ import { sqliteTable, integer, text, real } from "drizzle-orm/sqlite-core";
 export const verbs = sqliteTable("verbs", {
   id: integer("id").primaryKey({ autoIncrement: true }), // autogenerate primary key for now
   infinitive: text("infinitive").notNull(),
-  meaning: text("meaning").notNull(),
-  type: text("type").notNull(),
-  frequency: real("frequency"),
+  meaning: text("meaning"),
+  type: text("type"),
+  frequency: real("frequency").default(0),
+  participleEs: text("participle_es"),
+  participleEn: text("participle_en"),
+  gerundEs: text("gerund_es"),
+  gerundEn: text("gerund_en"),
 });
 
 export const conjugations = sqliteTable("conjugations", {
@@ -16,8 +20,8 @@ export const conjugations = sqliteTable("conjugations", {
   mood: text("mood").notNull(),
   tense: text("tense").notNull(),
   person: text("person").notNull(),
-  conjugation: text("conjugation").notNull(),
-  translation: text("translation").notNull(),
+  esForm: text("es_form").notNull(),
+  enForm: text("en_form"),
 });
 
 export const srsReviews = sqliteTable("srs_reviews", {

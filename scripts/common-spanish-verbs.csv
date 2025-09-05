@@ -1,4 +1,4 @@
-Infinitive,English,Type,Participle_ES,Participle_EN,Gerund_ES,Gerund_EN
+Infinitive,Meaning,Type,Participle_ES,Participle_EN,Gerund_ES,Gerund_EN
 Abandonar,"to abandon, to leave",Regular,abandonado,abandoned,abandonando,abandoning
 Abrazar,"to hug, to embrace",Irregular,abrazado,hugged,abrazando,hugging
 Abrir,to open,Irregular,abierto,opened,abriendo,opening
@@ -48,56 +48,56 @@ Alimentar,"to feed, to nourish",Regular,alimentado,fed,alimentando,feeding
 Almacenar,"to store, to stock up",Regular,almacenado,stored,almacenando,storing
 Almorzar,"to lunch, to eat lunch",Irregular,almorzado,lunched,almorzando,lunching
 Alquilar,"to rent, to hire",Regular,alquilado,rented,alquilando,renting
-Alterar,to alter,Regular
-Amanecer,to dawn,Irregular
-Amar,to love,Regular
-Amarse,to love (each other),Regular
-Amenazar,"to threaten, to menace",Irregular
-Añadir,to add,Regular
-Analizar,"to analyse, to analyze",Irregular
-Andar,"to walk, to go, to go around",Irregular
-Animar,"to encourage, to animate",Regular
-Anochecer,"to become night, to get dark",Irregular
-Añorar,to yearn,Regular
-Anotar,"to annotate, to make a note",Regular
-Anular,to cancel,Regular
-Anunciar,"to announce, to advertise",Regular
-Apagar,"to turn off, to extinguish",Irregular
-Aparecer,to appear,Irregular
-Aplaudir,to applaud,Regular
-Aplicar,to apply,Irregular
-Apoyar,to support,Regular
-Apoyarse,to be supported,Regular
-Aprender,to learn,Regular
-Apretar,to tighten,Irregular
-Aprobar,"to approve, to pass",Irregular
-Aprovechar,to take advantage of,Regular
-Aprovecharse,"to take advantage (when used with ""de"")",Regular
-Apuntar,"to point, to aim, to make a note, to record",Regular
-Armar,"to assemble, to arm",Regular
-Arreglar,"to fix, to mend, to arrange",Regular
-Arreglarse,to get ready,Regular
-Arrendar,"to lease, to rent",Irregular
-Asegurar,"to ensure, to secure, to insure",Regular
-Asegurarse,"to ensure, to be sure",Regular
-Asistir,"to assist, to attend",Regular
-Atender,"to attend to, to serve, to tend to",Irregular
-Aumentar,"to increase, to enlarge",Regular
-Avanzar,"to advance, to proceed, to move",Irregular
-Averiguar,"to find out, to ascertain",Irregular
-Ayudar,"to help, to assist",Regular
-Bailar,to dance,Regular
-Bajar,"to go down, to lower, to bring down",Regular
-Beber,to drink,Regular
-Buscar,"to search (for), to look (for)",Irregular
-Caber,to fit,Irregular
-Caer,"to fall, to fall down",Irregular
-Caerse,"to fall, to fall down",Irregular
-Calcular,"to calculate, to estimate",Regular
-Calentar,"to warm (up), to heat (up)",Irregular
-Calentarse,to heat (oneself),Irregular
-Callar,"to stop talking, to be quiet",Regular
-Calmar,"to calm, to soothe",Regular
+Alterar,to alter,Regular,alterado,altered,alterando,altering
+Amanecer,to dawn,Irregular,amanecido,dawned,amaneciendo,dawning
+Amar,to love,Regular,amado,loved,amando,loving
+Amarse,to love (each other),Regular,amado,loved,amando,loving
+Amenazar,"to threaten, to menace",Irregular,amenazado,threatened,amenazando,threatening
+Añadir,to add,Regular,añadido,added,añadiendo,adding
+Analizar,"to analyse, to analyze",Irregular,analizado,analyzed,analizando,analyzing
+Andar,"to walk, to go, to go around",Irregular,andado,walked,ando,walking
+Animar,"to encourage, to animate",Regular,animado,encouraged,animando,encouraging
+Anochecer,"to become night, to get dark",Irregular,anochecido,nighted,anocheciendo,darkening
+Añorar,to yearn,Regular,añorado,yearned,añorando,yearning
+Anotar,"to annotate, to make a note",Regular,anotado,noted,anotando,noting
+Anular,to cancel,Regular,anulado,canceled,anulando,canceling
+Anunciar,"to announce, to advertise",Regular,anunciado,announced,anunciando,announcing
+Apagar,"to turn off, to extinguish",Irregular,apagado,turned off,apagando,turning off
+Aparecer,to appear,Irregular,aparecido,appeared,apareciendo,appearing
+Aplaudir,to applaud,Regular,aplaudido,applauded,aplaudiendo,applauding
+Aplicar,to apply,Irregular,aplicado,applied,aplicando,applying
+Apoyar,to support,Regular,apoyado,supported,apoyando,supporting
+Apoyarse,to be supported,Regular,apoyado,supported,apoyando,supporting
+Aprender,to learn,Regular,aprendido,learned,aprendiendo,learning
+Apretar,to tighten,Irregular,apretado,tightened,apretando,tightening
+Aprobar,"to approve, to pass",Irregular,aprobado,approved,aprobando,approving
+Aprovechar,to take advantage of,Regular,aprovechado,taken advantage of,aprovechando,taking advantage of
+Aprovecharse,"to take advantage",Regular,aprovechado,taken advantage,aprovechándose,taking advantage
+Apuntar,"to point, to aim, to make a note, to record",Regular,apuntado,pointed,apuntando,pointing
+Armar,"to assemble, to arm",Regular,armado,armed,armando,arming
+Arreglar,"to fix, to mend, to arrange",Regular,arreglado,fixed,arreglando,fixing
+Arreglarse,to get ready,Regular,arreglado,gone ready,arreglándose,getting ready
+Arrendar,"to lease, to rent",Irregular,arrendado,rented,arrendando,renting
+Asegurar,"to ensure, to secure, to insure",Regular,asegurado,ensured,asegurando,ensuring
+Asegurarse,"to ensure, to be sure",Regular,asegurado,ensured,asegurándose,ensuring
+Asistir,"to assist, to attend",Regular,asistido,assisted,asistiendo,assisting
+Atender,"to attend to, to serve, to tend to",Irregular,atendido,attended,atendiendo,attending
+Aumentar,"to increase, to enlarge",Regular,aumentado,increased,aumentando,increasing
+Avanzar,"to advance, to proceed, to move",Irregular,avanzado,advanced,avanzando,advancing
+Averiguar,"to find out, to ascertain",Irregular,averiguado,found out,averiguando,finding out
+Ayudar,"to help, to assist",Regular,ayudado,helped,ayudando,helping
+Bailar,to dance,Regular,bailado,danced,bailando,dancing
+Bajar,"to go down, to lower, to bring down",Regular,bajado,lowered,bajando,lowering
+Beber,to drink,Regular,bebido,drunk,bebiendo,drinking
+Buscar,"to search (for), to look (for)",Irregular,buscado,searched,buscando,searching
+Caber,to fit,Irregular,cabido,fitted,cabiendo,fitting
+Caer,"to fall, to fall down",Irregular,caído,fallen,cayendo,falling
+Caerse,"to fall, to fall down",Irregular,caído,fallen,cayéndose,falling
+Calcular,"to calculate, to estimate",Regular,calculado,calculated,calculando,calculating
+Calentar,"to warm (up), to heat (up)",Irregular,calentado,warmed,calentando,warming
+Calentarse,to heat (oneself),Irregular,calentado,warmed,calentándose,warming
+Callar,"to stop talking, to be quiet",Regular,callado,quieted,callando,being quiet
+Calmar,"to calm, to soothe",Regular,calmado,calmed,calmando,calming
 Cambiar,to change,Regular
 Cambiarse,to change (clothes),Regular
 Caminar,to walk,Regular

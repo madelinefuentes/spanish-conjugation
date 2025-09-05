@@ -1,8 +1,9 @@
 import { db } from "./client";
 import { verbs, conjugations, srsReviews } from "./schema";
-import conjugatedVerbs from "../../scripts/conjugated_verbs.json";
 import { State } from "ts-fsrs";
 import { eq } from "drizzle-orm";
+
+conjugatedVerbs = [];
 
 // TODO prevent this from blocking
 export const seedVerbs = () => {
