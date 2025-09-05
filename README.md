@@ -1,6 +1,6 @@
 # Spanish Conjugation App
 
-A mobile app built with Expo React Native for Spanish verb practice. It includes conjugation tables and a spaced-repetition review loop that orders cards by frequency and mastery. Data is stored locally with SQLite (Drizzle ORM) and state is managed with Zustand.
+A mobile app built with **Expo React Native** for Spanish verb practice. It includes conjugation tables and a spaced-repetition review loop that prioritizes cards by frequency and your progress. Data is stored locally with SQLite (Drizzle ORM) and state is managed with Zustand.
 
 <div style="display: flex; gap: 10px; justify-content: center;">
   <img src="https://github.com/user-attachments/assets/b2cef869-19f6-43b8-bb5b-67c8a460bc06" alt="Verb list" height="500" />
