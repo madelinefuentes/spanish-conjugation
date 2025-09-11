@@ -21,12 +21,13 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
-import { useDatabaseMigration } from "./db/client";
+import { initDb, useDatabaseMigration } from "./db/client";
 import { ModalManager } from "./ModalManager";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [dbReady, setDbReady] = useState(false);
   const themeSetting = useLocalStorageStore((state) => state.theme);
-  const { success, error } = useDatabaseMigration();
 
   const isInDarkMode = themeSetting === "dark";
   const currentTheme = isInDarkMode ? darkTheme : lightTheme;
@@ -38,17 +39,30 @@ export default function App() {
     Inter_400Regular_Italic,
   });
 
-  const defaultText = {
-    style: [{ fontFamily: "Inter_400Regular" }],
+  const intializeDb = async () => {
+    try {
+      await initDb();
+      setDbReady(true);
+    } catch (e) {
+      console.warn("DB init failed", e);
+    }
   };
 
-  if (!fontsLoaded && !success) {
-    console.log("error");
-    return null;
-  }
+  useEffect(() => {
+    intializeDb();
+  }, []);
 
-  setDefaultProps(Text, defaultText);
-  setDefaultProps(TextInput, defaultText);
+  useEffect(() => {
+    if (fontsLoaded) {
+      const defaultText = { style: [{ fontFamily: "Inter_400Regular" }] };
+      setDefaultProps(Text, defaultText);
+      setDefaultProps(TextInput, defaultText);
+    }
+  }, [fontsLoaded]);
+
+  const ready = fontsLoaded && dbReady;
+
+  if (!ready) return null;
 
   return (
     <ThemeProvider theme={currentTheme}>

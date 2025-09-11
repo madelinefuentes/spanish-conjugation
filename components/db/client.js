@@ -2,7 +2,7 @@
 import * as FileSystem from "expo-file-system";
 import { Asset } from "expo-asset";
 import { openDatabaseSync } from "expo-sqlite";
-import { drizzle } from "drizzle-orm/expo-sqlite";
+import { drizzle as createDrizzle } from "drizzle-orm/expo-sqlite";
 import { useMigrations } from "drizzle-orm/expo-sqlite/migrator";
 import migrations from "../../drizzle/migrations";
 import { useDrizzleStudio } from "expo-drizzle-studio-plugin";
@@ -21,18 +21,18 @@ export async function ensureBundledDb() {
     await FileSystem.makeDirectoryAsync(SQLITE_DIR, { intermediates: true });
   }
 
-  const asset = Asset.fromModule(require("../assets/conjugations.db"));
+  const asset = Asset.fromModule(require("../../assets/conjugations.db"));
   await asset.downloadAsync();
   if (!asset.localUri) throw new Error("Could not resolve bundled DB asset");
   await FileSystem.copyAsync({ from: asset.localUri, to: DB_PATH });
 }
 
 let expoDb = null;
-let drizzle = null;
+let drizzleClient = null;
 
-// call this once on app startup (before using the db anywhere)
+// call once at app startup
 export async function initDb() {
-  if (drizzle) return drizzle;
+  if (drizzleClient) return drizzleClient;
 
   await ensureBundledDb();
 
@@ -41,26 +41,24 @@ export async function initDb() {
   try {
     expoDb.execSync("PRAGMA foreign_keys=ON;");
     expoDb.execSync("PRAGMA journal_mode=WAL;");
-  } catch (e) {
-    // ignore if not supported in env
-  }
+  } catch (e) {}
 
-  drizzle = drizzle(expoDb);
-  return drizzle;
+  drizzleClient = createDrizzle(expoDb);
+  return drizzleClient;
 }
 
-// use this if you need a reference after initDb() has run
+// after initDb()
 export function getDb() {
-  if (!drizzle) throw new Error("Call initDb() once before getDb()");
-  return drizzle;
+  if (!drizzleClient) throw new Error("Called initDb() before getDb()");
+  return drizzleClient;
 }
 
 export function useDatabaseMigration() {
-  if (!expoDb || !drizzle) {
-    throw new Error("Call initDb() before useDatabaseMigration()");
+  if (!expoDb || !drizzleClient) {
+    throw new Error("Called initDb() before useDatabaseMigration()");
   }
   useDrizzleStudio(expoDb);
-  return useMigrations(drizzle, migrations);
+  return useMigrations(drizzleClient, migrations);
 }
 
 export async function clearDatabase() {
@@ -71,13 +69,11 @@ export async function clearDatabase() {
       BEGIN IMMEDIATE;
       DELETE FROM verbs;
       DELETE FROM conjugations;
-      DELETE FROM srs_reviews
+      DELETE FROM srs_reviews;
       COMMIT;
       PRAGMA foreign_keys = ON;
     `);
-    try {
-      await expoDb.execAsync(`DELETE FROM srs_reviews;`);
-    } catch {}
+
     console.log("Database cleared!");
   } catch (error) {
     console.log("Error", "Failed to clear the database.", error);

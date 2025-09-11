@@ -1,0 +1,11 @@
+[
+  { "id": "yo", "es": "yo", "en": "I" },
+  { "id": "tu", "es": "tú", "en": "you (sing.)" },
+  { "id": "ud", "es": "usted", "en": "you (formal)" },
+  { "id": "el", "es": "él", "en": "he" },
+  { "id": "ella", "es": "ella", "en": "she" },
+  { "id": "nos", "es": "nosotros", "en": "we" },
+  { "id": "uds", "es": "ustedes", "en": "you (pl.)" },
+  { "id": "ellos", "es": "ellos", "en": "they (m.)" },
+  { "id": "ellas", "es": "ellas", "en": "they (f.)" }
+]
