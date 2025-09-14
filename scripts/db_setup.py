@@ -7,31 +7,51 @@ DB_PATH = Path("conjugations.db")
 DDL = """
 PRAGMA foreign_keys = ON;
 
+CREATE TABLE IF NOT EXISTS tenses (
+  id TEXT PRIMARY KEY,               -- e.g. "ind_pres"
+  name_es TEXT NOT NULL,             -- "Presente"
+  name_en TEXT NOT NULL,             -- "Present"
+  mood    TEXT NOT NULL,             -- "indicative" | "subjunctive" | "imperative" | "periphrastic"
+  description TEXT
+);
+
 CREATE TABLE IF NOT EXISTS verbs (
   id INTEGER PRIMARY KEY,
-  infinitive TEXT NOT NULL UNIQUE,   -- e.g. "esperar"
-  meaning    TEXT,                   -- e.g. "to hope; to wait"
-  type       TEXT,                   -- e.g. "Regular" / "Irregular"
+  infinitive TEXT NOT NULL UNIQUE,   -- "ser"
+  meaning    TEXT,                   -- "to be (essential/permanent)"
+  type       TEXT,                   -- "regular" / "irregular" / etc.
   frequency  REAL DEFAULT 0,
-  participle_es TEXT,                -- "esperado"
-  participle_en TEXT,                -- "hoped"
-  gerund_es    TEXT,                 -- "esperando"
-  gerund_en    TEXT                  -- "hoping"
+  participle_es TEXT,
+  participle_en TEXT,
+  gerund_es    TEXT,
+  gerund_en    TEXT
 );
 
 CREATE TABLE IF NOT EXISTS conjugations (
   id INTEGER PRIMARY KEY,
-  verb_id  INTEGER NOT NULL REFERENCES verbs(id),
-  mood     TEXT NOT NULL,            -- e.g. "Indicativo"
-  tense    TEXT NOT NULL,            -- e.g. "present" | "preterite"
-  person   TEXT NOT NULL,            -- pronoun
-  es_form  TEXT NOT NULL,            -- "espero"
-  en_form  TEXT,                     -- "I hope"
-  UNIQUE (verb_id, mood, tense, person)
+  verb_id   INTEGER NOT NULL REFERENCES verbs(id),
+  tense_id  TEXT    NOT NULL REFERENCES tenses(id),
+  person    TEXT    NOT NULL,        -- "yo","tú","ud","él","ella","nos","uds","ellos","ellas"
+  es_form   TEXT    NOT NULL,
+  en_form   TEXT
+);
+
+CREATE TABLE IF NOT EXISTS srs_reviews (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  conjugation_id INTEGER NOT NULL REFERENCES conjugations(id),
+  due_at INTEGER NOT NULL,          -- unix timestamp
+  stability INTEGER NOT NULL,
+  difficulty INTEGER NOT NULL,
+  scheduled_days INTEGER NOT NULL,
+  learning_steps INTEGER NOT NULL,
+  reps INTEGER NOT NULL,
+  lapses INTEGER NOT NULL,
+  state TEXT NOT NULL,              -- e.g. 'learning', 'review'
+  last_review_at INTEGER
 );
 
 CREATE INDEX IF NOT EXISTS idx_conj_lookup
-  ON conjugations(verb_id, mood, tense);
+  ON conjugations(verb_id, tense_id);
 """
 
 def ensure_db(db_path=DB_PATH):
@@ -45,6 +65,20 @@ def get_conn(db_path=DB_PATH):
     conn.execute("PRAGMA foreign_keys=ON;")
     conn.execute("PRAGMA journal_mode=WAL;")
     return conn
+
+def upsert_tense(conn, tense_id, name_es, name_en, mood, description=None):
+    conn.execute(
+        """
+        INSERT INTO tenses (id, name_es, name_en, mood, description)
+        VALUES (?, ?, ?, ?, ?)
+        ON CONFLICT(id) DO UPDATE SET
+          name_es    = excluded.name_es,
+          name_en    = excluded.name_en,
+          mood       = excluded.mood,
+          description= excluded.description
+        """,
+        (tense_id, name_es, name_en, mood, description)
+    )
 
 def upsert_verb(
     conn,
@@ -88,18 +122,18 @@ def upsert_verb(
     ).fetchone()
     return int(row[0])
 
-def upsert_conjugation(conn, verb_id, mood, tense, person, es_form, en_form=None):
+def upsert_conjugation(conn, verb_id, tense_id, person, es_form, en_form=None):
     conn.execute(
         """
-        INSERT INTO conjugations (verb_id, mood, tense, person, es_form, en_form)
-        VALUES (?, ?, ?, ?, ?, ?)
-        ON CONFLICT(verb_id, mood, tense, person) DO UPDATE SET
+        INSERT INTO conjugations (verb_id, tense_id, person, es_form, en_form)
+        VALUES (?, ?, ?, ?, ?)
+        ON CONFLICT(verb_id, tense_id, person) DO UPDATE SET
           es_form = excluded.es_form,
           en_form = COALESCE(NULLIF(excluded.en_form, ''), conjugations.en_form)
         """,
-        (verb_id, mood, tense, person, es_form, en_form)
+        (verb_id, tense_id, person, es_form, en_form)
     )
 
 if __name__ == "__main__":
     ensure_db()
-    print(f"✅ created {DB_PATH.resolve()}")
+    print(f"created {DB_PATH.resolve()}")

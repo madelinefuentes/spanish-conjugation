@@ -1,0 +1,1724 @@
+[
+  {
+    "infinitive_es": "ser",
+    "meaning_en": "to be (essential/permanent)",
+    "type": "irregular",
+    "participle_es": "sido",
+    "participle_en": "been",
+    "gerund_es": "siendo",
+    "gerund_en": "being",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "soy", "en": "I am" },
+        "tú": { "es": "eres", "en": "you are" },
+        "ud": { "es": "es", "en": "you are" },
+        "él": { "es": "es", "en": "he is" },
+        "ella": { "es": "es", "en": "she is" },
+        "nos": { "es": "somos", "en": "we are" },
+        "uds": { "es": "son", "en": "you all are" },
+        "ellos": { "es": "son", "en": "they are" },
+        "ellas": { "es": "son", "en": "they are" }
+      },
+      "ind_pret": {
+        "yo": { "es": "fui", "en": "I was" },
+        "tú": { "es": "fuiste", "en": "you were" },
+        "ud": { "es": "fue", "en": "you were" },
+        "él": { "es": "fue", "en": "he was" },
+        "ella": { "es": "fue", "en": "she was" },
+        "nos": { "es": "fuimos", "en": "we were" },
+        "uds": { "es": "fueron", "en": "you all were" },
+        "ellos": { "es": "fueron", "en": "they were" },
+        "ellas": { "es": "fueron", "en": "they were" }
+      },
+      "ind_impf": {
+        "yo": { "es": "era", "en": "I used to be" },
+        "tú": { "es": "eras", "en": "you used to be" },
+        "ud": { "es": "era", "en": "you used to be" },
+        "él": { "es": "era", "en": "he used to be" },
+        "ella": { "es": "era", "en": "she used to be" },
+        "nos": { "es": "éramos", "en": "we used to be" },
+        "uds": { "es": "eran", "en": "you all used to be" },
+        "ellos": { "es": "eran", "en": "they used to be" },
+        "ellas": { "es": "eran", "en": "they used to be" }
+      },
+      "ind_fut": {
+        "yo": { "es": "seré", "en": "I will be" },
+        "tú": { "es": "serás", "en": "you will be" },
+        "ud": { "es": "será", "en": "you will be" },
+        "él": { "es": "será", "en": "he will be" },
+        "ella": { "es": "será", "en": "she will be" },
+        "nos": { "es": "seremos", "en": "we will be" },
+        "uds": { "es": "serán", "en": "you all will be" },
+        "ellos": { "es": "serán", "en": "they will be" },
+        "ellas": { "es": "serán", "en": "they will be" }
+      },
+      "ind_cond": {
+        "yo": { "es": "sería", "en": "I would be" },
+        "tú": { "es": "serías", "en": "you would be" },
+        "ud": { "es": "sería", "en": "you would be" },
+        "él": { "es": "sería", "en": "he would be" },
+        "ella": { "es": "sería", "en": "she would be" },
+        "nos": { "es": "seríamos", "en": "we would be" },
+        "uds": { "es": "serían", "en": "you all would be" },
+        "ellos": { "es": "serían", "en": "they would be" },
+        "ellas": { "es": "serían", "en": "they would be" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he sido", "en": "I have been" },
+        "tú": { "es": "has sido", "en": "you have been" },
+        "ud": { "es": "ha sido", "en": "you have been" },
+        "él": { "es": "ha sido", "en": "he has been" },
+        "ella": { "es": "ha sido", "en": "she has been" },
+        "nos": { "es": "hemos sido", "en": "we have been" },
+        "uds": { "es": "han sido", "en": "you all have been" },
+        "ellos": { "es": "han sido", "en": "they have been" },
+        "ellas": { "es": "han sido", "en": "they have been" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había sido", "en": "I had been" },
+        "tú": { "es": "habías sido", "en": "you had been" },
+        "ud": { "es": "había sido", "en": "you had been" },
+        "él": { "es": "había sido", "en": "he had been" },
+        "ella": { "es": "había sido", "en": "she had been" },
+        "nos": { "es": "habíamos sido", "en": "we had been" },
+        "uds": { "es": "habían sido", "en": "you all had been" },
+        "ellos": { "es": "habían sido", "en": "they had been" },
+        "ellas": { "es": "habían sido", "en": "they had been" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré sido", "en": "I will have been" },
+        "tú": { "es": "habrás sido", "en": "you will have been" },
+        "ud": { "es": "habrá sido", "en": "you will have been" },
+        "él": { "es": "habrá sido", "en": "he will have been" },
+        "ella": { "es": "habrá sido", "en": "she will have been" },
+        "nos": { "es": "habremos sido", "en": "we will have been" },
+        "uds": { "es": "habrán sido", "en": "you all will have been" },
+        "ellos": { "es": "habrán sido", "en": "they will have been" },
+        "ellas": { "es": "habrán sido", "en": "they will have been" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría sido", "en": "I would have been" },
+        "tú": { "es": "habrías sido", "en": "you would have been" },
+        "ud": { "es": "habría sido", "en": "you would have been" },
+        "él": { "es": "habría sido", "en": "he would have been" },
+        "ella": { "es": "habría sido", "en": "she would have been" },
+        "nos": { "es": "habríamos sido", "en": "we would have been" },
+        "uds": { "es": "habrían sido", "en": "you all would have been" },
+        "ellos": { "es": "habrían sido", "en": "they would have been" },
+        "ellas": { "es": "habrían sido", "en": "they would have been" }
+      },
+      "subj_pres": {
+        "yo": { "es": "sea", "en": "that I be" },
+        "tú": { "es": "seas", "en": "that you be" },
+        "ud": { "es": "sea", "en": "that you be" },
+        "él": { "es": "sea", "en": "that he be" },
+        "ella": { "es": "sea", "en": "that she be" },
+        "nos": { "es": "seamos", "en": "that we be" },
+        "uds": { "es": "sean", "en": "that you all be" },
+        "ellos": { "es": "sean", "en": "that they be" },
+        "ellas": { "es": "sean", "en": "that they be" }
+      },
+      "subj_impf": {
+        "yo": { "es": "fuera", "en": "that I were" },
+        "tú": { "es": "fueras", "en": "that you were" },
+        "ud": { "es": "fuera", "en": "that you were" },
+        "él": { "es": "fuera", "en": "that he were" },
+        "ella": { "es": "fuera", "en": "that she were" },
+        "nos": { "es": "fuéramos", "en": "that we were" },
+        "uds": { "es": "fueran", "en": "that you all were" },
+        "ellos": { "es": "fueran", "en": "that they were" },
+        "ellas": { "es": "fueran", "en": "that they were" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya sido", "en": "that I have been" },
+        "tú": { "es": "hayas sido", "en": "that you have been" },
+        "ud": { "es": "haya sido", "en": "that you have been" },
+        "él": { "es": "haya sido", "en": "that he have been" },
+        "ella": { "es": "haya sido", "en": "that she have been" },
+        "nos": { "es": "hayamos sido", "en": "that we have been" },
+        "uds": { "es": "hayan sido", "en": "that you all have been" },
+        "ellos": { "es": "hayan sido", "en": "that they have been" },
+        "ellas": { "es": "hayan sido", "en": "that they have been" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera sido", "en": "that I had been" },
+        "tú": { "es": "hubieras sido", "en": "that you had been" },
+        "ud": { "es": "hubiera sido", "en": "that you had been" },
+        "él": { "es": "hubiera sido", "en": "that he had been" },
+        "ella": { "es": "hubiera sido", "en": "that she had been" },
+        "nos": { "es": "hubiéramos sido", "en": "that we had been" },
+        "uds": { "es": "hubieran sido", "en": "that you all had been" },
+        "ellos": { "es": "hubieran sido", "en": "that they had been" },
+        "ellas": { "es": "hubieran sido", "en": "that they had been" }
+      },
+      "imp_aff": {
+        "tú": { "es": "sé", "en": "Be" },
+        "ud": { "es": "sea", "en": "Be" },
+        "nos": { "es": "seamos", "en": "Let’s be" },
+        "uds": { "es": "sean", "en": "Be" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no seas", "en": "Don’t be" },
+        "ud": { "es": "no sea", "en": "Don’t be" },
+        "nos": { "es": "no seamos", "en": "Let’s not be" },
+        "uds": { "es": "no sean", "en": "Don’t be" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy siendo", "en": "I am being" },
+        "tú": { "es": "estás siendo", "en": "you are being" },
+        "ud": { "es": "está siendo", "en": "you are being" },
+        "él": { "es": "está siendo", "en": "he is being" },
+        "ella": { "es": "está siendo", "en": "she is being" },
+        "nos": { "es": "estamos siendo", "en": "we are being" },
+        "uds": { "es": "están siendo", "en": "you all are being" },
+        "ellos": { "es": "están siendo", "en": "they are being" },
+        "ellas": { "es": "están siendo", "en": "they are being" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a ser", "en": "I am going to be" },
+        "tú": { "es": "vas a ser", "en": "you are going to be" },
+        "ud": { "es": "va a ser", "en": "you are going to be" },
+        "él": { "es": "va a ser", "en": "he is going to be" },
+        "ella": { "es": "va a ser", "en": "she is going to be" },
+        "nos": { "es": "vamos a ser", "en": "we are going to be" },
+        "uds": { "es": "van a ser", "en": "you all are going to be" },
+        "ellos": { "es": "van a ser", "en": "they are going to be" },
+        "ellas": { "es": "van a ser", "en": "they are going to be" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "estar",
+    "meaning_en": "to be (state/location)",
+    "type": "irregular",
+    "participle_es": "estado",
+    "participle_en": "been",
+    "gerund_es": "estando",
+    "gerund_en": "being",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "estoy", "en": "I am" },
+        "tú": { "es": "estás", "en": "you are" },
+        "ud": { "es": "está", "en": "you are" },
+        "él": { "es": "está", "en": "he is" },
+        "ella": { "es": "está", "en": "she is" },
+        "nos": { "es": "estamos", "en": "we are" },
+        "uds": { "es": "están", "en": "you all are" },
+        "ellos": { "es": "están", "en": "they are" },
+        "ellas": { "es": "están", "en": "they are" }
+      },
+      "ind_pret": {
+        "yo": { "es": "estuve", "en": "I was" },
+        "tú": { "es": "estuviste", "en": "you were" },
+        "ud": { "es": "estuvo", "en": "you were" },
+        "él": { "es": "estuvo", "en": "he was" },
+        "ella": { "es": "estuvo", "en": "she was" },
+        "nos": { "es": "estuvimos", "en": "we were" },
+        "uds": { "es": "estuvieron", "en": "you all were" },
+        "ellos": { "es": "estuvieron", "en": "they were" },
+        "ellas": { "es": "estuvieron", "en": "they were" }
+      },
+      "ind_impf": {
+        "yo": { "es": "estaba", "en": "I used to be" },
+        "tú": { "es": "estabas", "en": "you used to be" },
+        "ud": { "es": "estaba", "en": "you used to be" },
+        "él": { "es": "estaba", "en": "he used to be" },
+        "ella": { "es": "estaba", "en": "she used to be" },
+        "nos": { "es": "estábamos", "en": "we used to be" },
+        "uds": { "es": "estaban", "en": "you all used to be" },
+        "ellos": { "es": "estaban", "en": "they used to be" },
+        "ellas": { "es": "estaban", "en": "they used to be" }
+      },
+      "ind_fut": {
+        "yo": { "es": "estaré", "en": "I will be" },
+        "tú": { "es": "estarás", "en": "you will be" },
+        "ud": { "es": "estará", "en": "you will be" },
+        "él": { "es": "estará", "en": "he will be" },
+        "ella": { "es": "estará", "en": "she will be" },
+        "nos": { "es": "estaremos", "en": "we will be" },
+        "uds": { "es": "estarán", "en": "you all will be" },
+        "ellos": { "es": "estarán", "en": "they will be" },
+        "ellas": { "es": "estarán", "en": "they will be" }
+      },
+      "ind_cond": {
+        "yo": { "es": "estaría", "en": "I would be" },
+        "tú": { "es": "estarías", "en": "you would be" },
+        "ud": { "es": "estaría", "en": "you would be" },
+        "él": { "es": "estaría", "en": "he would be" },
+        "ella": { "es": "estaría", "en": "she would be" },
+        "nos": { "es": "estaríamos", "en": "we would be" },
+        "uds": { "es": "estarían", "en": "you all would be" },
+        "ellos": { "es": "estarían", "en": "they would be" },
+        "ellas": { "es": "estarían", "en": "they would be" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he estado", "en": "I have been" },
+        "tú": { "es": "has estado", "en": "you have been" },
+        "ud": { "es": "ha estado", "en": "you have been" },
+        "él": { "es": "ha estado", "en": "he has been" },
+        "ella": { "es": "ha estado", "en": "she has been" },
+        "nos": { "es": "hemos estado", "en": "we have been" },
+        "uds": { "es": "han estado", "en": "you all have been" },
+        "ellos": { "es": "han estado", "en": "they have been" },
+        "ellas": { "es": "han estado", "en": "they have been" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había estado", "en": "I had been" },
+        "tú": { "es": "habías estado", "en": "you had been" },
+        "ud": { "es": "había estado", "en": "you had been" },
+        "él": { "es": "había estado", "en": "he had been" },
+        "ella": { "es": "había estado", "en": "she had been" },
+        "nos": { "es": "habíamos estado", "en": "we had been" },
+        "uds": { "es": "habían estado", "en": "you all had been" },
+        "ellos": { "es": "habían estado", "en": "they had been" },
+        "ellas": { "es": "habían estado", "en": "they had been" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré estado", "en": "I will have been" },
+        "tú": { "es": "habrás estado", "en": "you will have been" },
+        "ud": { "es": "habrá estado", "en": "you will have been" },
+        "él": { "es": "habrá estado", "en": "he will have been" },
+        "ella": { "es": "habrá estado", "en": "she will have been" },
+        "nos": { "es": "habremos estado", "en": "we will have been" },
+        "uds": { "es": "habrán estado", "en": "you all will have been" },
+        "ellos": { "es": "habrán estado", "en": "they will have been" },
+        "ellas": { "es": "habrán estado", "en": "they will have been" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría estado", "en": "I would have been" },
+        "tú": { "es": "habrías estado", "en": "you would have been" },
+        "ud": { "es": "habría estado", "en": "you would have been" },
+        "él": { "es": "habría estado", "en": "he would have been" },
+        "ella": { "es": "habría estado", "en": "she would have been" },
+        "nos": { "es": "habríamos estado", "en": "we would have been" },
+        "uds": { "es": "habrían estado", "en": "you all would have been" },
+        "ellos": { "es": "habrían estado", "en": "they would have been" },
+        "ellas": { "es": "habrían estado", "en": "they would have been" }
+      },
+      "subj_pres": {
+        "yo": { "es": "esté", "en": "that I be" },
+        "tú": { "es": "estés", "en": "that you be" },
+        "ud": { "es": "esté", "en": "that you be" },
+        "él": { "es": "esté", "en": "that he be" },
+        "ella": { "es": "esté", "en": "that she be" },
+        "nos": { "es": "estemos", "en": "that we be" },
+        "uds": { "es": "estén", "en": "that you all be" },
+        "ellos": { "es": "estén", "en": "that they be" },
+        "ellas": { "es": "estén", "en": "that they be" }
+      },
+      "subj_impf": {
+        "yo": { "es": "estuviera", "en": "that I were" },
+        "tú": { "es": "estuvieras", "en": "that you were" },
+        "ud": { "es": "estuviera", "en": "that you were" },
+        "él": { "es": "estuviera", "en": "that he were" },
+        "ella": { "es": "estuviera", "en": "that she were" },
+        "nos": { "es": "estuviéramos", "en": "that we were" },
+        "uds": { "es": "estuvieran", "en": "that you all were" },
+        "ellos": { "es": "estuvieran", "en": "that they were" },
+        "ellas": { "es": "estuvieran", "en": "that they were" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya estado", "en": "that I have been" },
+        "tú": { "es": "hayas estado", "en": "that you have been" },
+        "ud": { "es": "haya estado", "en": "that you have been" },
+        "él": { "es": "haya estado", "en": "that he have been" },
+        "ella": { "es": "haya estado", "en": "that she have been" },
+        "nos": { "es": "hayamos estado", "en": "that we have been" },
+        "uds": { "es": "hayan estado", "en": "that you all have been" },
+        "ellos": { "es": "hayan estado", "en": "that they have been" },
+        "ellas": { "es": "hayan estado", "en": "that they have been" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera estado", "en": "that I had been" },
+        "tú": { "es": "hubieras estado", "en": "that you had been" },
+        "ud": { "es": "hubiera estado", "en": "that you had been" },
+        "él": { "es": "hubiera estado", "en": "that he had been" },
+        "ella": { "es": "hubiera estado", "en": "that she had been" },
+        "nos": { "es": "hubiéramos estado", "en": "that we had been" },
+        "uds": { "es": "hubieran estado", "en": "that you all had been" },
+        "ellos": { "es": "hubieran estado", "en": "that they had been" },
+        "ellas": { "es": "hubieran estado", "en": "that they had been" }
+      },
+      "imp_aff": {
+        "tú": { "es": "está", "en": "Be" },
+        "ud": { "es": "esté", "en": "Be" },
+        "nos": { "es": "estemos", "en": "Let’s be" },
+        "uds": { "es": "estén", "en": "Be" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no estés", "en": "Don’t be" },
+        "ud": { "es": "no esté", "en": "Don’t be" },
+        "nos": { "es": "no estemos", "en": "Let’s not be" },
+        "uds": { "es": "no estén", "en": "Don’t be" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy estando", "en": "I am being" },
+        "tú": { "es": "estás estando", "en": "you are being" },
+        "ud": { "es": "está estando", "en": "you are being" },
+        "él": { "es": "está estando", "en": "he is being" },
+        "ella": { "es": "está estando", "en": "she is being" },
+        "nos": { "es": "estamos estando", "en": "we are being" },
+        "uds": { "es": "están estando", "en": "you all are being" },
+        "ellos": { "es": "están estando", "en": "they are being" },
+        "ellas": { "es": "están estando", "en": "they are being" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a estar", "en": "I am going to be" },
+        "tú": { "es": "vas a estar", "en": "you are going to be" },
+        "ud": { "es": "va a estar", "en": "you are going to be" },
+        "él": { "es": "va a estar", "en": "he is going to be" },
+        "ella": { "es": "va a estar", "en": "she is going to be" },
+        "nos": { "es": "vamos a estar", "en": "we are going to be" },
+        "uds": { "es": "van a estar", "en": "you all are going to be" },
+        "ellos": { "es": "van a estar", "en": "they are going to be" },
+        "ellas": { "es": "van a estar", "en": "they are going to be" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "tener",
+    "meaning_en": "to have",
+    "type": "irregular",
+    "participle_es": "tenido",
+    "participle_en": "had",
+    "gerund_es": "teniendo",
+    "gerund_en": "having",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "tengo", "en": "I have" },
+        "tú": { "es": "tienes", "en": "you have" },
+        "ud": { "es": "tiene", "en": "you have" },
+        "él": { "es": "tiene", "en": "he has" },
+        "ella": { "es": "tiene", "en": "she has" },
+        "nos": { "es": "tenemos", "en": "we have" },
+        "uds": { "es": "tienen", "en": "you all have" },
+        "ellos": { "es": "tienen", "en": "they have" },
+        "ellas": { "es": "tienen", "en": "they have" }
+      },
+      "ind_pret": {
+        "yo": { "es": "tuve", "en": "I had" },
+        "tú": { "es": "tuviste", "en": "you had" },
+        "ud": { "es": "tuvo", "en": "you had" },
+        "él": { "es": "tuvo", "en": "he had" },
+        "ella": { "es": "tuvo", "en": "she had" },
+        "nos": { "es": "tuvimos", "en": "we had" },
+        "uds": { "es": "tuvieron", "en": "you all had" },
+        "ellos": { "es": "tuvieron", "en": "they had" },
+        "ellas": { "es": "tuvieron", "en": "they had" }
+      },
+      "ind_impf": {
+        "yo": { "es": "tenía", "en": "I used to have" },
+        "tú": { "es": "tenías", "en": "you used to have" },
+        "ud": { "es": "tenía", "en": "you used to have" },
+        "él": { "es": "tenía", "en": "he used to have" },
+        "ella": { "es": "tenía", "en": "she used to have" },
+        "nos": { "es": "teníamos", "en": "we used to have" },
+        "uds": { "es": "tenían", "en": "you all used to have" },
+        "ellos": { "es": "tenían", "en": "they used to have" },
+        "ellas": { "es": "tenían", "en": "they used to have" }
+      },
+      "ind_fut": {
+        "yo": { "es": "tendré", "en": "I will have" },
+        "tú": { "es": "tendrás", "en": "you will have" },
+        "ud": { "es": "tendrá", "en": "you will have" },
+        "él": { "es": "tendrá", "en": "he will have" },
+        "ella": { "es": "tendrá", "en": "she will have" },
+        "nos": { "es": "tendremos", "en": "we will have" },
+        "uds": { "es": "tendrán", "en": "you all will have" },
+        "ellos": { "es": "tendrán", "en": "they will have" },
+        "ellas": { "es": "tendrán", "en": "they will have" }
+      },
+      "ind_cond": {
+        "yo": { "es": "tendría", "en": "I would have" },
+        "tú": { "es": "tendrías", "en": "you would have" },
+        "ud": { "es": "tendría", "en": "you would have" },
+        "él": { "es": "tendría", "en": "he would have" },
+        "ella": { "es": "tendría", "en": "she would have" },
+        "nos": { "es": "tendríamos", "en": "we would have" },
+        "uds": { "es": "tendrían", "en": "you all would have" },
+        "ellos": { "es": "tendrían", "en": "they would have" },
+        "ellas": { "es": "tendrían", "en": "they would have" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he tenido", "en": "I have had" },
+        "tú": { "es": "has tenido", "en": "you have had" },
+        "ud": { "es": "ha tenido", "en": "you have had" },
+        "él": { "es": "ha tenido", "en": "he has had" },
+        "ella": { "es": "ha tenido", "en": "she has had" },
+        "nos": { "es": "hemos tenido", "en": "we have had" },
+        "uds": { "es": "han tenido", "en": "you all have had" },
+        "ellos": { "es": "han tenido", "en": "they have had" },
+        "ellas": { "es": "han tenido", "en": "they have had" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había tenido", "en": "I had had" },
+        "tú": { "es": "habías tenido", "en": "you had had" },
+        "ud": { "es": "había tenido", "en": "you had had" },
+        "él": { "es": "había tenido", "en": "he had had" },
+        "ella": { "es": "había tenido", "en": "she had had" },
+        "nos": { "es": "habíamos tenido", "en": "we had had" },
+        "uds": { "es": "habían tenido", "en": "you all had had" },
+        "ellos": { "es": "habían tenido", "en": "they had had" },
+        "ellas": { "es": "habían tenido", "en": "they had had" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré tenido", "en": "I will have had" },
+        "tú": { "es": "habrás tenido", "en": "you will have had" },
+        "ud": { "es": "habrá tenido", "en": "you will have had" },
+        "él": { "es": "habrá tenido", "en": "he will have had" },
+        "ella": { "es": "habrá tenido", "en": "she will have had" },
+        "nos": { "es": "habremos tenido", "en": "we will have had" },
+        "uds": { "es": "habrán tenido", "en": "you all will have had" },
+        "ellos": { "es": "habrán tenido", "en": "they will have had" },
+        "ellas": { "es": "habrán tenido", "en": "they will have had" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría tenido", "en": "I would have had" },
+        "tú": { "es": "habrías tenido", "en": "you would have had" },
+        "ud": { "es": "habría tenido", "en": "you would have had" },
+        "él": { "es": "habría tenido", "en": "he would have had" },
+        "ella": { "es": "habría tenido", "en": "she would have had" },
+        "nos": { "es": "habríamos tenido", "en": "we would have had" },
+        "uds": { "es": "habrían tenido", "en": "you all would have had" },
+        "ellos": { "es": "habrían tenido", "en": "they would have had" },
+        "ellas": { "es": "habrían tenido", "en": "they would have had" }
+      },
+      "subj_pres": {
+        "yo": { "es": "tenga", "en": "that I have" },
+        "tú": { "es": "tengas", "en": "that you have" },
+        "ud": { "es": "tenga", "en": "that you have" },
+        "él": { "es": "tenga", "en": "that he have" },
+        "ella": { "es": "tenga", "en": "that she have" },
+        "nos": { "es": "tengamos", "en": "that we have" },
+        "uds": { "es": "tengan", "en": "that you all have" },
+        "ellos": { "es": "tengan", "en": "that they have" },
+        "ellas": { "es": "tengan", "en": "that they have" }
+      },
+      "subj_impf": {
+        "yo": { "es": "tuviera", "en": "that I had" },
+        "tú": { "es": "tuvieras", "en": "that you had" },
+        "ud": { "es": "tuviera", "en": "that you had" },
+        "él": { "es": "tuviera", "en": "that he had" },
+        "ella": { "es": "tuviera", "en": "that she had" },
+        "nos": { "es": "tuviéramos", "en": "that we had" },
+        "uds": { "es": "tuvieran", "en": "that you all had" },
+        "ellos": { "es": "tuvieran", "en": "that they had" },
+        "ellas": { "es": "tuvieran", "en": "that they had" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya tenido", "en": "that I have had" },
+        "tú": { "es": "hayas tenido", "en": "that you have had" },
+        "ud": { "es": "haya tenido", "en": "that you have had" },
+        "él": { "es": "haya tenido", "en": "that he have had" },
+        "ella": { "es": "haya tenido", "en": "that she have had" },
+        "nos": { "es": "hayamos tenido", "en": "that we have had" },
+        "uds": { "es": "hayan tenido", "en": "that you all have had" },
+        "ellos": { "es": "hayan tenido", "en": "that they have had" },
+        "ellas": { "es": "hayan tenido", "en": "that they have had" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera tenido", "en": "that I had had" },
+        "tú": { "es": "hubieras tenido", "en": "that you had had" },
+        "ud": { "es": "hubiera tenido", "en": "that you had had" },
+        "él": { "es": "hubiera tenido", "en": "that he had had" },
+        "ella": { "es": "hubiera tenido", "en": "that she had had" },
+        "nos": { "es": "hubiéramos tenido", "en": "that we had had" },
+        "uds": { "es": "hubieran tenido", "en": "that you all had had" },
+        "ellos": { "es": "hubieran tenido", "en": "that they had had" },
+        "ellas": { "es": "hubieran tenido", "en": "that they had had" }
+      },
+      "imp_aff": {
+        "tú": { "es": "ten", "en": "Have" },
+        "ud": { "es": "tenga", "en": "Have" },
+        "nos": { "es": "tengamos", "en": "Let’s have" },
+        "uds": { "es": "tengan", "en": "Have" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no tengas", "en": "Don’t have" },
+        "ud": { "es": "no tenga", "en": "Don’t have" },
+        "nos": { "es": "no tengamos", "en": "Let’s not have" },
+        "uds": { "es": "no tengan", "en": "Don’t have" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy teniendo", "en": "I am having" },
+        "tú": { "es": "estás teniendo", "en": "you are having" },
+        "ud": { "es": "está teniendo", "en": "you are having" },
+        "él": { "es": "está teniendo", "en": "he is having" },
+        "ella": { "es": "está teniendo", "en": "she is having" },
+        "nos": { "es": "estamos teniendo", "en": "we are having" },
+        "uds": { "es": "están teniendo", "en": "you all are having" },
+        "ellos": { "es": "están teniendo", "en": "they are having" },
+        "ellas": { "es": "están teniendo", "en": "they are having" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a tener", "en": "I am going to have" },
+        "tú": { "es": "vas a tener", "en": "you are going to have" },
+        "ud": { "es": "va a tener", "en": "you are going to have" },
+        "él": { "es": "va a tener", "en": "he is going to have" },
+        "ella": { "es": "va a tener", "en": "she is going to have" },
+        "nos": { "es": "vamos a tener", "en": "we are going to have" },
+        "uds": { "es": "van a tener", "en": "you all are going to have" },
+        "ellos": { "es": "van a tener", "en": "they are going to have" },
+        "ellas": { "es": "van a tener", "en": "they are going to have" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "hacer",
+    "meaning_en": "to do, to make",
+    "type": "irregular",
+    "participle_es": "hecho",
+    "participle_en": "done, made",
+    "gerund_es": "haciendo",
+    "gerund_en": "doing, making",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "hago", "en": "I do" },
+        "tú": { "es": "haces", "en": "you do" },
+        "ud": { "es": "hace", "en": "you do" },
+        "él": { "es": "hace", "en": "he does" },
+        "ella": { "es": "hace", "en": "she does" },
+        "nos": { "es": "hacemos", "en": "we do" },
+        "uds": { "es": "hacen", "en": "you all do" },
+        "ellos": { "es": "hacen", "en": "they do" },
+        "ellas": { "es": "hacen", "en": "they do" }
+      },
+      "ind_pret": {
+        "yo": { "es": "hice", "en": "I did" },
+        "tú": { "es": "hiciste", "en": "you did" },
+        "ud": { "es": "hizo", "en": "you did" },
+        "él": { "es": "hizo", "en": "he did" },
+        "ella": { "es": "hizo", "en": "she did" },
+        "nos": { "es": "hicimos", "en": "we did" },
+        "uds": { "es": "hicieron", "en": "you all did" },
+        "ellos": { "es": "hicieron", "en": "they did" },
+        "ellas": { "es": "hicieron", "en": "they did" }
+      },
+      "ind_impf": {
+        "yo": { "es": "hacía", "en": "I used to do" },
+        "tú": { "es": "hacías", "en": "you used to do" },
+        "ud": { "es": "hacía", "en": "you used to do" },
+        "él": { "es": "hacía", "en": "he used to do" },
+        "ella": { "es": "hacía", "en": "she used to do" },
+        "nos": { "es": "hacíamos", "en": "we used to do" },
+        "uds": { "es": "hacían", "en": "you all used to do" },
+        "ellos": { "es": "hacían", "en": "they used to do" },
+        "ellas": { "es": "hacían", "en": "they used to do" }
+      },
+      "ind_fut": {
+        "yo": { "es": "haré", "en": "I will do" },
+        "tú": { "es": "harás", "en": "you will do" },
+        "ud": { "es": "hará", "en": "you will do" },
+        "él": { "es": "hará", "en": "he will do" },
+        "ella": { "es": "hará", "en": "she will do" },
+        "nos": { "es": "haremos", "en": "we will do" },
+        "uds": { "es": "harán", "en": "you all will do" },
+        "ellos": { "es": "harán", "en": "they will do" },
+        "ellas": { "es": "harán", "en": "they will do" }
+      },
+      "ind_cond": {
+        "yo": { "es": "haría", "en": "I would do" },
+        "tú": { "es": "harías", "en": "you would do" },
+        "ud": { "es": "haría", "en": "you would do" },
+        "él": { "es": "haría", "en": "he would do" },
+        "ella": { "es": "haría", "en": "she would do" },
+        "nos": { "es": "haríamos", "en": "we would do" },
+        "uds": { "es": "harían", "en": "you all would do" },
+        "ellos": { "es": "harían", "en": "they would do" },
+        "ellas": { "es": "harían", "en": "they would do" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he hecho", "en": "I have done" },
+        "tú": { "es": "has hecho", "en": "you have done" },
+        "ud": { "es": "ha hecho", "en": "you have done" },
+        "él": { "es": "ha hecho", "en": "he has done" },
+        "ella": { "es": "ha hecho", "en": "she has done" },
+        "nos": { "es": "hemos hecho", "en": "we have done" },
+        "uds": { "es": "han hecho", "en": "you all have done" },
+        "ellos": { "es": "han hecho", "en": "they have done" },
+        "ellas": { "es": "han hecho", "en": "they have done" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había hecho", "en": "I had done" },
+        "tú": { "es": "habías hecho", "en": "you had done" },
+        "ud": { "es": "había hecho", "en": "you had done" },
+        "él": { "es": "había hecho", "en": "he had done" },
+        "ella": { "es": "había hecho", "en": "she had done" },
+        "nos": { "es": "habíamos hecho", "en": "we had done" },
+        "uds": { "es": "habían hecho", "en": "you all had done" },
+        "ellos": { "es": "habían hecho", "en": "they had done" },
+        "ellas": { "es": "habían hecho", "en": "they had done" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré hecho", "en": "I will have done" },
+        "tú": { "es": "habrás hecho", "en": "you will have done" },
+        "ud": { "es": "habrá hecho", "en": "you will have done" },
+        "él": { "es": "habrá hecho", "en": "he will have done" },
+        "ella": { "es": "habrá hecho", "en": "she will have done" },
+        "nos": { "es": "habremos hecho", "en": "we will have done" },
+        "uds": { "es": "habrán hecho", "en": "you all will have done" },
+        "ellos": { "es": "habrán hecho", "en": "they will have done" },
+        "ellas": { "es": "habrán hecho", "en": "they will have done" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría hecho", "en": "I would have done" },
+        "tú": { "es": "habrías hecho", "en": "you would have done" },
+        "ud": { "es": "habría hecho", "en": "you would have done" },
+        "él": { "es": "habría hecho", "en": "he would have done" },
+        "ella": { "es": "habría hecho", "en": "she would have done" },
+        "nos": { "es": "habríamos hecho", "en": "we would have done" },
+        "uds": { "es": "habrían hecho", "en": "you all would have done" },
+        "ellos": { "es": "habrían hecho", "en": "they would have done" },
+        "ellas": { "es": "habrían hecho", "en": "they would have done" }
+      },
+      "subj_pres": {
+        "yo": { "es": "haga", "en": "that I do" },
+        "tú": { "es": "hagas", "en": "that you do" },
+        "ud": { "es": "haga", "en": "that you do" },
+        "él": { "es": "haga", "en": "that he do" },
+        "ella": { "es": "haga", "en": "that she do" },
+        "nos": { "es": "hagamos", "en": "that we do" },
+        "uds": { "es": "hagan", "en": "that you all do" },
+        "ellos": { "es": "hagan", "en": "that they do" },
+        "ellas": { "es": "hagan", "en": "that they do" }
+      },
+      "subj_impf": {
+        "yo": { "es": "hiciera", "en": "that I did" },
+        "tú": { "es": "hicieras", "en": "that you did" },
+        "ud": { "es": "hiciera", "en": "that you did" },
+        "él": { "es": "hiciera", "en": "that he did" },
+        "ella": { "es": "hiciera", "en": "that she did" },
+        "nos": { "es": "hiciéramos", "en": "that we did" },
+        "uds": { "es": "hicieran", "en": "that you all did" },
+        "ellos": { "es": "hicieran", "en": "that they did" },
+        "ellas": { "es": "hicieran", "en": "that they did" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya hecho", "en": "that I have done" },
+        "tú": { "es": "hayas hecho", "en": "that you have done" },
+        "ud": { "es": "haya hecho", "en": "that you have done" },
+        "él": { "es": "haya hecho", "en": "that he have done" },
+        "ella": { "es": "haya hecho", "en": "that she have done" },
+        "nos": { "es": "hayamos hecho", "en": "that we have done" },
+        "uds": { "es": "hayan hecho", "en": "that you all have done" },
+        "ellos": { "es": "hayan hecho", "en": "that they have done" },
+        "ellas": { "es": "hayan hecho", "en": "that they have done" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera hecho", "en": "that I had done" },
+        "tú": { "es": "hubieras hecho", "en": "that you had done" },
+        "ud": { "es": "hubiera hecho", "en": "that you had done" },
+        "él": { "es": "hubiera hecho", "en": "that he had done" },
+        "ella": { "es": "hubiera hecho", "en": "that she had done" },
+        "nos": { "es": "hubiéramos hecho", "en": "that we had done" },
+        "uds": { "es": "hubieran hecho", "en": "that you all had done" },
+        "ellos": { "es": "hubieran hecho", "en": "that they had done" },
+        "ellas": { "es": "hubieran hecho", "en": "that they had done" }
+      },
+      "imp_aff": {
+        "tú": { "es": "haz", "en": "Do" },
+        "ud": { "es": "haga", "en": "Do" },
+        "nos": { "es": "hagamos", "en": "Let’s do" },
+        "uds": { "es": "hagan", "en": "Do" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no hagas", "en": "Don’t do" },
+        "ud": { "es": "no haga", "en": "Don’t do" },
+        "nos": { "es": "no hagamos", "en": "Let’s not do" },
+        "uds": { "es": "no hagan", "en": "Don’t do" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy haciendo", "en": "I am doing" },
+        "tú": { "es": "estás haciendo", "en": "you are doing" },
+        "ud": { "es": "está haciendo", "en": "you are doing" },
+        "él": { "es": "está haciendo", "en": "he is doing" },
+        "ella": { "es": "está haciendo", "en": "she is doing" },
+        "nos": { "es": "estamos haciendo", "en": "we are doing" },
+        "uds": { "es": "están haciendo", "en": "you all are doing" },
+        "ellos": { "es": "están haciendo", "en": "they are doing" },
+        "ellas": { "es": "están haciendo", "en": "they are doing" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a hacer", "en": "I am going to do" },
+        "tú": { "es": "vas a hacer", "en": "you are going to do" },
+        "ud": { "es": "va a hacer", "en": "you are going to do" },
+        "él": { "es": "va a hacer", "en": "he is going to do" },
+        "ella": { "es": "va a hacer", "en": "she is going to do" },
+        "nos": { "es": "vamos a hacer", "en": "we are going to do" },
+        "uds": { "es": "van a hacer", "en": "you all are going to do" },
+        "ellos": { "es": "van a hacer", "en": "they are going to do" },
+        "ellas": { "es": "van a hacer", "en": "they are going to do" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "poder",
+    "meaning_en": "to be able to / can",
+    "type": "irregular",
+    "participle_es": "podido",
+    "participle_en": "been able",
+    "gerund_es": "pudiendo",
+    "gerund_en": "being able",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "puedo", "en": "I can" },
+        "tú": { "es": "puedes", "en": "you can" },
+        "ud": { "es": "puede", "en": "you can" },
+        "él": { "es": "puede", "en": "he can" },
+        "ella": { "es": "puede", "en": "she can" },
+        "nos": { "es": "podemos", "en": "we can" },
+        "uds": { "es": "pueden", "en": "you all can" },
+        "ellos": { "es": "pueden", "en": "they can" },
+        "ellas": { "es": "pueden", "en": "they (f.) can" }
+      },
+      "ind_pret": {
+        "yo": { "es": "pude", "en": "I could" },
+        "tú": { "es": "pudiste", "en": "you could" },
+        "ud": { "es": "pudo", "en": "you could" },
+        "él": { "es": "pudo", "en": "he could" },
+        "ella": { "es": "pudo", "en": "she could" },
+        "nos": { "es": "pudimos", "en": "we could" },
+        "uds": { "es": "pudieron", "en": "you all could" },
+        "ellos": { "es": "pudieron", "en": "they could" },
+        "ellas": { "es": "pudieron", "en": "they (f.) could" }
+      },
+      "ind_impf": {
+        "yo": { "es": "podía", "en": "I used to be able to" },
+        "tú": { "es": "podías", "en": "you used to be able to" },
+        "ud": { "es": "podía", "en": "you used to be able to" },
+        "él": { "es": "podía", "en": "he used to be able to" },
+        "ella": { "es": "podía", "en": "she used to be able to" },
+        "nos": { "es": "podíamos", "en": "we used to be able to" },
+        "uds": { "es": "podían", "en": "you all used to be able to" },
+        "ellos": { "es": "podían", "en": "they used to be able to" },
+        "ellas": { "es": "podían", "en": "they (f.) used to be able to" }
+      },
+      "ind_fut": {
+        "yo": { "es": "podré", "en": "I will be able to" },
+        "tú": { "es": "podrás", "en": "you will be able to" },
+        "ud": { "es": "podrá", "en": "you will be able to" },
+        "él": { "es": "podrá", "en": "he will be able to" },
+        "ella": { "es": "podrá", "en": "she will be able to" },
+        "nos": { "es": "podremos", "en": "we will be able to" },
+        "uds": { "es": "podrán", "en": "you all will be able to" },
+        "ellos": { "es": "podrán", "en": "they will be able to" },
+        "ellas": { "es": "podrán", "en": "they (f.) will be able to" }
+      },
+      "ind_cond": {
+        "yo": { "es": "podría", "en": "I would be able to" },
+        "tú": { "es": "podrías", "en": "you would be able to" },
+        "ud": { "es": "podría", "en": "you would be able to" },
+        "él": { "es": "podría", "en": "he would be able to" },
+        "ella": { "es": "podría", "en": "she would be able to" },
+        "nos": { "es": "podríamos", "en": "we would be able to" },
+        "uds": { "es": "podrían", "en": "you all would be able to" },
+        "ellos": { "es": "podrían", "en": "they would be able to" },
+        "ellas": { "es": "podrían", "en": "they (f.) would be able to" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he podido", "en": "I have been able to" },
+        "tú": { "es": "has podido", "en": "you have been able to" },
+        "ud": { "es": "ha podido", "en": "you have been able to" },
+        "él": { "es": "ha podido", "en": "he has been able to" },
+        "ella": { "es": "ha podido", "en": "she has been able to" },
+        "nos": { "es": "hemos podido", "en": "we have been able to" },
+        "uds": { "es": "han podido", "en": "you all have been able to" },
+        "ellos": { "es": "han podido", "en": "they have been able to" },
+        "ellas": { "es": "han podido", "en": "they (f.) have been able to" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había podido", "en": "I had been able to" },
+        "tú": { "es": "habías podido", "en": "you had been able to" },
+        "ud": { "es": "había podido", "en": "you had been able to" },
+        "él": { "es": "había podido", "en": "he had been able to" },
+        "ella": { "es": "había podido", "en": "she had been able to" },
+        "nos": { "es": "habíamos podido", "en": "we had been able to" },
+        "uds": { "es": "habían podido", "en": "you all had been able to" },
+        "ellos": { "es": "habían podido", "en": "they had been able to" },
+        "ellas": { "es": "habían podido", "en": "they (f.) had been able to" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré podido", "en": "I will have been able to" },
+        "tú": { "es": "habrás podido", "en": "you will have been able to" },
+        "ud": { "es": "habrá podido", "en": "you will have been able to" },
+        "él": { "es": "habrá podido", "en": "he will have been able to" },
+        "ella": { "es": "habrá podido", "en": "she will have been able to" },
+        "nos": { "es": "habremos podido", "en": "we will have been able to" },
+        "uds": {
+          "es": "habrán podido",
+          "en": "you all will have been able to"
+        },
+        "ellos": { "es": "habrán podido", "en": "they will have been able to" },
+        "ellas": {
+          "es": "habrán podido",
+          "en": "they (f.) will have been able to"
+        }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría podido", "en": "I would have been able to" },
+        "tú": { "es": "habrías podido", "en": "you would have been able to" },
+        "ud": { "es": "habría podido", "en": "you would have been able to" },
+        "él": { "es": "habría podido", "en": "he would have been able to" },
+        "ella": { "es": "habría podido", "en": "she would have been able to" },
+        "nos": { "es": "habríamos podido", "en": "we would have been able to" },
+        "uds": {
+          "es": "habrían podido",
+          "en": "you all would have been able to"
+        },
+        "ellos": {
+          "es": "habrían podido",
+          "en": "they would have been able to"
+        },
+        "ellas": {
+          "es": "habrían podido",
+          "en": "they (f.) would have been able to"
+        }
+      },
+      "subj_pres": {
+        "yo": { "es": "pueda", "en": "that I can" },
+        "tú": { "es": "puedas", "en": "that you can" },
+        "ud": { "es": "pueda", "en": "that you can" },
+        "él": { "es": "pueda", "en": "that he can" },
+        "ella": { "es": "pueda", "en": "that she can" },
+        "nos": { "es": "podamos", "en": "that we can" },
+        "uds": { "es": "puedan", "en": "that you all can" },
+        "ellos": { "es": "puedan", "en": "that they can" },
+        "ellas": { "es": "puedan", "en": "that they (f.) can" }
+      },
+      "subj_impf": {
+        "yo": { "es": "pudiera", "en": "that I could" },
+        "tú": { "es": "pudieras", "en": "that you could" },
+        "ud": { "es": "pudiera", "en": "that you could" },
+        "él": { "es": "pudiera", "en": "that he could" },
+        "ella": { "es": "pudiera", "en": "that she could" },
+        "nos": { "es": "pudiéramos", "en": "that we could" },
+        "uds": { "es": "pudieran", "en": "that you all could" },
+        "ellos": { "es": "pudieran", "en": "that they could" },
+        "ellas": { "es": "pudieran", "en": "that they (f.) could" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya podido", "en": "that I have been able to" },
+        "tú": { "es": "hayas podido", "en": "that you have been able to" },
+        "ud": { "es": "haya podido", "en": "that you have been able to" },
+        "él": { "es": "haya podido", "en": "that he has been able to" },
+        "ella": { "es": "haya podido", "en": "that she has been able to" },
+        "nos": { "es": "hayamos podido", "en": "that we have been able to" },
+        "uds": { "es": "hayan podido", "en": "that you all have been able to" },
+        "ellos": { "es": "hayan podido", "en": "that they have been able to" },
+        "ellas": {
+          "es": "hayan podido",
+          "en": "that they (f.) have been able to"
+        }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera podido", "en": "that I had been able to" },
+        "tú": { "es": "hubieras podido", "en": "that you had been able to" },
+        "ud": { "es": "hubiera podido", "en": "that you had been able to" },
+        "él": { "es": "hubiera podido", "en": "that he had been able to" },
+        "ella": { "es": "hubiera podido", "en": "that she had been able to" },
+        "nos": { "es": "hubiéramos podido", "en": "that we had been able to" },
+        "uds": {
+          "es": "hubieran podido",
+          "en": "that you all had been able to"
+        },
+        "ellos": {
+          "es": "hubieran podido",
+          "en": "that they had been able to"
+        },
+        "ellas": {
+          "es": "hubieran podido",
+          "en": "that they (f.) had been able to"
+        }
+      },
+      "imp_aff": {
+        "tú": { "es": "puede", "en": "Be able" },
+        "ud": { "es": "pueda", "en": "Be able" },
+        "nos": { "es": "podamos", "en": "Let's be able" },
+        "uds": { "es": "puedan", "en": "Be able" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no puedas", "en": "Don't be able" },
+        "ud": { "es": "no pueda", "en": "Don't be able" },
+        "nos": { "es": "no podamos", "en": "Let's not be able" },
+        "uds": { "es": "no puedan", "en": "Don't be able" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy pudiendo", "en": "I am being able" },
+        "tú": { "es": "estás pudiendo", "en": "you are being able" },
+        "ud": { "es": "está pudiendo", "en": "you are being able" },
+        "él": { "es": "está pudiendo", "en": "he is being able" },
+        "ella": { "es": "está pudiendo", "en": "she is being able" },
+        "nos": { "es": "estamos pudiendo", "en": "we are being able" },
+        "uds": { "es": "están pudiendo", "en": "you all are being able" },
+        "ellos": { "es": "están pudiendo", "en": "they are being able" },
+        "ellas": { "es": "están pudiendo", "en": "they (f.) are being able" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a poder", "en": "I am going to be able to" },
+        "tú": { "es": "vas a poder", "en": "you are going to be able to" },
+        "ud": { "es": "va a poder", "en": "you are going to be able to" },
+        "él": { "es": "va a poder", "en": "he is going to be able to" },
+        "ella": { "es": "va a poder", "en": "she is going to be able to" },
+        "nos": { "es": "vamos a poder", "en": "we are going to be able to" },
+        "uds": { "es": "van a poder", "en": "you all are going to be able to" },
+        "ellos": { "es": "van a poder", "en": "they are going to be able to" },
+        "ellas": {
+          "es": "van a poder",
+          "en": "they (f.) are going to be able to"
+        }
+      }
+    }
+  },
+  {
+    "infinitive_es": "ir",
+    "meaning_en": "to go",
+    "type": "irregular",
+    "participle_es": "ido",
+    "participle_en": "gone",
+    "gerund_es": "yendo",
+    "gerund_en": "going",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "voy", "en": "I go" },
+        "tú": { "es": "vas", "en": "you go" },
+        "ud": { "es": "va", "en": "you go" },
+        "él": { "es": "va", "en": "he goes" },
+        "ella": { "es": "va", "en": "she goes" },
+        "nos": { "es": "vamos", "en": "we go" },
+        "uds": { "es": "van", "en": "you all go" },
+        "ellos": { "es": "van", "en": "they go" },
+        "ellas": { "es": "van", "en": "they (f.) go" }
+      },
+      "ind_pret": {
+        "yo": { "es": "fui", "en": "I went" },
+        "tú": { "es": "fuiste", "en": "you went" },
+        "ud": { "es": "fue", "en": "you went" },
+        "él": { "es": "fue", "en": "he went" },
+        "ella": { "es": "fue", "en": "she went" },
+        "nos": { "es": "fuimos", "en": "we went" },
+        "uds": { "es": "fueron", "en": "you all went" },
+        "ellos": { "es": "fueron", "en": "they went" },
+        "ellas": { "es": "fueron", "en": "they (f.) went" }
+      },
+      "ind_impf": {
+        "yo": { "es": "iba", "en": "I used to go" },
+        "tú": { "es": "ibas", "en": "you used to go" },
+        "ud": { "es": "iba", "en": "you used to go" },
+        "él": { "es": "iba", "en": "he used to go" },
+        "ella": { "es": "iba", "en": "she used to go" },
+        "nos": { "es": "íbamos", "en": "we used to go" },
+        "uds": { "es": "iban", "en": "you all used to go" },
+        "ellos": { "es": "iban", "en": "they used to go" },
+        "ellas": { "es": "iban", "en": "they (f.) used to go" }
+      },
+      "ind_fut": {
+        "yo": { "es": "iré", "en": "I will go" },
+        "tú": { "es": "irás", "en": "you will go" },
+        "ud": { "es": "irá", "en": "you will go" },
+        "él": { "es": "irá", "en": "he will go" },
+        "ella": { "es": "irá", "en": "she will go" },
+        "nos": { "es": "iremos", "en": "we will go" },
+        "uds": { "es": "irán", "en": "you all will go" },
+        "ellos": { "es": "irán", "en": "they will go" },
+        "ellas": { "es": "irán", "en": "they (f.) will go" }
+      },
+      "ind_cond": {
+        "yo": { "es": "iría", "en": "I would go" },
+        "tú": { "es": "irías", "en": "you would go" },
+        "ud": { "es": "iría", "en": "you would go" },
+        "él": { "es": "iría", "en": "he would go" },
+        "ella": { "es": "iría", "en": "she would go" },
+        "nos": { "es": "iríamos", "en": "we would go" },
+        "uds": { "es": "irían", "en": "you all would go" },
+        "ellos": { "es": "irían", "en": "they would go" },
+        "ellas": { "es": "irían", "en": "they (f.) would go" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he ido", "en": "I have gone" },
+        "tú": { "es": "has ido", "en": "you have gone" },
+        "ud": { "es": "ha ido", "en": "you have gone" },
+        "él": { "es": "ha ido", "en": "he has gone" },
+        "ella": { "es": "ha ido", "en": "she has gone" },
+        "nos": { "es": "hemos ido", "en": "we have gone" },
+        "uds": { "es": "han ido", "en": "you all have gone" },
+        "ellos": { "es": "han ido", "en": "they have gone" },
+        "ellas": { "es": "han ido", "en": "they (f.) have gone" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había ido", "en": "I had gone" },
+        "tú": { "es": "habías ido", "en": "you had gone" },
+        "ud": { "es": "había ido", "en": "you had gone" },
+        "él": { "es": "había ido", "en": "he had gone" },
+        "ella": { "es": "había ido", "en": "she had gone" },
+        "nos": { "es": "habíamos ido", "en": "we had gone" },
+        "uds": { "es": "habían ido", "en": "you all had gone" },
+        "ellos": { "es": "habían ido", "en": "they had gone" },
+        "ellas": { "es": "habían ido", "en": "they (f.) had gone" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré ido", "en": "I will have gone" },
+        "tú": { "es": "habrás ido", "en": "you will have gone" },
+        "ud": { "es": "habrá ido", "en": "you will have gone" },
+        "él": { "es": "habrá ido", "en": "he will have gone" },
+        "ella": { "es": "habrá ido", "en": "she will have gone" },
+        "nos": { "es": "habremos ido", "en": "we will have gone" },
+        "uds": { "es": "habrán ido", "en": "you all will have gone" },
+        "ellos": { "es": "habrán ido", "en": "they will have gone" },
+        "ellas": { "es": "habrán ido", "en": "they (f.) will have gone" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría ido", "en": "I would have gone" },
+        "tú": { "es": "habrías ido", "en": "you would have gone" },
+        "ud": { "es": "habría ido", "en": "you would have gone" },
+        "él": { "es": "habría ido", "en": "he would have gone" },
+        "ella": { "es": "habría ido", "en": "she would have gone" },
+        "nos": { "es": "habríamos ido", "en": "we would have gone" },
+        "uds": { "es": "habrían ido", "en": "you all would have gone" },
+        "ellos": { "es": "habrían ido", "en": "they would have gone" },
+        "ellas": { "es": "habrían ido", "en": "they (f.) would have gone" }
+      },
+      "subj_pres": {
+        "yo": { "es": "vaya", "en": "that I go" },
+        "tú": { "es": "vayas", "en": "that you go" },
+        "ud": { "es": "vaya", "en": "that you go" },
+        "él": { "es": "vaya", "en": "that he goes" },
+        "ella": { "es": "vaya", "en": "that she goes" },
+        "nos": { "es": "vayamos", "en": "that we go" },
+        "uds": { "es": "vayan", "en": "that you all go" },
+        "ellos": { "es": "vayan", "en": "that they go" },
+        "ellas": { "es": "vayan", "en": "that they (f.) go" }
+      },
+      "subj_impf": {
+        "yo": { "es": "fuera", "en": "that I went" },
+        "tú": { "es": "fueras", "en": "that you went" },
+        "ud": { "es": "fuera", "en": "that you went" },
+        "él": { "es": "fuera", "en": "that he went" },
+        "ella": { "es": "fuera", "en": "that she went" },
+        "nos": { "es": "fuéramos", "en": "that we went" },
+        "uds": { "es": "fueran", "en": "that you all went" },
+        "ellos": { "es": "fueran", "en": "that they went" },
+        "ellas": { "es": "fueran", "en": "that they (f.) went" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya ido", "en": "that I have gone" },
+        "tú": { "es": "hayas ido", "en": "that you have gone" },
+        "ud": { "es": "haya ido", "en": "that you have gone" },
+        "él": { "es": "haya ido", "en": "that he has gone" },
+        "ella": { "es": "haya ido", "en": "that she has gone" },
+        "nos": { "es": "hayamos ido", "en": "that we have gone" },
+        "uds": { "es": "hayan ido", "en": "that you all have gone" },
+        "ellos": { "es": "hayan ido", "en": "that they have gone" },
+        "ellas": { "es": "hayan ido", "en": "that they (f.) have gone" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera ido", "en": "that I had gone" },
+        "tú": { "es": "hubieras ido", "en": "that you had gone" },
+        "ud": { "es": "hubiera ido", "en": "that you had gone" },
+        "él": { "es": "hubiera ido", "en": "that he had gone" },
+        "ella": { "es": "hubiera ido", "en": "that she had gone" },
+        "nos": { "es": "hubiéramos ido", "en": "that we had gone" },
+        "uds": { "es": "hubieran ido", "en": "that you all had gone" },
+        "ellos": { "es": "hubieran ido", "en": "that they had gone" },
+        "ellas": { "es": "hubieran ido", "en": "that they (f.) had gone" }
+      },
+      "imp_aff": {
+        "tú": { "es": "ve", "en": "Go" },
+        "ud": { "es": "vaya", "en": "Go" },
+        "nos": { "es": "vamos", "en": "Let's go" },
+        "uds": { "es": "vayan", "en": "Go" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no vayas", "en": "Don't go" },
+        "ud": { "es": "no vaya", "en": "Don't go" },
+        "nos": { "es": "no vayamos", "en": "Let's not go" },
+        "uds": { "es": "no vayan", "en": "Don't go" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy yendo", "en": "I am going" },
+        "tú": { "es": "estás yendo", "en": "you are going" },
+        "ud": { "es": "está yendo", "en": "you are going" },
+        "él": { "es": "está yendo", "en": "he is going" },
+        "ella": { "es": "está yendo", "en": "she is going" },
+        "nos": { "es": "estamos yendo", "en": "we are going" },
+        "uds": { "es": "están yendo", "en": "you all are going" },
+        "ellos": { "es": "están yendo", "en": "they are going" },
+        "ellas": { "es": "están yendo", "en": "they (f.) are going" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a ir", "en": "I am going to go" },
+        "tú": { "es": "vas a ir", "en": "you are going to go" },
+        "ud": { "es": "va a ir", "en": "you are going to go" },
+        "él": { "es": "va a ir", "en": "he is going to go" },
+        "ella": { "es": "va a ir", "en": "she is going to go" },
+        "nos": { "es": "vamos a ir", "en": "we are going to go" },
+        "uds": { "es": "van a ir", "en": "you all are going to go" },
+        "ellos": { "es": "van a ir", "en": "they are going to go" },
+        "ellas": { "es": "van a ir", "en": "they (f.) are going to go" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "irse",
+    "meaning_en": "to leave / to go away",
+    "type": "irregular",
+    "participle_es": "ido",
+    "participle_en": "gone away",
+    "gerund_es": "yéndose",
+    "gerund_en": "leaving / going away",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "me voy", "en": "I leave" },
+        "tú": { "es": "te vas", "en": "you leave" },
+        "ud": { "es": "se va", "en": "you leave" },
+        "él": { "es": "se va", "en": "he leaves" },
+        "ella": { "es": "se va", "en": "she leaves" },
+        "nos": { "es": "nos vamos", "en": "we leave" },
+        "uds": { "es": "se van", "en": "you all leave" },
+        "ellos": { "es": "se van", "en": "they leave" },
+        "ellas": { "es": "se van", "en": "they (f.) leave" }
+      },
+      "ind_pret": {
+        "yo": { "es": "me fui", "en": "I left" },
+        "tú": { "es": "te fuiste", "en": "you left" },
+        "ud": { "es": "se fue", "en": "you left" },
+        "él": { "es": "se fue", "en": "he left" },
+        "ella": { "es": "se fue", "en": "she left" },
+        "nos": { "es": "nos fuimos", "en": "we left" },
+        "uds": { "es": "se fueron", "en": "you all left" },
+        "ellos": { "es": "se fueron", "en": "they left" },
+        "ellas": { "es": "se fueron", "en": "they (f.) left" }
+      },
+      "ind_impf": {
+        "yo": { "es": "me iba", "en": "I used to leave" },
+        "tú": { "es": "te ibas", "en": "you used to leave" },
+        "ud": { "es": "se iba", "en": "you used to leave" },
+        "él": { "es": "se iba", "en": "he used to leave" },
+        "ella": { "es": "se iba", "en": "she used to leave" },
+        "nos": { "es": "nos íbamos", "en": "we used to leave" },
+        "uds": { "es": "se iban", "en": "you all used to leave" },
+        "ellos": { "es": "se iban", "en": "they used to leave" },
+        "ellas": { "es": "se iban", "en": "they (f.) used to leave" }
+      },
+      "ind_fut": {
+        "yo": { "es": "me iré", "en": "I will leave" },
+        "tú": { "es": "te irás", "en": "you will leave" },
+        "ud": { "es": "se irá", "en": "you will leave" },
+        "él": { "es": "se irá", "en": "he will leave" },
+        "ella": { "es": "se irá", "en": "she will leave" },
+        "nos": { "es": "nos iremos", "en": "we will leave" },
+        "uds": { "es": "se irán", "en": "you all will leave" },
+        "ellos": { "es": "se irán", "en": "they will leave" },
+        "ellas": { "es": "se irán", "en": "they (f.) will leave" }
+      },
+      "ind_cond": {
+        "yo": { "es": "me iría", "en": "I would leave" },
+        "tú": { "es": "te irías", "en": "you would leave" },
+        "ud": { "es": "se iría", "en": "you would leave" },
+        "él": { "es": "se iría", "en": "he would leave" },
+        "ella": { "es": "se iría", "en": "she would leave" },
+        "nos": { "es": "nos iríamos", "en": "we would leave" },
+        "uds": { "es": "se irían", "en": "you all would leave" },
+        "ellos": { "es": "se irían", "en": "they would leave" },
+        "ellas": { "es": "se irían", "en": "they (f.) would leave" }
+      },
+      "perf_pres": {
+        "yo": { "es": "me he ido", "en": "I have left" },
+        "tú": { "es": "te has ido", "en": "you have left" },
+        "ud": { "es": "se ha ido", "en": "you have left" },
+        "él": { "es": "se ha ido", "en": "he has left" },
+        "ella": { "es": "se ha ido", "en": "she has left" },
+        "nos": { "es": "nos hemos ido", "en": "we have left" },
+        "uds": { "es": "se han ido", "en": "you all have left" },
+        "ellos": { "es": "se han ido", "en": "they have left" },
+        "ellas": { "es": "se han ido", "en": "they (f.) have left" }
+      },
+      "perf_plu": {
+        "yo": { "es": "me había ido", "en": "I had left" },
+        "tú": { "es": "te habías ido", "en": "you had left" },
+        "ud": { "es": "se había ido", "en": "you had left" },
+        "él": { "es": "se había ido", "en": "he had left" },
+        "ella": { "es": "se había ido", "en": "she had left" },
+        "nos": { "es": "nos habíamos ido", "en": "we had left" },
+        "uds": { "es": "se habían ido", "en": "you all had left" },
+        "ellos": { "es": "se habían ido", "en": "they had left" },
+        "ellas": { "es": "se habían ido", "en": "they (f.) had left" }
+      },
+      "perf_fut": {
+        "yo": { "es": "me habré ido", "en": "I will have left" },
+        "tú": { "es": "te habrás ido", "en": "you will have left" },
+        "ud": { "es": "se habrá ido", "en": "you will have left" },
+        "él": { "es": "se habrá ido", "en": "he will have left" },
+        "ella": { "es": "se habrá ido", "en": "she will have left" },
+        "nos": { "es": "nos habremos ido", "en": "we will have left" },
+        "uds": { "es": "se habrán ido", "en": "you all will have left" },
+        "ellos": { "es": "se habrán ido", "en": "they will have left" },
+        "ellas": { "es": "se habrán ido", "en": "they (f.) will have left" }
+      },
+      "perf_cond": {
+        "yo": { "es": "me habría ido", "en": "I would have left" },
+        "tú": { "es": "te habrías ido", "en": "you would have left" },
+        "ud": { "es": "se habría ido", "en": "you would have left" },
+        "él": { "es": "se habría ido", "en": "he would have left" },
+        "ella": { "es": "se habría ido", "en": "she would have left" },
+        "nos": { "es": "nos habríamos ido", "en": "we would have left" },
+        "uds": { "es": "se habrían ido", "en": "you all would have left" },
+        "ellos": { "es": "se habrían ido", "en": "they would have left" },
+        "ellas": { "es": "se habrían ido", "en": "they (f.) would have left" }
+      },
+      "subj_pres": {
+        "yo": { "es": "me vaya", "en": "that I leave" },
+        "tú": { "es": "te vayas", "en": "that you leave" },
+        "ud": { "es": "se vaya", "en": "that you leave" },
+        "él": { "es": "se vaya", "en": "that he leaves" },
+        "ella": { "es": "se vaya", "en": "that she leaves" },
+        "nos": { "es": "nos vayamos", "en": "that we leave" },
+        "uds": { "es": "se vayan", "en": "that you all leave" },
+        "ellos": { "es": "se vayan", "en": "that they leave" },
+        "ellas": { "es": "se vayan", "en": "that they (f.) leave" }
+      },
+      "subj_impf": {
+        "yo": { "es": "me fuera", "en": "that I left" },
+        "tú": { "es": "te fueras", "en": "that you left" },
+        "ud": { "es": "se fuera", "en": "that you left" },
+        "él": { "es": "se fuera", "en": "that he left" },
+        "ella": { "es": "se fuera", "en": "that she left" },
+        "nos": { "es": "nos fuéramos", "en": "that we left" },
+        "uds": { "es": "se fueran", "en": "that you all left" },
+        "ellos": { "es": "se fueran", "en": "that they left" },
+        "ellas": { "es": "se fueran", "en": "that they (f.) left" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "me haya ido", "en": "that I have left" },
+        "tú": { "es": "te hayas ido", "en": "that you have left" },
+        "ud": { "es": "se haya ido", "en": "that you have left" },
+        "él": { "es": "se haya ido", "en": "that he has left" },
+        "ella": { "es": "se haya ido", "en": "that she has left" },
+        "nos": { "es": "nos hayamos ido", "en": "that we have left" },
+        "uds": { "es": "se hayan ido", "en": "that you all have left" },
+        "ellos": { "es": "se hayan ido", "en": "that they have left" },
+        "ellas": { "es": "se hayan ido", "en": "that they (f.) have left" }
+      },
+      "subj_plu": {
+        "yo": { "es": "me hubiera ido", "en": "that I had left" },
+        "tú": { "es": "te hubieras ido", "en": "that you had left" },
+        "ud": { "es": "se hubiera ido", "en": "that you had left" },
+        "él": { "es": "se hubiera ido", "en": "that he had left" },
+        "ella": { "es": "se hubiera ido", "en": "that she had left" },
+        "nos": { "es": "nos hubiéramos ido", "en": "that we had left" },
+        "uds": { "es": "se hubieran ido", "en": "that you all had left" },
+        "ellos": { "es": "se hubieran ido", "en": "that they had left" },
+        "ellas": { "es": "se hubieran ido", "en": "that they (f.) had left" }
+      },
+      "imp_aff": {
+        "tú": { "es": "vete", "en": "Leave" },
+        "ud": { "es": "váyase", "en": "Leave" },
+        "nos": { "es": "vámonos", "en": "Let's leave" },
+        "uds": { "es": "váyanse", "en": "Leave" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no te vayas", "en": "Don't leave" },
+        "ud": { "es": "no se vaya", "en": "Don't leave" },
+        "nos": { "es": "no nos vayamos", "en": "Let's not leave" },
+        "uds": { "es": "no se vayan", "en": "Don't leave" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "me estoy yendo", "en": "I am leaving" },
+        "tú": { "es": "te estás yendo", "en": "you are leaving" },
+        "ud": { "es": "se está yendo", "en": "you are leaving" },
+        "él": { "es": "se está yendo", "en": "he is leaving" },
+        "ella": { "es": "se está yendo", "en": "she is leaving" },
+        "nos": { "es": "nos estamos yendo", "en": "we are leaving" },
+        "uds": { "es": "se están yendo", "en": "you all are leaving" },
+        "ellos": { "es": "se están yendo", "en": "they are leaving" },
+        "ellas": { "es": "se están yendo", "en": "they (f.) are leaving" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "me voy a ir", "en": "I am going to leave" },
+        "tú": { "es": "te vas a ir", "en": "you are going to leave" },
+        "ud": { "es": "se va a ir", "en": "you are going to leave" },
+        "él": { "es": "se va a ir", "en": "he is going to leave" },
+        "ella": { "es": "se va a ir", "en": "she is going to leave" },
+        "nos": { "es": "nos vamos a ir", "en": "we are going to leave" },
+        "uds": { "es": "se van a ir", "en": "you all are going to leave" },
+        "ellos": { "es": "se van a ir", "en": "they are going to leave" },
+        "ellas": { "es": "se van a ir", "en": "they (f.) are going to leave" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "ver",
+    "meaning_en": "to see",
+    "type": "irregular",
+    "participle_es": "visto",
+    "participle_en": "seen",
+    "gerund_es": "viendo",
+    "gerund_en": "seeing",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "veo", "en": "I see" },
+        "tú": { "es": "ves", "en": "you see" },
+        "ud": { "es": "ve", "en": "you see" },
+        "él": { "es": "ve", "en": "he sees" },
+        "ella": { "es": "ve", "en": "she sees" },
+        "nos": { "es": "vemos", "en": "we see" },
+        "uds": { "es": "ven", "en": "you all see" },
+        "ellos": { "es": "ven", "en": "they see" },
+        "ellas": { "es": "ven", "en": "they (f.) see" }
+      },
+      "ind_pret": {
+        "yo": { "es": "vi", "en": "I saw" },
+        "tú": { "es": "viste", "en": "you saw" },
+        "ud": { "es": "vio", "en": "you saw" },
+        "él": { "es": "vio", "en": "he saw" },
+        "ella": { "es": "vio", "en": "she saw" },
+        "nos": { "es": "vimos", "en": "we saw" },
+        "uds": { "es": "vieron", "en": "you all saw" },
+        "ellos": { "es": "vieron", "en": "they saw" },
+        "ellas": { "es": "vieron", "en": "they (f.) saw" }
+      },
+      "ind_impf": {
+        "yo": { "es": "veía", "en": "I used to see" },
+        "tú": { "es": "veías", "en": "you used to see" },
+        "ud": { "es": "veía", "en": "you used to see" },
+        "él": { "es": "veía", "en": "he used to see" },
+        "ella": { "es": "veía", "en": "she used to see" },
+        "nos": { "es": "veíamos", "en": "we used to see" },
+        "uds": { "es": "veían", "en": "you all used to see" },
+        "ellos": { "es": "veían", "en": "they used to see" },
+        "ellas": { "es": "veían", "en": "they (f.) used to see" }
+      },
+      "ind_fut": {
+        "yo": { "es": "veré", "en": "I will see" },
+        "tú": { "es": "verás", "en": "you will see" },
+        "ud": { "es": "verá", "en": "you will see" },
+        "él": { "es": "verá", "en": "he will see" },
+        "ella": { "es": "verá", "en": "she will see" },
+        "nos": { "es": "veremos", "en": "we will see" },
+        "uds": { "es": "verán", "en": "you all will see" },
+        "ellos": { "es": "verán", "en": "they will see" },
+        "ellas": { "es": "verán", "en": "they (f.) will see" }
+      },
+      "ind_cond": {
+        "yo": { "es": "vería", "en": "I would see" },
+        "tú": { "es": "verías", "en": "you would see" },
+        "ud": { "es": "vería", "en": "you would see" },
+        "él": { "es": "vería", "en": "he would see" },
+        "ella": { "es": "vería", "en": "she would see" },
+        "nos": { "es": "veríamos", "en": "we would see" },
+        "uds": { "es": "verían", "en": "you all would see" },
+        "ellos": { "es": "verían", "en": "they would see" },
+        "ellas": { "es": "verían", "en": "they (f.) would see" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he visto", "en": "I have seen" },
+        "tú": { "es": "has visto", "en": "you have seen" },
+        "ud": { "es": "ha visto", "en": "you have seen" },
+        "él": { "es": "ha visto", "en": "he has seen" },
+        "ella": { "es": "ha visto", "en": "she has seen" },
+        "nos": { "es": "hemos visto", "en": "we have seen" },
+        "uds": { "es": "han visto", "en": "you all have seen" },
+        "ellos": { "es": "han visto", "en": "they have seen" },
+        "ellas": { "es": "han visto", "en": "they (f.) have seen" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había visto", "en": "I had seen" },
+        "tú": { "es": "habías visto", "en": "you had seen" },
+        "ud": { "es": "había visto", "en": "you had seen" },
+        "él": { "es": "había visto", "en": "he had seen" },
+        "ella": { "es": "había visto", "en": "she had seen" },
+        "nos": { "es": "habíamos visto", "en": "we had seen" },
+        "uds": { "es": "habían visto", "en": "you all had seen" },
+        "ellos": { "es": "habían visto", "en": "they had seen" },
+        "ellas": { "es": "habían visto", "en": "they (f.) had seen" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré visto", "en": "I will have seen" },
+        "tú": { "es": "habrás visto", "en": "you will have seen" },
+        "ud": { "es": "habrá visto", "en": "you will have seen" },
+        "él": { "es": "habrá visto", "en": "he will have seen" },
+        "ella": { "es": "habrá visto", "en": "she will have seen" },
+        "nos": { "es": "habremos visto", "en": "we will have seen" },
+        "uds": { "es": "habrán visto", "en": "you all will have seen" },
+        "ellos": { "es": "habrán visto", "en": "they will have seen" },
+        "ellas": { "es": "habrán visto", "en": "they (f.) will have seen" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría visto", "en": "I would have seen" },
+        "tú": { "es": "habrías visto", "en": "you would have seen" },
+        "ud": { "es": "habría visto", "en": "you would have seen" },
+        "él": { "es": "habría visto", "en": "he would have seen" },
+        "ella": { "es": "habría visto", "en": "she would have seen" },
+        "nos": { "es": "habríamos visto", "en": "we would have seen" },
+        "uds": { "es": "habrían visto", "en": "you all would have seen" },
+        "ellos": { "es": "habrían visto", "en": "they would have seen" },
+        "ellas": { "es": "habrían visto", "en": "they (f.) would have seen" }
+      },
+      "subj_pres": {
+        "yo": { "es": "vea", "en": "that I see" },
+        "tú": { "es": "veas", "en": "that you see" },
+        "ud": { "es": "vea", "en": "that you see" },
+        "él": { "es": "vea", "en": "that he sees" },
+        "ella": { "es": "vea", "en": "that she sees" },
+        "nos": { "es": "veamos", "en": "that we see" },
+        "uds": { "es": "vean", "en": "that you all see" },
+        "ellos": { "es": "vean", "en": "that they see" },
+        "ellas": { "es": "vean", "en": "that they (f.) see" }
+      },
+      "subj_impf": {
+        "yo": { "es": "viera", "en": "that I saw" },
+        "tú": { "es": "vieras", "en": "that you saw" },
+        "ud": { "es": "viera", "en": "that you saw" },
+        "él": { "es": "viera", "en": "that he saw" },
+        "ella": { "es": "viera", "en": "that she saw" },
+        "nos": { "es": "viéramos", "en": "that we saw" },
+        "uds": { "es": "vieran", "en": "that you all saw" },
+        "ellos": { "es": "vieran", "en": "that they saw" },
+        "ellas": { "es": "vieran", "en": "that they (f.) saw" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya visto", "en": "that I have seen" },
+        "tú": { "es": "hayas visto", "en": "that you have seen" },
+        "ud": { "es": "haya visto", "en": "that you have seen" },
+        "él": { "es": "haya visto", "en": "that he has seen" },
+        "ella": { "es": "haya visto", "en": "that she has seen" },
+        "nos": { "es": "hayamos visto", "en": "that we have seen" },
+        "uds": { "es": "hayan visto", "en": "that you all have seen" },
+        "ellos": { "es": "hayan visto", "en": "that they have seen" },
+        "ellas": { "es": "hayan visto", "en": "that they (f.) have seen" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera visto", "en": "that I had seen" },
+        "tú": { "es": "hubieras visto", "en": "that you had seen" },
+        "ud": { "es": "hubiera visto", "en": "that you had seen" },
+        "él": { "es": "hubiera visto", "en": "that he had seen" },
+        "ella": { "es": "hubiera visto", "en": "that she had seen" },
+        "nos": { "es": "hubiéramos visto", "en": "that we had seen" },
+        "uds": { "es": "hubieran visto", "en": "that you all had seen" },
+        "ellos": { "es": "hubieran visto", "en": "that they had seen" },
+        "ellas": { "es": "hubieran visto", "en": "that they (f.) had seen" }
+      },
+      "imp_aff": {
+        "tú": { "es": "ve", "en": "See" },
+        "ud": { "es": "vea", "en": "See" },
+        "nos": { "es": "veamos", "en": "Let's see" },
+        "uds": { "es": "vean", "en": "See" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no veas", "en": "Don't see" },
+        "ud": { "es": "no vea", "en": "Don't see" },
+        "nos": { "es": "no veamos", "en": "Let's not see" },
+        "uds": { "es": "no vean", "en": "Don't see" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy viendo", "en": "I am seeing" },
+        "tú": { "es": "estás viendo", "en": "you are seeing" },
+        "ud": { "es": "está viendo", "en": "you are seeing" },
+        "él": { "es": "está viendo", "en": "he is seeing" },
+        "ella": { "es": "está viendo", "en": "she is seeing" },
+        "nos": { "es": "estamos viendo", "en": "we are seeing" },
+        "uds": { "es": "están viendo", "en": "you all are seeing" },
+        "ellos": { "es": "están viendo", "en": "they are seeing" },
+        "ellas": { "es": "están viendo", "en": "they (f.) are seeing" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a ver", "en": "I am going to see" },
+        "tú": { "es": "vas a ver", "en": "you are going to see" },
+        "ud": { "es": "va a ver", "en": "you are going to see" },
+        "él": { "es": "va a ver", "en": "he is going to see" },
+        "ella": { "es": "va a ver", "en": "she is going to see" },
+        "nos": { "es": "vamos a ver", "en": "we are going to see" },
+        "uds": { "es": "van a ver", "en": "you all are going to see" },
+        "ellos": { "es": "van a ver", "en": "they are going to see" },
+        "ellas": { "es": "van a ver", "en": "they (f.) are going to see" }
+      }
+    }
+  },
+  {
+    "infinitive_es": "dar",
+    "meaning_en": "to give",
+    "type": "irregular",
+    "participle_es": "dado",
+    "participle_en": "given",
+    "gerund_es": "dando",
+    "gerund_en": "giving",
+    "conjugations": {
+      "ind_pres": {
+        "yo": { "es": "doy", "en": "I give" },
+        "tú": { "es": "das", "en": "you give" },
+        "ud": { "es": "da", "en": "you give" },
+        "él": { "es": "da", "en": "he gives" },
+        "ella": { "es": "da", "en": "she gives" },
+        "nos": { "es": "damos", "en": "we give" },
+        "uds": { "es": "dan", "en": "you all give" },
+        "ellos": { "es": "dan", "en": "they give" },
+        "ellas": { "es": "dan", "en": "they (f.) give" }
+      },
+      "ind_pret": {
+        "yo": { "es": "di", "en": "I gave" },
+        "tú": { "es": "diste", "en": "you gave" },
+        "ud": { "es": "dio", "en": "you gave" },
+        "él": { "es": "dio", "en": "he gave" },
+        "ella": { "es": "dio", "en": "she gave" },
+        "nos": { "es": "dimos", "en": "we gave" },
+        "uds": { "es": "dieron", "en": "you all gave" },
+        "ellos": { "es": "dieron", "en": "they gave" },
+        "ellas": { "es": "dieron", "en": "they (f.) gave" }
+      },
+      "ind_impf": {
+        "yo": { "es": "daba", "en": "I used to give" },
+        "tú": { "es": "dabas", "en": "you used to give" },
+        "ud": { "es": "daba", "en": "you used to give" },
+        "él": { "es": "daba", "en": "he used to give" },
+        "ella": { "es": "daba", "en": "she used to give" },
+        "nos": { "es": "dábamos", "en": "we used to give" },
+        "uds": { "es": "daban", "en": "you all used to give" },
+        "ellos": { "es": "daban", "en": "they used to give" },
+        "ellas": { "es": "daban", "en": "they (f.) used to give" }
+      },
+      "ind_fut": {
+        "yo": { "es": "daré", "en": "I will give" },
+        "tú": { "es": "darás", "en": "you will give" },
+        "ud": { "es": "dará", "en": "you will give" },
+        "él": { "es": "dará", "en": "he will give" },
+        "ella": { "es": "dará", "en": "she will give" },
+        "nos": { "es": "daremos", "en": "we will give" },
+        "uds": { "es": "darán", "en": "you all will give" },
+        "ellos": { "es": "darán", "en": "they will give" },
+        "ellas": { "es": "darán", "en": "they (f.) will give" }
+      },
+      "ind_cond": {
+        "yo": { "es": "daría", "en": "I would give" },
+        "tú": { "es": "darías", "en": "you would give" },
+        "ud": { "es": "daría", "en": "you would give" },
+        "él": { "es": "daría", "en": "he would give" },
+        "ella": { "es": "daría", "en": "she would give" },
+        "nos": { "es": "daríamos", "en": "we would give" },
+        "uds": { "es": "darían", "en": "you all would give" },
+        "ellos": { "es": "darían", "en": "they would give" },
+        "ellas": { "es": "darían", "en": "they (f.) would give" }
+      },
+      "perf_pres": {
+        "yo": { "es": "he dado", "en": "I have given" },
+        "tú": { "es": "has dado", "en": "you have given" },
+        "ud": { "es": "ha dado", "en": "you have given" },
+        "él": { "es": "ha dado", "en": "he has given" },
+        "ella": { "es": "ha dado", "en": "she has given" },
+        "nos": { "es": "hemos dado", "en": "we have given" },
+        "uds": { "es": "han dado", "en": "you all have given" },
+        "ellos": { "es": "han dado", "en": "they have given" },
+        "ellas": { "es": "han dado", "en": "they (f.) have given" }
+      },
+      "perf_plu": {
+        "yo": { "es": "había dado", "en": "I had given" },
+        "tú": { "es": "habías dado", "en": "you had given" },
+        "ud": { "es": "había dado", "en": "you had given" },
+        "él": { "es": "había dado", "en": "he had given" },
+        "ella": { "es": "había dado", "en": "she had given" },
+        "nos": { "es": "habíamos dado", "en": "we had given" },
+        "uds": { "es": "habían dado", "en": "you all had given" },
+        "ellos": { "es": "habían dado", "en": "they had given" },
+        "ellas": { "es": "habían dado", "en": "they (f.) had given" }
+      },
+      "perf_fut": {
+        "yo": { "es": "habré dado", "en": "I will have given" },
+        "tú": { "es": "habrás dado", "en": "you will have given" },
+        "ud": { "es": "habrá dado", "en": "you will have given" },
+        "él": { "es": "habrá dado", "en": "he will have given" },
+        "ella": { "es": "habrá dado", "en": "she will have given" },
+        "nos": { "es": "habremos dado", "en": "we will have given" },
+        "uds": { "es": "habrán dado", "en": "you all will have given" },
+        "ellos": { "es": "habrán dado", "en": "they will have given" },
+        "ellas": { "es": "habrán dado", "en": "they (f.) will have given" }
+      },
+      "perf_cond": {
+        "yo": { "es": "habría dado", "en": "I would have given" },
+        "tú": { "es": "habrías dado", "en": "you would have given" },
+        "ud": { "es": "habría dado", "en": "you would have given" },
+        "él": { "es": "habría dado", "en": "he would have given" },
+        "ella": { "es": "habría dado", "en": "she would have given" },
+        "nos": { "es": "habríamos dado", "en": "we would have given" },
+        "uds": { "es": "habrían dado", "en": "you all would have given" },
+        "ellos": { "es": "habrían dado", "en": "they would have given" },
+        "ellas": { "es": "habrían dado", "en": "they (f.) would have given" }
+      },
+      "subj_pres": {
+        "yo": { "es": "dé", "en": "that I give" },
+        "tú": { "es": "des", "en": "that you give" },
+        "ud": { "es": "dé", "en": "that you give" },
+        "él": { "es": "dé", "en": "that he gives" },
+        "ella": { "es": "dé", "en": "that she gives" },
+        "nos": { "es": "demos", "en": "that we give" },
+        "uds": { "es": "den", "en": "that you all give" },
+        "ellos": { "es": "den", "en": "that they give" },
+        "ellas": { "es": "den", "en": "that they (f.) give" }
+      },
+      "subj_impf": {
+        "yo": { "es": "diera", "en": "that I gave" },
+        "tú": { "es": "dieras", "en": "that you gave" },
+        "ud": { "es": "diera", "en": "that you gave" },
+        "él": { "es": "diera", "en": "that he gave" },
+        "ella": { "es": "diera", "en": "that she gave" },
+        "nos": { "es": "diéramos", "en": "that we gave" },
+        "uds": { "es": "dieran", "en": "that you all gave" },
+        "ellos": { "es": "dieran", "en": "that they gave" },
+        "ellas": { "es": "dieran", "en": "that they (f.) gave" }
+      },
+      "subj_perf_pres": {
+        "yo": { "es": "haya dado", "en": "that I have given" },
+        "tú": { "es": "hayas dado", "en": "that you have given" },
+        "ud": { "es": "haya dado", "en": "that you have given" },
+        "él": { "es": "haya dado", "en": "that he has given" },
+        "ella": { "es": "haya dado", "en": "that she has given" },
+        "nos": { "es": "hayamos dado", "en": "that we have given" },
+        "uds": { "es": "hayan dado", "en": "that you all have given" },
+        "ellos": { "es": "hayan dado", "en": "that they have given" },
+        "ellas": { "es": "hayan dado", "en": "that they (f.) have given" }
+      },
+      "subj_plu": {
+        "yo": { "es": "hubiera dado", "en": "that I had given" },
+        "tú": { "es": "hubieras dado", "en": "that you had given" },
+        "ud": { "es": "hubiera dado", "en": "that you had given" },
+        "él": { "es": "hubiera dado", "en": "that he had given" },
+        "ella": { "es": "hubiera dado", "en": "that she had given" },
+        "nos": { "es": "hubiéramos dado", "en": "that we had given" },
+        "uds": { "es": "hubieran dado", "en": "that you all had given" },
+        "ellos": { "es": "hubieran dado", "en": "that they had given" },
+        "ellas": { "es": "hubieran dado", "en": "that they (f.) had given" }
+      },
+      "imp_aff": {
+        "tú": { "es": "da", "en": "Give" },
+        "ud": { "es": "dé", "en": "Give" },
+        "nos": { "es": "demos", "en": "Let's give" },
+        "uds": { "es": "den", "en": "Give" }
+      },
+      "imp_neg": {
+        "tú": { "es": "no des", "en": "Don't give" },
+        "ud": { "es": "no dé", "en": "Don't give" },
+        "nos": { "es": "no demos", "en": "Let's not give" },
+        "uds": { "es": "no den", "en": "Don't give" }
+      },
+      "perip_pres_prog": {
+        "yo": { "es": "estoy dando", "en": "I am giving" },
+        "tú": { "es": "estás dando", "en": "you are giving" },
+        "ud": { "es": "está dando", "en": "you are giving" },
+        "él": { "es": "está dando", "en": "he is giving" },
+        "ella": { "es": "está dando", "en": "she is giving" },
+        "nos": { "es": "estamos dando", "en": "we are giving" },
+        "uds": { "es": "están dando", "en": "you all are giving" },
+        "ellos": { "es": "están dando", "en": "they are giving" },
+        "ellas": { "es": "están dando", "en": "they (f.) are giving" }
+      },
+      "perip_fut_prox": {
+        "yo": { "es": "voy a dar", "en": "I am going to give" },
+        "tú": { "es": "vas a dar", "en": "you are going to give" },
+        "ud": { "es": "va a dar", "en": "you are going to give" },
+        "él": { "es": "va a dar", "en": "he is going to give" },
+        "ella": { "es": "va a dar", "en": "she is going to give" },
+        "nos": { "es": "vamos a dar", "en": "we are going to give" },
+        "uds": { "es": "van a dar", "en": "you all are going to give" },
+        "ellos": { "es": "van a dar", "en": "they are going to give" },
+        "ellas": { "es": "van a dar", "en": "they (f.) are going to give" }
+      }
+    }
+  }
+]

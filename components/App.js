@@ -1,4 +1,5 @@
 import "../wdyr";
+import { SQLiteProvider, useSQLiteContext } from "expo-sqlite";
 import { Text, View, TextInput } from "react-native";
 import setDefaultProps from "react-native-simple-default-props";
 import { useLocalStorageStore } from "./stores/LocalStorageStore";
@@ -21,12 +22,13 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
-import { initDb, useDatabaseMigration } from "./db/client";
+import { useMigrations } from "drizzle-orm/expo-sqlite/migrator";
 import { ModalManager } from "./ModalManager";
-import { useEffect, useState } from "react";
+import migrations from "../drizzle/migrations";
+import { drizzle } from "drizzle-orm/expo-sqlite";
+import { useMemo } from "react";
 
 export default function App() {
-  const [dbReady, setDbReady] = useState(false);
   const themeSetting = useLocalStorageStore((state) => state.theme);
 
   const isInDarkMode = themeSetting === "dark";
@@ -39,66 +41,72 @@ export default function App() {
     Inter_400Regular_Italic,
   });
 
-  const intializeDb = async () => {
-    try {
-      await initDb();
-      setDbReady(true);
-    } catch (e) {
-      console.warn("DB init failed", e);
-    }
+  const defaultText = {
+    style: [{ fontFamily: "Inter_400Regular" }],
   };
 
-  useEffect(() => {
-    intializeDb();
-  }, []);
+  if (!fontsLoaded) return null;
 
-  useEffect(() => {
-    if (fontsLoaded) {
-      const defaultText = { style: [{ fontFamily: "Inter_400Regular" }] };
-      setDefaultProps(Text, defaultText);
-      setDefaultProps(TextInput, defaultText);
-    }
-  }, [fontsLoaded]);
-
-  const ready = fontsLoaded && dbReady;
-
-  if (!ready) return null;
+  setDefaultProps(Text, defaultText);
+  setDefaultProps(TextInput, defaultText);
 
   return (
     <ThemeProvider theme={currentTheme}>
       <SafeAreaProvider>
         <SystemBars style={isInDarkMode ? "light" : "dark"} />
-        <NavigationContainer
-          theme={{
-            colors: {
-              ...DefaultTheme.colors,
-              background: currentTheme.colors.background,
-            },
+        <SQLiteProvider
+          databaseName={"conjugations.db"}
+          assetSource={{ assetId: require("../assets/conjugations.db") }}
+          onInit={async (db) => {
+            await db.execAsync("PRAGMA foreign_keys=ON;");
+            await db.execAsync("PRAGMA journal_mode=WAL;");
           }}
         >
           <AppContent />
-        </NavigationContainer>
+        </SQLiteProvider>
       </SafeAreaProvider>
     </ThemeProvider>
   );
 }
 
 const AppContent = () => {
+  const sqlite = useSQLiteContext();
+  const db = useMemo(() => drizzle(sqlite), [sqlite]);
+  const { success, error } = useMigrations(db, migrations);
+
   const insets = useSafeAreaInsets();
   const theme = useTheme();
 
+  if (error) {
+    console.error("Migration error:", error);
+    return null;
+  }
+
+  if (!success) {
+    return null;
+  }
+
   return (
-    <View
-      style={{
-        flex: 1,
-        paddingTop: insets.top,
-        paddingBottom: insets.bottom,
-        backgroundColor: theme.colors.background,
+    <NavigationContainer
+      theme={{
+        ...DefaultTheme,
+        colors: {
+          ...DefaultTheme.colors,
+        },
       }}
     >
-      <BottomTabs />
-      <ModalManager />
-    </View>
+      <View
+        style={{
+          flex: 1,
+          paddingTop: insets.top,
+          paddingBottom: insets.bottom,
+          backgroundColor: theme.colors.background,
+        }}
+      >
+        <BottomTabs />
+        <ModalManager />
+      </View>
+    </NavigationContainer>
   );
 };
 

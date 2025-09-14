@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "a3db8ca3-3f26-49da-9207-2d7e08a6a99c",
+  "id": "0afb3c79-2f96-4df1-a826-f92a1286ca3b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "conjugations": {
@@ -16,7 +16,7 @@
         },
         "verb_id": {
           "name": "verb_id",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
@@ -42,15 +42,15 @@
           "notNull": true,
           "autoincrement": false
         },
-        "conjugation": {
-          "name": "conjugation",
+        "es_form": {
+          "name": "es_form",
           "type": "text",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "translation": {
-          "name": "translation",
+        "en_form": {
+          "name": "en_form",
           "type": "text",
           "primaryKey": false,
           "notNull": true,
@@ -89,7 +89,14 @@
         },
         "conjugation_id": {
           "name": "conjugation_id",
-          "type": "text",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "due_at": {
+          "name": "due_at",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
@@ -108,15 +115,15 @@
           "notNull": true,
           "autoincrement": false
         },
-        "elapsed_days": {
-          "name": "elapsed_days",
+        "scheduled_days": {
+          "name": "scheduled_days",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "scheduled_days": {
-          "name": "scheduled_days",
+        "learning_steps": {
+          "name": "learning_steps",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
@@ -147,7 +154,7 @@
           "name": "last_review_at",
           "type": "integer",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoincrement": false
         }
       },
@@ -167,6 +174,51 @@
           "onUpdate": "no action"
         }
       },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "tenses": {
+      "name": "tenses",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name_es": {
+          "name": "name_es",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name_en": {
+          "name": "name_en",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "mood": {
+          "name": "mood",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraints": {}
@@ -192,28 +244,50 @@
           "name": "meaning",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoincrement": false
         },
         "type": {
           "name": "type",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoincrement": false
         },
-        "group": {
-          "name": "group",
+        "frequency": {
+          "name": "frequency",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": 0
+        },
+        "participle_es": {
+          "name": "participle_es",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoincrement": false
         },
-        "status": {
-          "name": "status",
+        "participle_en": {
+          "name": "participle_en",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "gerund_es": {
+          "name": "gerund_es",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "gerund_en": {
+          "name": "gerund_en",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
           "autoincrement": false
         }
       },

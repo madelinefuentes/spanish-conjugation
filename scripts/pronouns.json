@@ -6,6 +6,6 @@
   { "id": "ella", "es": "ella", "en": "she" },
   { "id": "nos", "es": "nosotros", "en": "we" },
   { "id": "uds", "es": "ustedes", "en": "you (pl.)" },
-  { "id": "ellos", "es": "ellos", "en": "they (m.)" },
+  { "id": "ellos", "es": "ellos", "en": "they" },
   { "id": "ellas", "es": "ellas", "en": "they (f.)" }
 ]
