@@ -1,48 +1,70 @@
-import { db } from "../db/client";
-import { conjugations, verbs, srsReviews } from "../db/schema";
-import { and, desc, eq, isNull, lte } from "drizzle-orm";
+// services/study.js
+import { presetDb, userDb } from "../db/client";
+import { conjugations, verbs } from "../db/schema.preset";
+import { srsReviews } from "../db/schema.user";
+import { and, desc, eq, lte, inArray, notInArray } from "drizzle-orm";
+
+async function getConjugationCardsByIds(ids) {
+  if (!ids || ids.length === 0) return [];
+  return await presetDb
+    .select({
+      id: conjugations.id,
+      mood: conjugations.mood,
+      tense: conjugations.tense,
+      person: conjugations.person,
+      conjugation: conjugations.esForm,
+      translation: conjugations.enForm,
+      infinitive: verbs.infinitive,
+      meaning: verbs.meaning,
+    })
+    .from(conjugations)
+    .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
+    .where(inArray(conjugations.id, ids));
+}
 
 export const getStudySessionCards = async (numCards) => {
   try {
     const now = Math.floor(Date.now() / 1000);
 
-    const dueCards = await db
+    const due = await userDb
       .select({
-        id: conjugations.id,
-        mood: conjugations.mood,
-        tense: conjugations.tense,
-        person: conjugations.person,
-        conjugation: conjugations.conjugation,
-        translation: conjugations.translation,
-        infinitive: verbs.infinitive,
-        meaning: verbs.meaning,
+        conjugationId: srsReviews.conjugationId,
+        dueAt: srsReviews.dueAt,
       })
       .from(srsReviews)
-      .innerJoin(conjugations, eq(srsReviews.conjugationId, conjugations.id))
-      .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
       .where(lte(srsReviews.dueAt, now))
       .orderBy(srsReviews.dueAt)
       .limit(numCards);
+
+    const dueIds = due.map((d) => d.conjugationId);
+    const dueCards = await getConjugationCardsByIds(dueIds);
 
     const remaining = numCards - dueCards.length;
 
     let newCards = [];
     if (remaining > 0) {
-      newCards = await db
+      const reviewedRows = await userDb
+        .select({ conjugationId: srsReviews.conjugationId })
+        .from(srsReviews);
+
+      const reviewedIds = Array.from(
+        new Set(reviewedRows.map((r) => r.conjugationId))
+      );
+
+      newCards = await presetDb
         .select({
           id: conjugations.id,
           mood: conjugations.mood,
           tense: conjugations.tense,
           person: conjugations.person,
-          conjugation: conjugations.conjugation,
-          translation: conjugations.translation,
+          conjugation: conjugations.esForm,
+          translation: conjugations.enForm,
           infinitive: verbs.infinitive,
           meaning: verbs.meaning,
         })
         .from(conjugations)
-        .leftJoin(srsReviews, eq(srsReviews.conjugationId, conjugations.id))
         .innerJoin(verbs, eq(verbs.id, conjugations.verbId))
-        .where(isNull(srsReviews.id))
+        .where(notInArray(conjugations.id, reviewedIds))
         .orderBy(desc(verbs.frequency))
         .limit(remaining);
     }
@@ -50,18 +72,19 @@ export const getStudySessionCards = async (numCards) => {
     return [...dueCards, ...newCards];
   } catch (error) {
     console.error("Error in getStudySessionCards:", error);
+    return [];
   }
 };
 
 export const getConjugationsByVerb = async (verbId) => {
-  return await db
+  return await presetDb
     .select({
       id: conjugations.id,
       mood: conjugations.mood,
       tense: conjugations.tense,
       person: conjugations.person,
-      conjugation: conjugations.conjugation,
-      translation: conjugations.translation,
+      conjugation: conjugations.esForm,
+      translation: conjugations.enForm,
       infinitive: verbs.infinitive,
       meaning: verbs.meaning,
     })
@@ -71,14 +94,14 @@ export const getConjugationsByVerb = async (verbId) => {
 };
 
 export const getConjugationsByVerbAndTense = async (verbId, tense) => {
-  return await db
+  return await presetDb
     .select({
       id: conjugations.id,
       mood: conjugations.mood,
       tense: conjugations.tense,
       person: conjugations.person,
-      conjugation: conjugations.conjugation,
-      translation: conjugations.translation,
+      conjugation: conjugations.esForm,
+      translation: conjugations.enForm,
       infinitive: verbs.infinitive,
       meaning: verbs.meaning,
     })

@@ -1,2 +1,0 @@
--- Baseline migration: schema is already present in the prefilled DB.
--- No-op.

@@ -1,5 +1,5 @@
 import { Pressable, View } from "react-native";
-import { Bean, Bubbles, Star } from "lucide-react-native";
+import { Bubbles, Star } from "lucide-react-native";
 import { clearDatabase } from "../db/client";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
 import { useTheme } from "@emotion/react";

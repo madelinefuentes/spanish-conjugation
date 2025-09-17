@@ -2,34 +2,20 @@ import { openDatabaseSync } from "expo-sqlite";
 import { drizzle } from "drizzle-orm/expo-sqlite";
 import { useMigrations } from "drizzle-orm/expo-sqlite/migrator";
 import migrations from "../../drizzle/migrations";
-// import { useDrizzleStudio } from "expo-drizzle-studio-plugin";
-// import { useSQLiteDevTools } from "expo-sqlite-devtools";
 
-export const DATABASE_NAME = "conjugoDb.sqlite";
+export const PRESET_DB_NAME = "conjugations.db"; // asset-copied by SQLiteProvider
+export const USER_DB_NAME = "userData.sqlite"; // app-writable
 
-const expoDb = openDatabaseSync(DATABASE_NAME, { enableChangeListener: true });
-export const db = drizzle(expoDb);
+const presetSqlite = openDatabaseSync(PRESET_DB_NAME, {
+  enableChangeListener: true,
+});
+const userSqlite = openDatabaseSync(USER_DB_NAME, {
+  enableChangeListener: true,
+});
 
-export function useDatabaseMigration() {
-  // useDrizzleStudio(expoDb);
-  return useMigrations(db, migrations);
-}
+export const presetDb = drizzle(presetSqlite);
+export const userDb = drizzle(userSqlite);
 
-export const clearDatabase = async () => {
-  try {
-    await expoDb.execAsync(`
-      PRAGMA foreign_keys = OFF;
-
-      BEGIN TRANSACTION;
-      DELETE FROM verbs;
-      DELETE FROM conjugations;
-      DELETE FROM srs_reviews;
-      COMMIT;
-
-      PRAGMA foreign_keys = ON;
-    `);
-    console.log("Database cleared!");
-  } catch (error) {
-    console.log("Error", "Failed to clear the database.");
-  }
+export const useUserDatabaseMigration = () => {
+  return useMigrations(userDb, migrations);
 };

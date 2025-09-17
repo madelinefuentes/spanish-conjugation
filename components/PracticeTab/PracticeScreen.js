@@ -5,8 +5,6 @@ import { useLocalStorageStore } from "../stores/LocalStorageStore";
 import { getStudySessionCards } from "../db/dbFunctions";
 import dayjs from "dayjs";
 
-const SESSION_COUNT = 20;
-
 export const PracticeScreen = () => {
   const [cards, setCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +23,7 @@ export const PracticeScreen = () => {
   };
 
   const fetchCards = async () => {
-    const result = await getStudySessionCards(SESSION_COUNT);
+    const result = await getStudySessionCards(sessionCount);
     setCards(result);
   };
 
@@ -36,7 +34,7 @@ export const PracticeScreen = () => {
 
   const incrementCard = async () => {
     if (currentIndex == cards.length - 1) {
-      const result = await getStudySessionCards(SESSION_COUNT);
+      const result = await getStudySessionCards(sessionCount);
       setCards(result);
       setCurrentIndex(0);
     } else {

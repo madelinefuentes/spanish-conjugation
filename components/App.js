@@ -1,5 +1,5 @@
 import "../wdyr";
-import { SQLiteProvider, useSQLiteContext } from "expo-sqlite";
+import { SQLiteProvider } from "expo-sqlite";
 import { Text, View, TextInput } from "react-native";
 import setDefaultProps from "react-native-simple-default-props";
 import { useLocalStorageStore } from "./stores/LocalStorageStore";
@@ -8,13 +8,10 @@ import { ThemeProvider, useTheme } from "@emotion/react";
 import { SystemBars } from "react-native-edge-to-edge";
 import {
   useFonts,
-  Lato_400Regular,
-  Barlow_400Regular,
   Inter_400Regular,
   Inter_500Medium,
   Inter_600SemiBold,
   Inter_400Regular_Italic,
-  Manrope_400Regular,
 } from "@expo-google-fonts/dev";
 import { BottomTabs } from "./BottomTabs";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
@@ -22,29 +19,22 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
-import { useMigrations } from "drizzle-orm/expo-sqlite/migrator";
 import { ModalManager } from "./ModalManager";
-import migrations from "../drizzle/migrations";
-import { drizzle } from "drizzle-orm/expo-sqlite";
-import { useMemo } from "react";
+import { useUserDatabaseMigration } from "./db/client";
 
 export default function App() {
-  const themeSetting = useLocalStorageStore((state) => state.theme);
-
+  const themeSetting = useLocalStorageStore((s) => s.theme);
   const isInDarkMode = themeSetting === "dark";
   const currentTheme = isInDarkMode ? darkTheme : lightTheme;
 
-  let [fontsLoaded] = useFonts({
+  const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_500Medium,
     Inter_600SemiBold,
     Inter_400Regular_Italic,
   });
 
-  const defaultText = {
-    style: [{ fontFamily: "Inter_400Regular" }],
-  };
-
+  const defaultText = { style: [{ fontFamily: "Inter_400Regular" }] };
   if (!fontsLoaded) return null;
 
   setDefaultProps(Text, defaultText);
@@ -70,29 +60,22 @@ export default function App() {
 }
 
 const AppContent = () => {
-  const sqlite = useSQLiteContext();
-  const db = useMemo(() => drizzle(sqlite), [sqlite]);
-  const { success, error } = useMigrations(db, migrations);
+  const { success, error } = useUserDatabaseMigration();
 
   const insets = useSafeAreaInsets();
   const theme = useTheme();
 
   if (error) {
-    console.error("Migration error:", error);
+    console.error("User DB migration error:", error);
     return null;
   }
-
-  if (!success) {
-    return null;
-  }
+  if (!success) return null;
 
   return (
     <NavigationContainer
       theme={{
         ...DefaultTheme,
-        colors: {
-          ...DefaultTheme.colors,
-        },
+        colors: { ...DefaultTheme.colors, background: theme.colors.background },
       }}
     >
       <View
@@ -110,4 +93,4 @@ const AppContent = () => {
   );
 };
 
-App.whyDidYouRender = true;
+AppContent.whyDidYouRender = true;
