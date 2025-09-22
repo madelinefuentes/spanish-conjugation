@@ -44,6 +44,6 @@ export const srsReviews = sqliteTable("srs_reviews", {
   learningSteps: integer("learning_steps").notNull(),
   reps: integer("reps").notNull(),
   lapses: integer("lapses").notNull(),
-  state: text("state").notNull(),
+  state: integer("state").notNull(),
   lastReviewAt: integer("last_review_at"),
 });

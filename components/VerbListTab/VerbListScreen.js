@@ -1,9 +1,9 @@
 import styled from "@emotion/native";
 import { FlatList, Pressable, View } from "react-native";
-import { db } from "../db/client";
+import { db, presetDb } from "../db/client";
 import { useLiveQuery } from "drizzle-orm/expo-sqlite";
 import { verbs } from "../db/schema";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
 import { getHexWithOpacity } from "../util/ColorHelper";
 import { useTheme } from "@emotion/react";
@@ -117,6 +117,7 @@ export const VerbListScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isVerbModalVisible, setIsVerbModalVisible] = useState(false);
   const [selectedVerb, setSelectedVerb] = useState({});
+  const [verbList, setVerbList] = useState([]);
 
   const sortField = useLocalStorageStore((state) => state.sortField);
   const setSortField = useLocalStorageStore((state) => state.setSortField);
@@ -124,11 +125,17 @@ export const VerbListScreen = () => {
   const flatListRef = useRef();
   const theme = useTheme();
 
-  // TODO use useEffect instead of live query
-  const { data: rawVerbs, error } = useLiveQuery(db.select().from(verbs));
+  const fetchVerbs = async () => {
+    const result = await presetDb.select().from(verbs);
+    setVerbList(result);
+  };
 
-  const verbList = useMemo(() => {
-    const filtered = rawVerbs.filter(
+  useEffect(() => {
+    fetchVerbs();
+  }, []);
+
+  const filteredList = useMemo(() => {
+    const filtered = verbList.filter(
       (v) =>
         v.infinitive.toLowerCase().includes(searchQuery.toLowerCase()) ||
         v.meaning.toLowerCase().includes(searchQuery.toLowerCase())
@@ -140,7 +147,7 @@ export const VerbListScreen = () => {
       }
       return a.infinitive.localeCompare(b.infinitive);
     });
-  }, [rawVerbs, sortField, searchQuery]);
+  }, [verbList, sortField, searchQuery]);
 
   const getHeader = (verb, sortField) => {
     if (sortField === "frequency") {
@@ -156,7 +163,7 @@ export const VerbListScreen = () => {
   const { flatData, headerIndices } = useMemo(() => {
     const grouped = [];
 
-    verbList.forEach((verb) => {
+    filteredList.forEach((verb) => {
       const header = getHeader(verb, sortField);
 
       if (!grouped[header]) grouped[header] = [];
@@ -179,7 +186,7 @@ export const VerbListScreen = () => {
     });
 
     return { flatData, headerIndices };
-  }, [verbList, sortField]);
+  }, [filteredList, sortField]);
 
   const renderItem = ({ item }) => {
     if (item.type === "header") {
@@ -239,7 +246,7 @@ export const VerbListScreen = () => {
           </SortField>
         </Pressable>
       </SortContainer>
-      {searchQuery.length > 0 && verbList.length < 1 ? (
+      {searchQuery.length > 0 && filteredList.length < 1 ? (
         <PlaceholderContainer>
           <PlaceholderText>{`There are no search results for '${searchQuery}'`}</PlaceholderText>
         </PlaceholderContainer>

@@ -6,7 +6,7 @@ import { useTheme } from "@emotion/react";
 import { getHexWithOpacity } from "../util/ColorHelper";
 import { useEffect, useState } from "react";
 import { TabControl } from "./TabControl";
-import { db } from "../db/client";
+import { db, presetDb } from "../db/client";
 import { conjugations } from "../db/schema";
 import { eq } from "drizzle-orm";
 import { useModalStore } from "../stores/ModalStore";
@@ -14,6 +14,7 @@ import {
   getConjugationsByVerb,
   getConjugationsByVerbAndTense,
 } from "../db/dbFunctions";
+import tenses from "../";
 
 const ModalContainer = styled.View(({ theme }) => ({
   flex: 1,
@@ -140,7 +141,7 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
   useEffect(() => {
     const loadConjugations = async () => {
       try {
-        const results = await db
+        const results = await presetDb
           .select()
           .from(conjugations)
           .where(eq(conjugations.verbId, verb.id));

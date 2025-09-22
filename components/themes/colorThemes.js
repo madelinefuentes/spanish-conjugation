@@ -16,6 +16,10 @@ export const lightTheme = {
     white: "#FFFDFA",
     black: "#212529",
     greyText: "#9ca3af",
+    indicative: "#10B981",
+    subjunctive: "#8B5CF6",
+    imperative: "#F97316",
+    success: "#22C55E",
   },
   darkMode: false,
 };
@@ -36,6 +40,10 @@ export const darkTheme = {
     white: "#F2F2F2",
     black: "#212529",
     greyText: "#9ca3af",
+    indicative: "#34D399",
+    subjunctive: "#A78BFA",
+    imperative: "#FB923C",
+    success: "#22C55E",
   },
   darkMode: true,
 };

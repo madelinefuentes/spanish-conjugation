@@ -46,7 +46,7 @@ export default function App() {
         <SystemBars style={isInDarkMode ? "light" : "dark"} />
         <SQLiteProvider
           databaseName={"conjugations.db"}
-          assetSource={{ assetId: require("../assets/conjugations.db") }}
+          assetSource={{ assetId: require("../assets/conjugations-v2.db") }}
           onInit={async (db) => {
             await db.execAsync("PRAGMA foreign_keys=ON;");
             await db.execAsync("PRAGMA journal_mode=WAL;");

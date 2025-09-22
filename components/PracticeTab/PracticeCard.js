@@ -21,6 +21,7 @@ import Animated, {
   withSpring,
 } from "react-native-reanimated";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
+import { userDb } from "../db/client";
 
 const Container = styled.View(({ theme }) => ({
   alignItems: "center",
@@ -37,23 +38,25 @@ const TenseRow = styled.View(({ theme }) => ({
   flexDirection: "row",
   gap: theme.s3,
   marginBottom: theme.s4,
+  marginHorizontal: theme.s2,
+  alignItems: "center",
 }));
 
 const TenseContainer = styled.View(({ theme, color }) => ({
-  paddingVertical: theme.s1,
-  paddingHorizontal: theme.s3,
-  borderRadius: 999,
-  backgroundColor: getHexWithOpacity(color, 0.2),
-  flexDirection: "row",
-  alignItems: "center",
-  gap: theme.s2,
+  paddingVertical: theme.s2,
+  paddingHorizontal: theme.s4,
+  borderRadius: theme.s3 * 2,
+  backgroundColor: getHexWithOpacity(color, 0.12),
+  flexShrink: 1,
+  maxWidth: "75%",
 }));
 
 const Tense = styled.Text(({ theme, color }) => ({
   fontSize: theme.t6,
-  color: color,
+  color,
+  textAlign: "center",
+  lineHeight: Math.round(theme.t6 * 1.3),
 }));
-
 const Pronoun = styled.Text(({ theme }) => ({
   fontSize: theme.t10,
   color: theme.colors.text,
@@ -85,9 +88,20 @@ const AnswerContainer = styled.View(({ theme }) => ({
   borderColor: theme.colors.line,
 }));
 
+const RevealButton = styled.View(({ theme }) => ({
+  paddingVertical: theme.s1,
+  paddingHorizontal: theme.s3,
+  borderRadius: theme.s3,
+  borderWidth: 1,
+  borderColor: theme.colors.primary,
+  flexDirection: "row",
+  alignItems: "center",
+  gap: theme.s2,
+}));
+
 const CorrectText = styled(Animated.Text)(({ theme }) => ({
   fontSize: theme.t7,
-  color: "#22c55e",
+  color: theme.colors.success,
   position: "absolute",
   right: theme.s2,
   pointerEvents: "none",
@@ -135,7 +149,7 @@ export const PracticeCard = ({ item, incrementCard }) => {
     const now = dayjs();
 
     try {
-      const [existingReview] = await db
+      const [existingReview] = await userDb
         .select()
         .from(srsReviews)
         .where(eq(srsReviews.conjugationId, item.id))
@@ -150,7 +164,7 @@ export const PracticeCard = ({ item, incrementCard }) => {
         card.learning_steps = existingReview.learningSteps;
         card.reps = existingReview.reps;
         card.lapses = existingReview.lapses;
-        card.state = Number(existingReview.state); // TODO change schema so state is an integer
+        card.state = existingReview.state;
         card.last_review = dayjs.unix(existingReview.lastReviewAt).toDate();
         card.due = dayjs.unix(existingReview.dueAt).toDate();
       }
@@ -170,17 +184,17 @@ export const PracticeCard = ({ item, incrementCard }) => {
         lastReviewAt: now.unix(),
       };
 
-      // if (existingReview) {
-      //   await db
-      //     .update(srsReviews)
-      //     .set(reviewData)
-      //     .where(eq(srsReviews.id, existingReview.id));
-      // } else {
-      //   await db.insert(srsReviews).values({
-      //     conjugationId: item.id,
-      //     ...reviewData,
-      //   });
-      // }
+      if (existingReview) {
+        await userDb
+          .update(srsReviews)
+          .set(reviewData)
+          .where(eq(srsReviews.id, existingReview.id));
+      } else {
+        await userDb.insert(srsReviews).values({
+          conjugationId: item.id,
+          ...reviewData,
+        });
+      }
     } catch (err) {
       console.error("Failed to update SRS review:", err);
     }
@@ -188,7 +202,7 @@ export const PracticeCard = ({ item, incrementCard }) => {
     if (correct) {
       correctTextOpacity.value = withTiming(1, { duration: 160 });
       correctTextTranslateY.value = withTiming(0, { duration: 160 });
-      setButtonColor("#22c55e");
+      setButtonColor(theme.colors.success);
 
       buttonScale.value = withSequence(
         withTiming(1.12, { duration: 90 }),
@@ -219,28 +233,34 @@ export const PracticeCard = ({ item, incrementCard }) => {
     setShowInfinitive(false);
   };
 
+  const colorMap = {
+    indicative: theme.colors.indicative,
+    subjunctive: theme.colors.subjunctive,
+    imperative: theme.colors.imperative,
+  };
+
   if (!item) return;
+
+  const moodColor = colorMap[item.mood.toLowerCase()];
 
   return (
     <Container>
       <Prompt>{item.translation}</Prompt>
       <TenseRow>
-        <TenseContainer color={theme.colors.primary}>
-          <Tense color={theme.colors.primary}>
-            {item.tense.charAt(0).toUpperCase() + item.tense.slice(1)}
-          </Tense>
+        <TenseContainer color={moodColor}>
+          <Tense color={moodColor}>{`${item.mood} ${item.tense}`}</Tense>
         </TenseContainer>
         <Pressable onPress={() => setShowInfinitive(!showInfinitive)}>
-          <TenseContainer color={"#a78bfa"}>
+          <RevealButton>
             {showInfinitive ? (
-              <Eye size={theme.t7} color={"#a78bfa"} />
+              <Eye size={theme.t7} color={theme.colors.primary} />
             ) : (
-              <EyeOff size={theme.t7} color={"#a78bfa"} />
+              <EyeOff size={theme.t7} color={theme.colors.primary} />
             )}
-            <Tense color={"#a78bfa"}>
+            <Tense color={theme.colors.primary}>
               {showInfinitive ? "Hide Verb" : "Reveal Verb"}
             </Tense>
-          </TenseContainer>
+          </RevealButton>
         </Pressable>
       </TenseRow>
       <AnswerContainer>
