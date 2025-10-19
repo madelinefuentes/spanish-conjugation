@@ -42,7 +42,9 @@
         }
       ],
       "expo-sqlite",
-      "expo-asset"
+      "expo-asset",
+      "expo-build-properties",
+      "expo-font"
     ]
   }
 }

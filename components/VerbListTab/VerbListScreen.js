@@ -2,7 +2,7 @@ import styled from "@emotion/native";
 import { FlatList, Pressable, View } from "react-native";
 import { db, presetDb } from "../db/client";
 import { useLiveQuery } from "drizzle-orm/expo-sqlite";
-import { verbs } from "../db/schema";
+import { verbs } from "../db/schema.preset";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocalStorageStore } from "../stores/LocalStorageStore";
 import { getHexWithOpacity } from "../util/ColorHelper";

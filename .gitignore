@@ -38,3 +38,4 @@ yarn-error.*
 
 scripts/env310
 .env
+drizzle/

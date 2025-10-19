@@ -6,15 +6,14 @@ import { useTheme } from "@emotion/react";
 import { getHexWithOpacity } from "../util/ColorHelper";
 import { useEffect, useState } from "react";
 import { TabControl } from "./TabControl";
-import { db, presetDb } from "../db/client";
-import { conjugations } from "../db/schema";
-import { eq } from "drizzle-orm";
 import { useModalStore } from "../stores/ModalStore";
 import {
   getConjugationsByVerb,
   getConjugationsByVerbAndTense,
 } from "../db/dbFunctions";
-import tenses from "../";
+
+// TODO move to db
+import tenses from "../../scripts/tenses.json";
 
 const ModalContainer = styled.View(({ theme }) => ({
   flex: 1,
@@ -94,36 +93,12 @@ const QuizButtonText = styled.Text(({ theme }) => ({
   color: theme.colors.white,
 }));
 
-export const moodArray = [
-  {
-    key: "indicative",
-    label: "Indicative",
-    tenses: {
-      present: "Used to state facts or habitual actions",
-      preterite: "Describes completed actions in the past",
-      imperfect: "Describes ongoing or habitual past actions",
-      future: "Describes actions that will happen",
-      conditional: "Describes hypothetical or polite actions",
-    },
-  },
-  {
-    key: "subjunctive",
-    label: "Subjunctive",
-    tenses: {
-      // present: "Expresses doubt, wishes, or emotions",
-      // imperfect: "Used for hypotheticals in the past",
-      // future: "Rarely used; expresses future hypotheticals",
-    },
-  },
-  {
-    key: "imperative",
-    label: "Imperative",
-    tenses: {
-      // affirmative: "Gives direct commands or requests",
-      // negative: "Tells someone not to do something",
-    },
-  },
-];
+const TENSES_BY_MOOD = tenses.reduce((acc, t) => {
+  (acc[t.mood] ||= []).push(t);
+  return acc;
+}, {});
+
+const MOOD_KEYS = ["Indicative", "Subjunctive", "Imperative"];
 
 export const VerbModal = ({ verb, isVisible, closeModal }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -141,10 +116,7 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
   useEffect(() => {
     const loadConjugations = async () => {
       try {
-        const results = await presetDb
-          .select()
-          .from(conjugations)
-          .where(eq(conjugations.verbId, verb.id));
+        const results = await getConjugationsByVerb(verb.id);
 
         const structured = {};
 
@@ -177,8 +149,8 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
     }
   }, [verb]);
 
-  const moodData = moodArray[activeIndex];
-  const { key: moodKey, tenses } = moodData;
+  const moodKey = MOOD_KEYS[activeIndex];
+  const moodTenses = TENSES_BY_MOOD[moodKey] || [];
 
   const typeColor = verb.type == "Regular" ? "#4ade80" : "#f87171";
 
@@ -232,22 +204,22 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
           </MeaningBlock>
           <Divider />
           <TabControl
-            tabs={["Indicative", "Subjunctive", "Imperative"]}
+            tabs={MOOD_KEYS}
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
           />
-
-          {Object.entries(tenses).map(([tenseKey, description]) => {
-            const tenseConjugations = conjugationData?.[moodKey]?.[tenseKey];
-
+          {moodTenses.map((t) => {
+            console.log(conjugationData[moodKey]);
+            console.log(t.name_en);
+            const tenseConjugations = conjugationData[moodKey]?.[t.name_en];
             if (!tenseConjugations) return null;
 
             return (
               <Table
-                key={tenseKey}
+                key={t.id}
                 verbId={verb.id}
-                tense={tenseKey}
-                description={description}
+                tense={t.name_en}
+                description={t.description}
                 tenseConjugations={tenseConjugations}
               />
             );
@@ -262,7 +234,7 @@ const TableContainer = styled.View(({ theme }) => ({
   padding: theme.s4,
 }));
 
-const TenseHeaderRow = styled.View(({ theme }) => ({
+const TenseHeaderRow = styled.View(() => ({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
@@ -322,9 +294,7 @@ const Table = ({ verbId, tense, description, tenseConjugations }) => {
   return (
     <TableContainer>
       <TenseHeaderRow>
-        <TenseHeader>
-          {tense.charAt(0).toUpperCase() + tense.slice(1)}
-        </TenseHeader>
+        <TenseHeader>{tense}</TenseHeader>
         <Pressable onPress={handleQuiz} hitSlop={15}>
           <QuizButton>
             <QuizButtonText>Quiz</QuizButtonText>

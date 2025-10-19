@@ -9,7 +9,7 @@ import { Pressable } from "react-native";
 import { useModalStore } from "../stores/ModalStore";
 import { createEmptyCard, FSRS, Rating } from "ts-fsrs";
 import { db } from "../db/client";
-import { srsReviews } from "../db/schema";
+import { srsReviews } from "../db/schema.user";
 import { eq } from "drizzle-orm";
 import dayjs from "dayjs";
 import Animated, {

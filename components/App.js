@@ -66,9 +66,12 @@ const AppContent = () => {
   const theme = useTheme();
 
   if (error) {
-    console.error("User DB migration error:", error);
+    console.error("User DB migration error (raw):", error);
+    if (error.cause) console.error("Cause:", error.cause);
+
     return null;
   }
+
   if (!success) return null;
 
   return (
