@@ -93,12 +93,13 @@ const QuizButtonText = styled.Text(({ theme }) => ({
   color: theme.colors.white,
 }));
 
+// move to db and normalize
+const MOOD_KEYS = ["Indicative", "Subjunctive", "Imperative"];
+
 const TENSES_BY_MOOD = tenses.reduce((acc, t) => {
   (acc[t.mood] ||= []).push(t);
   return acc;
 }, {});
-
-const MOOD_KEYS = ["Indicative", "Subjunctive", "Imperative"];
 
 export const VerbModal = ({ verb, isVisible, closeModal }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -209,8 +210,6 @@ export const VerbModal = ({ verb, isVisible, closeModal }) => {
             setActiveIndex={setActiveIndex}
           />
           {moodTenses.map((t) => {
-            console.log(conjugationData[moodKey]);
-            console.log(t.name_en);
             const tenseConjugations = conjugationData[moodKey]?.[t.name_en];
             if (!tenseConjugations) return null;
 

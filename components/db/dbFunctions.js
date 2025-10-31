@@ -6,7 +6,7 @@ import { and, desc, eq, lte, inArray, notInArray } from "drizzle-orm";
 
 async function getConjugationCardsByIds(ids) {
   if (!ids || ids.length === 0) return [];
-  return await presetDb
+  return await presetDb()
     .select({
       id: conjugations.id,
       mood: conjugations.mood,
@@ -51,7 +51,7 @@ export const getStudySessionCards = async (numCards) => {
         new Set(reviewedRows.map((r) => r.conjugationId))
       );
 
-      newCards = await presetDb
+      newCards = await presetDb()
         .select({
           id: conjugations.id,
           mood: conjugations.mood,
@@ -77,7 +77,7 @@ export const getStudySessionCards = async (numCards) => {
 };
 
 export const getConjugationsByVerb = async (verbId) => {
-  return await presetDb
+  return await presetDb()
     .select({
       id: conjugations.id,
       mood: conjugations.mood,
@@ -94,7 +94,7 @@ export const getConjugationsByVerb = async (verbId) => {
 };
 
 export const getConjugationsByVerbAndTense = async (verbId, tense) => {
-  return await presetDb
+  return await presetDb()
     .select({
       id: conjugations.id,
       mood: conjugations.mood,

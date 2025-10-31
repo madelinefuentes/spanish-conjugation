@@ -3,35 +3,35 @@
     "id": "ind_pres",
     "name_es": "Presente",
     "name_en": "Present",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for actions happening now, regular habits, and general truths"
   },
   {
     "id": "ind_pret",
     "name_es": "Pretérito indefinido",
     "name_en": "Preterite",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for past actions that are completed and seen as single events"
   },
   {
     "id": "ind_impf",
     "name_es": "Imperfecto",
     "name_en": "Imperfect",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for past actions that were repeated, ongoing, or background details"
   },
   {
     "id": "ind_fut",
     "name_es": "Futuro simple",
     "name_en": "Future",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for actions that will happen later or predictions about the future"
   },
   {
     "id": "ind_cond",
     "name_es": "Condicional simple",
     "name_en": "Conditional",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for actions that would happen if certain conditions were met"
   },
 
@@ -39,72 +39,71 @@
     "id": "perf_pres",
     "name_es": "Pretérito perfecto",
     "name_en": "Present Perfect",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for past actions that are connected to the present or whose time is not specified"
   },
   {
     "id": "perf_plu",
     "name_es": "Pluscuamperfecto",
     "name_en": "Pluperfect",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for actions that had already happened before another past action"
   },
   {
     "id": "perf_fut",
     "name_es": "Futuro perfecto",
     "name_en": "Future Perfect",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for actions that will have been completed by a certain future moment"
   },
   {
     "id": "perf_cond",
     "name_es": "Condicional perfecto",
     "name_en": "Conditional Perfect",
-    "mood": "indicative",
+    "mood": "Indicative",
     "description": "Used for actions that would have happened if certain conditions had been true"
   },
-
   {
     "id": "subj_pres",
     "name_es": "Presente de subjuntivo",
-    "name_en": "Present Subjunctive",
-    "mood": "subjunctive",
+    "name_en": "Present",
+    "mood": "Subjunctive",
     "description": "Used for actions that are uncertain, desired, or dependent on another situation in the present or future"
   },
   {
     "id": "subj_impf",
     "name_es": "Imperfecto de subjuntivo (-ra)",
-    "name_en": "Imperfect Subjunctive",
-    "mood": "subjunctive",
+    "name_en": "Imperfect",
+    "mood": "Subjunctive",
     "description": "Used for past actions that are uncertain, imaginary, or dependent on another situation"
   },
   {
     "id": "subj_perf_pres",
     "name_es": "Pretérito perfecto de subjuntivo",
-    "name_en": "Present Perfect Subjunctive",
-    "mood": "subjunctive",
+    "name_en": "Present Perfect",
+    "mood": "Subjunctive",
     "description": "Used for actions that are uncertain or influenced by emotion and happened in the recent past"
   },
   {
     "id": "subj_plu",
     "name_es": "Pluscuamperfecto de subjuntivo",
-    "name_en": "Pluperfect Subjunctive",
-    "mood": "subjunctive",
+    "name_en": "Past Perfect",
+    "mood": "Subjunctive",
     "description": "Used for hypothetical or impossible actions in the past often in if clauses"
   },
 
   {
     "id": "imp_aff",
     "name_es": "Imperativo afirmativo",
-    "name_en": "Affirmative Imperative",
-    "mood": "imperative",
+    "name_en": "Affirmative",
+    "mood": "Imperative",
     "description": "Used for giving direct positive commands or instructions"
   },
   {
     "id": "imp_neg",
     "name_es": "Imperativo negativo",
-    "name_en": "Negative Imperative",
-    "mood": "imperative",
+    "name_en": "Negative",
+    "mood": "Imperative",
     "description": "Used for giving direct negative commands or instructions"
   },
 
@@ -112,14 +111,14 @@
     "id": "perip_pres_prog",
     "name_es": "Presente progresivo",
     "name_en": "Present Progressive",
-    "mood": "periphrastic",
+    "mood": "Periphrastic",
     "description": "Used for actions that are in progress right now"
   },
   {
     "id": "perip_fut_prox",
     "name_es": "Futuro próximo",
     "name_en": "Near Future (Going to)",
-    "mood": "periphrastic",
+    "mood": "Periphrastic",
     "description": "Used for actions that are planned or expected to happen soon"
   }
 ]

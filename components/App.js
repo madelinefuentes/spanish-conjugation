@@ -21,6 +21,7 @@ import {
 } from "react-native-safe-area-context";
 import { ModalManager } from "./ModalManager";
 import { useUserDatabaseMigration } from "./db/client";
+import { PresetDbInitializer } from "./db/client";
 
 export default function App() {
   const themeSetting = useLocalStorageStore((s) => s.theme);
@@ -52,6 +53,7 @@ export default function App() {
             await db.execAsync("PRAGMA journal_mode=WAL;");
           }}
         >
+          <PresetDbInitializer />
           <AppContent />
         </SQLiteProvider>
       </SafeAreaProvider>
